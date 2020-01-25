@@ -1,0 +1,16 @@
+- url: https://search.gibberfish.org/
+  safe: true
+  comments: []
+  additional_urls:
+  - url: http://o2jdk5mdsijm2b7l.onion/
+    relation: Hidden Service
+  - url: https://search.gibberfish.org/
+    relation: Proxied through Tor
+- url: https://a.searx.space
+  safe: false
+  comments: []
+  additional_urls: []
+- url: https://a.searx.space
+  safe: false
+  comments: []
+  additional_urls: []
