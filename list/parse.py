@@ -4,10 +4,11 @@ import rfc3986
 import re
 import json
 import httpx
+import json
 from . import model
 
 INSTANCE_FILE = 'instances.yml'
-TITLE_RE = re.compile('(add|remove)[ ]+(.+)', re.IGNORECASE)
+TITLE_RE = re.compile('(add|remove|delete|del)[ ]+(.+)', re.IGNORECASE)
 
 
 def normalize_url(url):
@@ -38,30 +39,29 @@ def load_requests():
     return requests
 
 
-def apply_add_request(instances, request):
-    new_instance = model.Instance(request[2], False, '', {})
-    print(new_instance)
-    instances.add(new_instance)
+def apply_add_request(instance_list, url):
+    new_instance = model.Instance(False, ['test'])
+    instance_list[url] = new_instance
 
 
-def apply_remove_request(instance, request):
-    pass
+def apply_remove_request(instance_list, url):
+    del instance_list[url]
 
 
 def apply_requests(instance_list, requests):
     for request in requests:
         if request[1] in ['add']:
-            apply_add_request(instance_list, request)
+            apply_add_request(instance_list, request[2])
         elif request[1] in ['remove', 'delete', 'del']:
-            apply_remove_request(instance_list, request)
+            apply_remove_request(instance_list, request[2])
 
 
 def main():
-    instance_list = model.Storage.load(INSTANCE_FILE)
-    print(instance_list)
+    instance_list = model.load(INSTANCE_FILE)
+    # print(instance_list.json_dump())
     requests = load_requests()
-    # apply_requests(instance_list, requests)
-    model.Storage.save(INSTANCE_FILE, instance_list)
+    apply_requests(instance_list, requests)
+    model.save(INSTANCE_FILE, instance_list)
 
 
 if __name__ == "__main__":
