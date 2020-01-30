@@ -2,7 +2,7 @@ import asyncio
 from urllib.parse import urlparse
 import re
 import httpx
-from . import model
+from .. import model
 
 SEARX_INSTANCES_URL = 'https://raw.githubusercontent.com/asciimoo/searx/master/docs/user/public_instances.rst'
 AFTER_ALIVE_AND_RUNNING = re.compile('Alive and running(.*)Running with an incorrect SSL certificate',\
@@ -99,12 +99,11 @@ async def import_instance(instance_list, text, section_comment):
                 # add it
                 aurls[url] = label
         #
+        instance = model.Instance(None, instance_comments, aurls)
         if main_url in instance_list:
-            print('duplicate found ', main_url)
+            print('duplicate found ', main_url, instance)
         else:
-            if len(aurls) > 0:
-                print(main_url, aurls)
-            instance_list[main_url] = model.Instance(None, instance_comments, aurls)
+            instance_list[main_url] = instance
 
 
 

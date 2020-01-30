@@ -1,3 +1,4 @@
+from os.path import realpath, dirname
 from collections import OrderedDict
 import json
 import inspect
@@ -10,7 +11,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 
-# https://bugs.python.org/issue19438
+# Declare NoneType (see https://bugs.python.org/issue19438)
 NoneType = type(None)
 
 # Model
@@ -44,8 +45,12 @@ class Instance(yaml.YAMLObject):
             raise ValueError('safe is not a bool')
         if not isinstance(comments, (list, NoneType)):
             raise ValueError('comments is not a list')
-        if not isinstance(additional_urls, AdditionalUrlList):
+        if not isinstance(additional_urls, (AdditionalUrlList, NoneType)):
             raise ValueError('additional_urls is not a AdditionalUrlList instance')
+        if comments is None:
+            comments = []
+        if additional_urls is None:
+            additional_urls = AdditionalUrlList()
         # assign
         self.safe = safe
         self.comments = comments
@@ -102,7 +107,7 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
         for new_url in new_urls:
             new_url_n = str(rfc3986.normalize_uri(new_url))
             if new_url_n != new_url:
-                raise ValueError(f'{new_url} should be normalized to {new_url_n}')
+                raise ValueError(f'{new_url} should be normalized to {new_url_n}, main URL {url}')
         # update
         super().__setitem__(url, instance)
 
@@ -174,8 +179,18 @@ ILLoader.add_path_resolver('!Instance', [(yaml.MappingNode, False)])
 ILLoader.add_path_resolver('!AdditionalUrlList', [None, 'additional_urls'], yaml.MappingNode)
 
 # Storage
+FILENAME = realpath(dirname(realpath(__file__))) + '/instances.yml'
 
-FILENAME = 'instances.yml'
+
+def yaml_dump(instance_list: InstanceList) -> str:
+    return yaml.dump(instance_list, Dumper=ILDumper, width=240, allow_unicode=True)
+
+
+def yaml_load(content: str) -> InstanceList:
+    instance_list = yaml.load(content, Loader=ILLoader)
+    assert isinstance(instance_list, InstanceList)
+    return instance_list
+
 
 def load(filename: str = FILENAME) -> InstanceList:
     with open(filename, 'r') as input_file:
@@ -183,10 +198,11 @@ def load(filename: str = FILENAME) -> InstanceList:
         assert isinstance(instance_list, InstanceList)
         return instance_list
 
+
 def save(instance_list: InstanceList, filename: str = FILENAME):
-    output_content = yaml.dump(instance_list, Dumper=ILDumper, width=240, allow_unicode=True)
+    output_content = yaml_dump(instance_list)
     with open(filename, 'w') as output_file:
         output_file.write(output_content)
 
 
-__all__ = ['InstanceList', 'Instance', 'AdditionalUrlList', 'load', 'save']
+__all__ = ['InstanceList', 'Instance', 'AdditionalUrlList', 'yaml_dump', 'yaml_load', 'load', 'save', 'FILENAME']
