@@ -1,21 +1,24 @@
 from collections import OrderedDict
+import json
+import inspect
+
 import rfc3986
 import yaml
-import json
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
+
+
+# https://bugs.python.org/issue19438
+NoneType = type(None)
 
 # Model
 
 class AdditionalUrlList(OrderedDict, yaml.YAMLObject):
 
     yaml_tag = '!AdditionalUrlList'
-    __slots__ = [ ]
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    __slots__ = []
 
     def __repr__(self):
         return dict(self.items()).__repr__()
@@ -35,11 +38,11 @@ class Instance(yaml.YAMLObject):
     yaml_tag = '!Instance'
     __slots__ = ['safe', 'comments', 'additional_urls']
 
-    def __init__(self, safe=False, comments=[], additional_urls=AdditionalUrlList()):
+    def __init__(self, safe=None, comments=None, additional_urls=None):
         # type check
-        if not isinstance(safe, bool):
+        if not isinstance(safe, (bool, NoneType)):
             raise ValueError('safe is not a bool')
-        if not isinstance(comments, list):
+        if not isinstance(comments, (list, NoneType)):
             raise ValueError('comments is not a list')
         if not isinstance(additional_urls, AdditionalUrlList):
             raise ValueError('additional_urls is not a AdditionalUrlList instance')
@@ -60,7 +63,9 @@ class Instance(yaml.YAMLObject):
 
     @staticmethod
     def yaml_representer(dumper: yaml.Dumper, instance):
-        output = [('safe', instance.safe)]
+        output = []
+        if instance.safe is not None:
+            output.append(('safe', instance.safe))
         if instance.comments is not None and len(instance.comments) > 0:
             output.append(('comments', instance.comments))
         if instance.additional_urls is not None and len(instance.additional_urls) > 0:
@@ -76,7 +81,7 @@ class Instance(yaml.YAMLObject):
 class InstanceList(OrderedDict, yaml.YAMLObject):
 
     yaml_tag = '!InstanceList'
-    __slots__ = [ ]
+    __slots__ = []
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -94,10 +99,10 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
         if len(conflict_urls) > 0:
             raise ValueError(f'{", ".join(conflict_urls)} already declared')
         # check for URL not normalized
-        for url in new_urls:
-            nurl = str(rfc3986.normalize_uri(url))
-            if nurl != url:
-                raise ValueError(f'{url} should be normalized to {nurl}')
+        for new_url in new_urls:
+            new_url_n = str(rfc3986.normalize_uri(new_url))
+            if new_url_n != new_url:
+                raise ValueError(f'{new_url} should be normalized to {new_url_n}')
         # update
         super().__setitem__(url, instance)
 
@@ -112,11 +117,11 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
         return json.dumps(self, cls=ObjectEncoder, indent=2, sort_keys=True)
 
     def __repr__(self):
-        s = '{\n'
+        result = '{\n'
         for url, instance in self.items():
-            s += ' ' + url + ': ' + str(instance) + '\n'
-        s += '}'
-        return s
+            result += ' ' + url + ': ' + str(instance) + '\n'
+        result += '}'
+        return result
 
     @staticmethod
     def yaml_representer(dumper: yaml.Dumper, instance_list):
@@ -130,13 +135,14 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
 # JSON serialization
 
 class ObjectEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if hasattr(obj, "to_json"):
-            return self.default(obj.to_json())
-        elif hasattr(obj, "__dict__"):
-            d = dict(
+
+    def default(self, o): # pylint: disable=E0202
+        if hasattr(o, "to_json"):
+            return self.default(o.to_json())
+        elif hasattr(o, "__dict__"):
+            filtered_obj = dict(
                 (key, value)
-                for key, value in inspect.getmembers(obj)
+                for key, value in inspect.getmembers(o)
                 if not key.startswith("__")
                 and not inspect.isabstract(value)
                 and not inspect.isbuiltin(value)
@@ -147,39 +153,40 @@ class ObjectEncoder(json.JSONEncoder):
                 and not inspect.ismethoddescriptor(value)
                 and not inspect.isroutine(value)
             )
-            return self.default(d)
-        return obj
+            return self.default(filtered_obj)
+        return o
 
 # YAML (de)serialization
 
-class ILLoader(Loader):
+class ILLoader(Loader): # pylint: disable=too-many-ancestors
     pass
 
-class ILDumper(Dumper):
-    def ignore_aliases(*args):
+class ILDumper(Dumper): # pylint: disable=too-many-ancestors
+    def ignore_aliases(self, data):
         return True
 
 for c in [InstanceList, Instance, AdditionalUrlList]:
     ILDumper.add_representer(c, c.yaml_representer)
     ILLoader.add_constructor(c.yaml_tag, c.yaml_constructor)
 
-ILLoader.add_path_resolver('!InstanceList', [ ], yaml.MappingNode)
-ILLoader.add_path_resolver('!Instance', [ (yaml.MappingNode, False) ])
-ILLoader.add_path_resolver('!AdditionalUrlList', [ None, 'additional_urls' ], yaml.MappingNode)
+ILLoader.add_path_resolver('!InstanceList', [], yaml.MappingNode)
+ILLoader.add_path_resolver('!Instance', [(yaml.MappingNode, False)])
+ILLoader.add_path_resolver('!AdditionalUrlList', [None, 'additional_urls'], yaml.MappingNode)
 
 # Storage
 
-def load(filename) -> InstanceList:
+FILENAME = 'instances.yml'
+
+def load(filename: str = FILENAME) -> InstanceList:
     with open(filename, 'r') as input_file:
         instance_list = yaml.load(input_file, Loader=ILLoader)
         assert isinstance(instance_list, InstanceList)
         return instance_list
 
-def save(filename: str, instance_list: InstanceList):
+def save(instance_list: InstanceList, filename: str = FILENAME):
     output_content = yaml.dump(instance_list, Dumper=ILDumper, width=240, allow_unicode=True)
-    print(output_content)
     with open(filename, 'w') as output_file:
-            output_file.write(output_content)
+        output_file.write(output_content)
 
 
-__all__ = [ 'InstanceList', 'Instance', 'AdditionalUrl', 'load', 'save' ]
+__all__ = ['InstanceList', 'Instance', 'AdditionalUrlList', 'load', 'save']

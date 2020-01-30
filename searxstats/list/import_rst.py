@@ -5,7 +5,8 @@ import httpx
 from . import model
 
 SEARX_INSTANCES_URL = 'https://raw.githubusercontent.com/asciimoo/searx/master/docs/user/public_instances.rst'
-AFTER_ALIVE_AND_RUNNING = re.compile('Alive and running(.*)Running with an incorrect SSL certificate', re.MULTILINE | re.DOTALL)
+AFTER_ALIVE_AND_RUNNING = re.compile('Alive and running(.*)Running with an incorrect SSL certificate',\
+                          re.MULTILINE | re.DOTALL)
 INCORRECT_SSL = re.compile('Running with an incorrect SSL certificate(.*)Offline', re.MULTILINE | re.DOTALL)
 OFFLINE = re.compile('Offline(.*)', re.MULTILINE | re.DOTALL)
 ITEM_RE = r'\* (.+)'
@@ -22,7 +23,8 @@ COMMENT_BLANK_TEXT = [
     'Issuer: COMODO',
     'Issuer: COMODO via GANDI',
     'Issuer: CAcert',
-    'Let\'s Encrypt'
+    'Let\'s Encrypt',
+    'via GANDI',
     '-',
     '(as )',
     '(as  or )',
@@ -57,9 +59,13 @@ def get_instance_comment(line):
             instance_comment = instance_comment.replace(t_blank, "")
         instance_comment = instance_comment.strip()
         if instance_comment.startswith('-'):
-            instance_comment = instance_comment[2:].strip()
-        if instance_comment.endswith('-'):
+            instance_comment = instance_comment[1:].strip()
+        if instance_comment.endswith('-') or instance_comment.endswith('.'):
             instance_comment = instance_comment[:-1].strip()
+        if instance_comment.startswith('(') and instance_comment.endswith(')'):
+            ncomment = instance_comment[1:-1]
+            if ncomment.find('(') == -1 and ncomment.find(')') == -1:
+                instance_comment = ncomment
     if instance_comment == '':
         return None
     return instance_comment
@@ -89,14 +95,16 @@ async def import_instance(instance_list, text, section_comment):
             label = link[0].strip()
             if main_url is None:
                 main_url = url
-            elif url:   
+            elif url:
                 # add it
                 aurls[url] = label
         #
         if main_url in instance_list:
-            del instance_list[main_url]
             print('duplicate found ', main_url)
-        instance_list[main_url] = model.Instance(False, instance_comments, aurls)
+        else:
+            if len(aurls) > 0:
+                print(main_url, aurls)
+            instance_list[main_url] = model.Instance(None, instance_comments, aurls)
 
 
 
@@ -122,9 +130,13 @@ async def import_instance_urls():
     if match:
         await import_instance(instance_list, match.group(0), 'Offline')
 
-    model.save('instances.yaml', instance_list)
+    model.save(instance_list)
+
+
+def main():
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(import_instance_urls())
 
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(import_instance_urls())
+    main()

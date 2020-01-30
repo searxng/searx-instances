@@ -1,634 +1,419 @@
 http://7jwxg5rakyfvikpi.onion:
-  safe: false
   comments:
   - Offline
-  - available only as Tor Hidden Service (down on 2019-06-26)
-http://hmfztxt3pfhevucl.onion:
-  safe: false
-  additional_urls:
-    http://hmfztxt3pfhevucl.onion: Hidden Service
-http://juy4e6eicawzdrz7.onion:
-  safe: false
-  additional_urls:
-    http://juy4e6eicawzdrz7.onion: Hidden Service
-http://o2jdk5mdsijm2b7l.onion:
-  safe: false
-  additional_urls:
-    http://o2jdk5mdsijm2b7l.onion: Hidden Service
-    https://search.gibberfish.org/tor: Proxied through Tor
+  - available only as Tor Hidden Service (down on 20190626)
 http://ransack.i2p:
-  safe: false
   comments:
   - I2P eepsite, only accessible with
   additional_urls:
     http://mqamk4cfykdvhw5kjez2gnvse56gmnqxn7vkvvbuor4k4j2lbbnq.b32.i2p: base32 address
-http://searchb5a7tmimez.onion:
-  safe: false
-  additional_urls:
-    http://searchb5a7tmimez.onion: Hidden Service
-http://searx.cwuzdtzlubq5uual.onion:
-  safe: false
-  additional_urls:
-    http://searx.cwuzdtzlubq5uual.onion: Hidden Service
-http://searx.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion:
-  safe: false
-  additional_urls:
-    http://searx.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion: Hidden Service
-http://searx7gwtu5rh6wr.onion:
-  safe: false
-  comments:
-  - Running with an incorrect SSL certificate
-  additional_urls:
-    http://searx7gwtu5rh6wr.onion: Hidden Service
-http://searxl7u2y6gvonm.onion:
-  safe: false
-  additional_urls:
-    http://searxl7u2y6gvonm.onion: Hidden Service
-http://suche.xyzco456vwisukfg.onion:
-  safe: false
-http://ulrn6sryqaifefld.onion:
-  safe: false
-  additional_urls:
-    http://ulrn6sryqaifefld.onion: Hidden Service
+http://suche.xyzco456vwisukfg.onion: {}
 http://w6f7cgdm54cyvohcuhraaafhajctyj3ihenrovuxogoagrr5g43qmoid.onion:
-  safe: false
   comments:
   - Offline
   - Hidden Service
-http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion:
-  safe: false
-  additional_urls:
-    http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://a.searx.space:
-  safe: false
   comments:
   - Offline
-  - (unstable, under construction).
-https://ai.deafpray.wtf/searx:
-  safe: false
+  - unstable, under construction
+https://ai.deafpray.wtf/searx: {}
 https://anyonething.de:
-  safe: false
   comments:
   - Offline
-  - '(was found to have become a pastebin on or before 2019-03-01)  (Warning: uses Cloudflare)'
-https://bamboozle.it:
-  safe: false
-https://bee.jaekr.dev:
-  safe: false
-https://beezboo.com:
-  safe: false
-https://burtrum.org/searx:
-  safe: false
-https://darmarit.cloud/searx:
-  safe: false
-https://dc.ax:
-  safe: false
-https://dynabyte.ca:
-  safe: false
-https://goso.ga:
-  safe: false
+  - '(was found to have become a pastebin on or before 20190301)  (Warning: uses Cloudflare)'
+https://bamboozle.it: {}
+https://bee.jaekr.dev: {}
+https://beezboo.com: {}
+https://burtrum.org/searx: {}
+https://darmarit.cloud/searx: {}
+https://dc.ax: {}
+https://dynabyte.ca: {}
+https://goso.ga: {}
 https://hacktivis.me/searx:
-  safe: false
   comments:
   - Offline
-https://haku.ahmia.fi:
-  safe: false
-https://haku.lelux.fi:
-  safe: false
-https://huyo.me:
-  safe: false
+https://haku.ahmia.fi: {}
+https://haku.lelux.fi: {}
+https://huyo.me: {}
 https://icebal.com:
-  safe: false
   comments:
   - Offline
-https://intelme.com:
-  safe: false
-https://jsearch.pw:
-  safe: false
-https://le-dahut.com/searx:
-  safe: false
+https://intelme.com: {}
+https://jsearch.pw: {}
+https://le-dahut.com/searx: {}
 https://listi.me:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
-https://mijisou.com:
-  safe: false
+https://mijisou.com: {}
 https://netrangler.host:
-  safe: false
   comments:
   - Offline
-https://null.media:
-  safe: false
-https://openworlds.info:
-  safe: false
+https://null.media: {}
+https://openworlds.info: {}
 https://p9e.de:
-  safe: false
   comments:
   - Offline
-  - (down - timeout)
-https://rapu.nz:
-  safe: false
-https://roteserver.de/searx:
-  safe: false
+  - down  timeout
+https://rapu.nz: {}
+https://roteserver.de/searx: {}
 https://rubri.co:
-  safe: false
   comments:
   - Offline
 https://s.bacafe.xyz:
-  safe: false
   comments:
   - Offline
-https://s.cmd.gg:
-  safe: false
+https://s.cmd.gg: {}
 https://s.matejc.com:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
-https://search.activemail.de:
-  safe: false
+https://search.activemail.de: {}
 https://search.alecpap.com:
-  safe: false
   comments:
   - Offline
-https://search.anonymize.com:
-  safe: false
-https://search.azkware.net:
-  safe: false
-https://search.biboumail.fr:
-  safe: false
+https://search.anonymize.com: {}
+https://search.azkware.net: {}
+https://search.biboumail.fr: {}
 https://search.blackit.de:
-  safe: false
   comments:
   - Offline
-  - Let's Encrypt
-https://search.blankenberg.eu:
-  safe: false
-https://search.d4networks.com:
-  safe: false
-https://search.datensturm.net:
-  safe: false
+https://search.blankenberg.eu: {}
+https://search.d4networks.com: {}
+https://search.datensturm.net: {}
 https://search.deblan.org:
-  safe: false
   comments:
   - Offline
-  - via GANDI
-https://search.disroot.org:
-  safe: false
-https://search.ethibox.fr:
-  safe: false
-https://search.fossdaily.xyz:
-  safe: false
-https://search.galaxy.cat:
-  safe: false
+https://search.disroot.org: {}
+https://search.ethibox.fr: {}
+https://search.fossdaily.xyz: {}
+https://search.galaxy.cat: {}
+https://search.gibberfish.org:
+  additional_urls:
+    http://o2jdk5mdsijm2b7l.onion: Hidden Service
+    https://search.gibberfish.org/tor: Proxied through Tor
 https://search.homecomputing.fr:
-  safe: false
   comments:
   - Offline
 https://search.jollausers.de:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
   - Incorrectly configured
 https://search.jpope.org:
-  safe: false
   comments:
   - Offline
-  - (down - timeout)
+  - down  timeout
 https://search.kakise.xyz:
-  safe: false
   comments:
   - Offline
   - down
-https://search.koehn.com:
-  safe: false
+https://search.koehn.com: {}
 https://search.kosebamse.com:
-  safe: false
   comments:
   - Offline
 https://search.kujiu.org:
-  safe: false
   comments:
   - Offline
-https://search.lgbtq.cool:
-  safe: false
+https://search.lgbtq.cool: {}
 https://search.mailaender.coffee:
-  safe: false
   comments:
   - Offline
 https://search.matrix.ac:
-  safe: false
   comments:
   - Offline
 https://search.mdosch.de:
-  safe: false
   additional_urls:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
-https://search.modalogi.com:
-  safe: false
-https://search.moravit.com:
-  safe: false
+https://search.modalogi.com: {}
+https://search.moravit.com: {}
 https://search.mypsc.ca:
-  safe: false
   comments:
   - Offline
 https://search.namedkitten.pw:
-  safe: false
   comments:
   - Offline
-  - (SSL error)
-https://search.nebulacentre.net:
-  safe: false
+  - SSL error
+https://search.nebulacentre.net: {}
 https://search.opentunisia.org:
-  safe: false
   comments:
   - Offline
-https://search.paulla.asso.fr:
-  safe: false
+https://search.paulla.asso.fr: {}
 https://search.paviro.de:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
-https://search.pifferi.info:
-  safe: false
-https://search.poal.co:
-  safe: false
+https://search.pifferi.info: {}
+https://search.poal.co: {}
 https://search.privacytools.io:
-  safe: false
   comments:
   - Uses Matomo for user tracking and analytics
 https://search.r3d007.com:
-  safe: false
   comments:
   - Offline
-https://search.seds.nl:
-  safe: false
-https://search.spaeth.me:
-  safe: false
-https://search.st8.at:
-  safe: false
+https://search.seds.nl: {}
+https://search.snopyta.org:
+  additional_urls:
+    http://juy4e6eicawzdrz7.onion: Hidden Service
+https://search.spaeth.me: {}
+https://search.st8.at: {}
 https://search.static.lu:
-  safe: false
   comments:
   - Offline
-https://search.sudo-i.net:
-  safe: false
+https://search.stinpriza.org:
+  additional_urls:
+    http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
+https://search.sudo-i.net: {}
 https://search.teej.xyz:
-  safe: false
   comments:
   - Offline
-https://search.tolstoevsky.ml:
-  safe: false
+https://search.tolstoevsky.ml: {}
 https://search.wxzm.sx:
-  safe: false
   comments:
   - Offline
-https://searchsin.com/searx:
-  safe: false
-https://searchx.mobi:
-  safe: false
+https://searchsin.com/searx: {}
+https://searchx.mobi: {}
 https://searx.32bitflo.at:
-  safe: false
   comments:
   - Offline
 https://searx.4ray.co:
-  safe: false
   comments:
   - Offline
-  - (no longer an instance, redirects to main page)
+  - no longer an instance, redirects to main page
 https://searx.abenthung.it:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
 https://searx.ahh.si:
-  safe: false
   comments:
   - Offline
 https://searx.angristan.xyz:
-  safe: false
   comments:
   - Offline
-https://searx.anongoth.pl:
-  safe: false
+https://searx.anongoth.pl: {}
 https://searx.antirep.net:
-  safe: false
   comments:
   - Offline
-  - (return a 502 HTTP error)
+  - return a 502 HTTP error
 https://searx.aquilenet.fr:
-  safe: false
   comments:
   - Offline
-  - (down - 429 HTTP error)
+  - down  429 HTTP error
 https://searx.at:
-  safe: false
   comments:
   - Offline
-  - (return "request exception" at every search)
-https://searx.be:
-  safe: false
-https://searx.ca:
-  safe: false
-https://searx.canox.net:
-  safe: false
+  - return "request exception" at every search
+https://searx.be: {}
+https://searx.ca: {}
+https://searx.canox.net: {}
 https://searx.cc:
-  safe: false
   comments:
   - Offline
-  - (down on 2019-06-26)
+  - down on 20190626
 https://searx.ch:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
-  - (cert clock problems)
+  - cert clock problems
 https://searx.coding4schoki.org:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
   - Incorrectly configured
-https://searx.com.au:
-  safe: false
-https://searx.cybt.de:
-  safe: false
-https://searx.decatec.de:
-  safe: false
-https://searx.devol.it:
-  safe: false
+https://searx.com.au: {}
+https://searx.cybt.de: {}
+https://searx.decatec.de: {}
+https://searx.devol.it: {}
 https://searx.dk:
-  safe: false
   comments:
   - Offline
-  - (down - 429 HTTP error)
-https://searx.dnswarden.com:
-  safe: false
-https://searx.drakonix.net:
-  safe: false
-https://searx.dresden.network:
-  safe: false
+  - down  429 HTTP error
+https://searx.dnswarden.com: {}
+https://searx.drakonix.net: {}
+https://searx.dresden.network: {}
 https://searx.ehrmanns.ch:
-  safe: false
   comments:
   - Offline
-https://searx.elukerio.org:
-  safe: false
+https://searx.elukerio.org: {}
 https://searx.everdot.org:
-  safe: false
   comments:
   - Crawls using YaCy
-https://searx.foo.li:
-  safe: false
-https://searx.fr32k.de:
-  safe: false
+https://searx.foo.li: {}
+https://searx.fossencdi.org:
+  additional_urls:
+    http://searx.cwuzdtzlubq5uual.onion: Hidden Service
+https://searx.fr32k.de: {}
 https://searx.glibre.net:
-  safe: false
   comments:
   - Offline
+https://searx.good.one.pl:
+  additional_urls:
+    http://searxl7u2y6gvonm.onion: Hidden Service
 https://searx.gotrust.de:
-  safe: false
   additional_urls:
     http://nxhhwbbxc4khvvlw.onion: Hidden Service
-https://searx.hardwired.link:
-  safe: false
+https://searx.hardwired.link: {}
 https://searx.haxors.club:
-  safe: false
   comments:
   - Running with an incorrect SSL certificate
-https://searx.hlfh.space:
-  safe: false
+https://searx.hlfh.space: {}
 https://searx.infini.fr:
-  safe: false
   comments:
   - Offline
-  - (return a page stating that the website is not installed)
-https://searx.info:
-  safe: false
-https://searx.itunix.eu:
-  safe: false
+  - return a page stating that the website is not installed
+https://searx.info: {}
+https://searx.itunix.eu: {}
 https://searx.jeanphilippemorvan.info:
-  safe: false
   comments:
   - Offline
-https://searx.john-at-me.net:
-  safe: false
-https://searx.kvch.me:
-  safe: false
-https://searx.lavatech.top:
-  safe: false
-https://searx.lelux.fi:
-  safe: false
-https://searx.lhorn.de:
-  safe: false
-  comments:
-  - Offline
-  - (redirect the Searx's github repository page)   (only reachable from european countries)
-https://searx.li:
-  safe: false
-https://searx.libmail.eu:
-  safe: false
-https://searx.linux.pizza:
-  safe: false
+https://searx.john-at-me.net: {}
+https://searx.kvch.me: {}
+https://searx.laquadrature.net:
+  additional_urls:
+    http://searchb5a7tmimez.onion: Hidden Service
+https://searx.lavatech.top: {}
+https://searx.lelux.fi: {}
+https://searx.lhorn.de: {}
+https://searx.li: {}
+https://searx.libmail.eu: {}
+https://searx.linux.pizza: {}
 https://searx.lvweb.host:
-  safe: false
   comments:
   - Offline
-https://searx.lynnesbian.space:
-  safe: false
-https://searx.mastodontech.de:
-  safe: false
+https://searx.lynnesbian.space: {}
+https://searx.mastodontech.de: {}
+https://searx.me:
+  additional_urls:
+    http://ulrn6sryqaifefld.onion: Hidden Service
 https://searx.mrtino.eu:
-  safe: false
   comments:
   - Offline
-https://searx.mxchange.org:
-  safe: false
-https://searx.nakhan.net:
-  safe: false
+https://searx.mxchange.org: {}
+https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de:
-  safe: false
   comments:
   - Offline
-  - (error page about GDPR even when browsing it from USA and Asia)
+  - error page about GDPR even when browsing it from USA and Asia
 https://searx.new-admin.net:
-  safe: false
   comments:
   - Offline
-https://searx.nnto.net:
-  safe: false
+https://searx.nixnet.xyz:
+  additional_urls:
+    http://searx.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion: Hidden Service
+https://searx.nnto.net: {}
 https://searx.nogafa.org:
-  safe: false
   comments:
   - Offline
-  - (broken CSS)
-https://searx.openhoofd.nl:
-  safe: false
-https://searx.openpandora.org:
-  safe: false
-https://searx.operationtulip.com:
-  safe: false
-https://searx.orcadian.net:
-  safe: false
-https://searx.org:
-  safe: false
-https://searx.ouahpiti.info:
-  safe: false
-https://searx.pofilo.fr:
-  safe: false
+  - broken CSS
+https://searx.nulltime.net:
+  comments:
+  - Running with an incorrect SSL certificate
+  additional_urls:
+    http://searx7gwtu5rh6wr.onion: Hidden Service
+https://searx.openhoofd.nl: {}
+https://searx.openpandora.org: {}
+https://searx.operationtulip.com: {}
+https://searx.orcadian.net: {}
+https://searx.org: {}
+https://searx.ouahpiti.info: {}
+https://searx.pofilo.fr: {}
 https://searx.potato.hu:
-  safe: false
   comments:
   - Offline
-  - (not a searx instance)
-https://searx.pwoss.org:
-  safe: false
-https://searx.ro:
-  safe: false
-https://searx.ru:
-  safe: false
+  - not a searx instance
+https://searx.prvcy.eu:
+  additional_urls:
+    http://hmfztxt3pfhevucl.onion: Hidden Service
+https://searx.pwoss.org: {}
+https://searx.ro: {}
+https://searx.ru: {}
 https://searx.rubbeldiekatz.info:
-  safe: false
   comments:
   - Offline
-https://searx.run:
-  safe: false
+https://searx.run: {}
 https://searx.s42.space:
-  safe: false
   comments:
   - Offline
 https://searx.salcay.hu:
-  safe: false
   comments:
   - Offline
-  - (down - blank page)
+  - down  blank page
 https://searx.selea.se:
-  safe: false
   comments:
   - Offline
   - '(Leads to default Apache page) Issuer: RapidSSL (HSTS preloaded, DNSSEC)  |'
-https://searx.solusar.de:
-  safe: false
+https://searx.solusar.de: {}
 https://searx.steinscraft.net:
-  safe: false
   comments:
   - Offline
-https://searx.targaryen.house:
-  safe: false
+https://searx.targaryen.house: {}
 https://searx.techregion.de:
-  safe: false
   comments:
   - Offline
-  - (domain expired)
+  - domain expired
 https://searx.tognella.com:
-  safe: false
   comments:
   - Offline
-https://searx.tuxcloud.net:
-  safe: false
-https://searx.tyil.nl:
-  safe: false
-https://searx.wegeeks.win:
-  safe: false
-https://searx.win:
-  safe: false
+https://searx.tuxcloud.net: {}
+https://searx.tyil.nl: {}
+https://searx.wegeeks.win: {}
+https://searx.win: {}
 https://searx.world:
-  safe: false
   comments:
   - Adds Amazon affiliate links
 https://searx.xi.ht:
-  safe: false
   comments:
   - Offline
-  - (return a 502 HTTP error)
-https://searx.xyz:
-  safe: false
-https://searx.zareldyn.net:
-  safe: false
-https://searx.zdechov.net:
-  safe: false
+  - return a 502 HTTP error
+https://searx.xyz: {}
+https://searx.zareldyn.net: {}
+https://searx.zdechov.net: {}
 https://searxist.com:
-  safe: false
   comments:
   - Offline
-https://seeks.hsbp.org/cert:
-  safe: false
+https://seeks.hsbp.org:
   additional_urls:
     https://seeks.hsbp.org/cert: PGP signed fingerprints of cert
 https://skyn3t.in/srx:
-  safe: false
   comments:
   - '| onion'
   additional_urls:
     http://skyn3tb3bas655mw.onion/srx: hidden service
 https://so.sb:
-  safe: false
   comments:
   - Offline
-https://somewhere.com:
-  safe: false
-  comments:
-  - test
-https://spot.ecloud.global:
-  safe: false
+https://spot.ecloud.global: {}
 https://srx.stdout.net:
-  safe: false
   comments:
   - Offline
-https://srx.sx:
-  safe: false
-https://stemy.me/searx:
-  safe: false
-https://suche.dasnetzundich.de:
-  safe: false
-https://suche.elaon.de:
-  safe: false
-https://suche.uferwerk.org:
-  safe: false
-https://timdor.noip.me/searx:
-  safe: false
-https://trovu.komun.org:
-  safe: false
-https://unmonito.red:
-  safe: false
+https://srx.sx: {}
+https://stemy.me/searx: {}
+https://suche.dasnetzundich.de: {}
+https://suche.elaon.de: {}
+https://suche.uferwerk.org: {}
+https://timdor.noip.me/searx: {}
+https://trovu.komun.org: {}
+https://unmonito.red: {}
 https://win8linux.nohost.me/searx:
-  safe: false
   comments:
   - Offline
 https://wiznet.tech:
-  safe: false
   comments:
   - Offline
-https://wtf.roflcopter.fr/searx:
-  safe: false
-https://www.finden.tk:
-  safe: false
-https://www.gruble.de:
-  safe: false
+https://wtf.roflcopter.fr/searx: {}
+https://www.finden.tk: {}
+https://www.gruble.de: {}
 https://www.mercurius.space:
-  safe: false
   comments:
   - Offline
 https://www.opengo.nl:
-  safe: false
   comments:
   - Offline
-https://www.perfectpixel.de/searx:
-  safe: false
+https://www.perfectpixel.de/searx: {}
 https://www.ready.pm:
-  safe: false
   comments:
   - Offline
-https://www.search404.io:
-  safe: false
-https://www.searx.de:
-  safe: false
-https://www.searxs.eu:
-  safe: false
+https://www.search404.io: {}
+https://www.searx.de: {}
+https://www.searxs.eu: {}
 https://z.awsmppl.com:
-  safe: false
   comments:
   - Offline
 https://zlsdzh.tk:
-  safe: false
   comments:
   - Offline
-  - '(down - 404 HTTP error) Issuer: TrustAsia Technologies, Inc.  *'
-https://zoek.anchel.nl:
-  safe: false
+  - '(down  404 HTTP error) Issuer: TrustAsia Technologies, Inc.  *'
+https://zoek.anchel.nl: {}

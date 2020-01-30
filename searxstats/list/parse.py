@@ -1,13 +1,12 @@
-from  collections import OrderedDict
-
-import rfc3986
+import argparse
 import re
-import json
+
 import httpx
-import json
+import rfc3986
+
 from . import model
 
-INSTANCE_FILE = 'instances.yml'
+
 TITLE_RE = re.compile('(add|remove|delete|del)[ ]+(.+)', re.IGNORECASE)
 
 
@@ -20,21 +19,23 @@ def normalize_url(url):
 
     try:
         return rfc3986.normalize_uri(url)
-    except:
+    except Exception:
         return None
 
 
-def load_requests():
+def load_requests(issue_number):
     requests = []
     with httpx.Client() as client:
         response = client.get('https://api.github.com/repos/dalf/searx-instances/issues?state=open')
         rjson = response.json()
         for issue in rjson:
+            if issue_number is not None and issue.get('number') != issue_number:
+                continue
             if len(list(filter(lambda label: label.get('name') == 'instance', issue['labels']))):
-                r = re.search(TITLE_RE, issue.get('title'))
+                rtitle = re.search(TITLE_RE, issue.get('title'))
                 issue_number = issue.get('number')
-                command = r.group(1).lower()
-                url = normalize_url(r.group(2))
+                command = rtitle.group(1).lower()
+                url = normalize_url(rtitle.group(2))
                 requests.append((issue_number, command, url))
     return requests
 
@@ -56,13 +57,21 @@ def apply_requests(instance_list, requests):
             apply_remove_request(instance_list, request[2])
 
 
-def main():
-    instance_list = model.load(INSTANCE_FILE)
-    # print(instance_list.json_dump())
-    requests = load_requests()
+def main(issue_number):
+    requests = load_requests(issue_number)
+    instance_list = model.load()
     apply_requests(instance_list, requests)
-    model.save(INSTANCE_FILE, instance_list)
+    model.save(instance_list)
+    # print(instance_list.json_dump())
+    # git commit
 
 
 if __name__ == "__main__":
-    main()
+    PARSER = argparse.ArgumentParser(description='Update the instance list according to the github issues.')
+    PARSER.add_argument('--issue', '-i',
+                        type=str, nargs='?', dest='issue',
+                        help='Issue number to process, by default all',
+                        default=None)
+
+    ARGS = PARSER.parse_args()
+    main(ARGS.issue)
