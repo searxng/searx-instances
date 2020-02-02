@@ -16,6 +16,20 @@ NoneType = type(None)
 
 # Model
 
+def url_validation(url):
+    nurl = rfc3986.normalize_uri(url)
+    if nurl != url:
+        return False, f'URL must be normalized to {nurl}'
+    purl = rfc3986.urlparse(nurl)
+    if purl.scheme not in ['http', 'https']:
+        return False, 'protocol is not https neither http'
+    if purl.query is not None:
+        return False, 'no query in the URL'
+    if purl.fragment is not None:
+        return False, 'no fragment in the URL'
+    return True, None
+
+
 class AdditionalUrlList(OrderedDict, yaml.YAMLObject):
 
     yaml_tag = '!AdditionalUrlList'
@@ -105,9 +119,9 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
             raise ValueError(f'{", ".join(conflict_urls)} already declared')
         # check for URL not normalized
         for new_url in new_urls:
-            new_url_n = str(rfc3986.normalize_uri(new_url))
-            if new_url_n != new_url:
-                raise ValueError(f'{new_url} should be normalized to {new_url_n}, main URL {url}')
+            valid_url, error_message = url_validation(new_url)
+            if not valid_url:
+                raise ValueError(f'{new_url}: {error_message}')
         # update
         super().__setitem__(url, instance)
 
@@ -188,7 +202,8 @@ def yaml_dump(instance_list: InstanceList) -> str:
 
 def yaml_load(content: str) -> InstanceList:
     instance_list = yaml.load(content, Loader=ILLoader)
-    assert isinstance(instance_list, InstanceList)
+    if not isinstance(instance_list, (InstanceList, NoneType)):
+        raise RuntimeError('instance_list must be of type InstanceList or NoneType')
     return instance_list
 
 
