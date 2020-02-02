@@ -1,12 +1,12 @@
 ---
-name: Comment instance
-about: Change comments and "safe" status
-title: 'Comment: <searx instance url>'
+name: Comments an instance
+about: Comments about an existing instance on searx.space
+title: 'Comment <searx instance url>'
 labels: instance
 assignees: ''
 
 ---
 
 <!--
-Replace <searx instance url> in the title
+Replace <searx instance url> in the title.
 -->
