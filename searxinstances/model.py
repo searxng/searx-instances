@@ -16,13 +16,23 @@ NoneType = type(None)
 
 # Model
 
+
+def host_use_http(host):
+    tld = host.split('.')[-1]
+    # onion and i2p can't part of an IP address
+    return tld in ['onion', 'i2p']
+
+
 def url_validation(url):
     nurl = rfc3986.normalize_uri(url)
     if nurl != url:
         return False, f'URL must be normalized to {nurl}'
     purl = rfc3986.urlparse(nurl)
-    if purl.scheme not in ['http', 'https']:
-        return False, 'protocol is not https neither http'
+    if not(
+            (purl.scheme == 'https' and not host_use_http(purl.host)) or
+            (purl.scheme == 'http' and host_use_http(purl.host))
+    ):
+        return False, 'the protocol is neither https nor http with an .onion/.i2p TLD'
     if purl.query is not None:
         return False, 'no query in the URL'
     if purl.fragment is not None:
@@ -153,9 +163,10 @@ class InstanceList(OrderedDict, yaml.YAMLObject):
 
 # JSON serialization
 
+
 class ObjectEncoder(json.JSONEncoder):
 
-    def default(self, o): # pylint: disable=E0202
+    def default(self, o):  # pylint: disable=E0202
         if hasattr(o, "to_json"):
             return self.default(o.to_json())
         elif hasattr(o, "__dict__"):
@@ -175,14 +186,19 @@ class ObjectEncoder(json.JSONEncoder):
             return self.default(filtered_obj)
         return o
 
+
 # YAML (de)serialization
 
-class ILLoader(Loader): # pylint: disable=too-many-ancestors
+# pylint: disable=too-many-ancestors
+class ILLoader(Loader):
     pass
 
-class ILDumper(Dumper): # pylint: disable=too-many-ancestors
+
+# pylint: disable=too-many-ancestors
+class ILDumper(Dumper):
     def ignore_aliases(self, data):
         return True
+
 
 for c in [InstanceList, Instance, AdditionalUrlList]:
     ILDumper.add_representer(c, c.yaml_representer)

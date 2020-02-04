@@ -5,8 +5,8 @@ import httpx
 from .. import model
 
 SEARX_INSTANCES_URL = 'https://raw.githubusercontent.com/asciimoo/searx/master/docs/user/public_instances.rst'
-AFTER_ALIVE_AND_RUNNING = re.compile('Alive and running(.*)Running with an incorrect SSL certificate',\
-                          re.MULTILINE | re.DOTALL)
+AFTER_ALIVE_AND_RUNNING = re.compile('Alive and running(.*)Running with an incorrect SSL certificate',
+                                     re.MULTILINE | re.DOTALL)
 INCORRECT_SSL = re.compile('Running with an incorrect SSL certificate(.*)Offline', re.MULTILINE | re.DOTALL)
 OFFLINE = re.compile('Offline(.*)', re.MULTILINE | re.DOTALL)
 ITEM_RE = r'\* (.+)'
@@ -79,6 +79,7 @@ def get_instance_comments(section_comment, instance_comment):
         comments.append(instance_comment)
     return comments
 
+
 async def import_instance(instance_list, text, section_comment):
     #
     # for each item of a list
@@ -104,7 +105,6 @@ async def import_instance(instance_list, text, section_comment):
             print('duplicate found ', main_url, instance)
         else:
             instance_list[main_url] = instance
-
 
 
 async def import_instance_urls():

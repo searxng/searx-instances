@@ -1,4 +1,6 @@
+.coverage
 .vscode
+.pytest_cache/
 
 *~
 __pycache__/
@@ -15,4 +17,5 @@ dist/
 *.egg-info/
 
 cache
+htmlcov
 ve
