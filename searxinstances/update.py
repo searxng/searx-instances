@@ -2,12 +2,13 @@ import argparse
 import re
 import os.path
 
-import editor
 import git
 import httpx
 import rfc3986
+import idna
 
 from . import model
+from .utils import editor
 
 
 class UserRequest:
@@ -15,17 +16,20 @@ class UserRequest:
     __slots__ = ['request_id', 'request_url', 'user', 'command', 'url', 'message']
     user_request_name = None
 
-    def __init__(self, request_id: str, request_url: str, user: str, url: str, message: str):  # pylint: disable=too-many-arguments
+    # pylint: disable=too-many-arguments
+    def __init__(self, request_id: str, request_url: str, user: str, url: str, message: str):
         self.request_id = request_id
         self.request_url = request_url
         self.user = user
         self.url = url
         self.message = message
 
-    def execute(self, instance_list: model.InstanceList, instance_list_update: model.InstanceList):  # pylint: disable=no-self-use
+    # pylint: disable=no-self-use
+    def execute(self, instance_list: model.InstanceList, instance_list_update: model.InstanceList):
         raise RuntimeError('Abstract method')
 
-    def get_content(self, existing_instance_list) -> str:  # pylint: disable=no-self-use
+    # pylint: disable=no-self-use
+    def get_content(self, existing_instance_list) -> str:
         raise RuntimeError('Not implemented')
 
     def get_generic_content(self) -> str:
@@ -180,21 +184,9 @@ class GitCommitContext:
 
 
 def get_git_repo():
-    repo_path = os.path.realpath(os.path.dirname(os.path.realpath(__file__))+ '/..')
+    repo_path = os.path.realpath(os.path.dirname(os.path.realpath(__file__)) + '/..')
     repo = git.Repo(repo_path)
     return repo
-
-def normalize_url(url):
-    if url.startswith('http://'):
-        return None
-
-    if not url.startswith('https://'):
-        url = 'https://' + url
-
-    try:
-        return rfc3986.normalize_uri(url)
-    except Exception:
-        return None
 
 
 def add_comment_prefix(message, prefix='# '):
@@ -278,6 +270,42 @@ GITHUB_TITLE_PREFIX = {
 }
 
 
+def normalize_url(url):
+    purl = rfc3986.urlparse(url)
+
+    if purl.scheme is None and purl.host is None and purl.path is not None:
+        # no protocol, no // : it is a path according to the rfc3986
+        # but we know it is a host
+        purl = rfc3986.urlparse('//' + url)
+
+    if purl.scheme is None:
+        # The url starts with //
+        # Add https (or http for .onion or i2p TLD)
+        if model.host_use_http(purl.host):
+            purl = purl.copy_with(scheme='http')
+        else:
+            purl = purl.copy_with(scheme='https')
+
+    # first normalization
+    # * idna encoding to avoid misleading host
+    # * remove query and fragment
+    # * remove empty path
+    purl = purl.copy_with(scheme=purl.scheme.lower(),
+                          host=idna.encode(purl.host).decode('utf-8').lower(),
+                          path='' if purl.path == '/' else purl.path,
+                          query=None,
+                          fragment=None)
+
+    # only https (exception: http for .onion and .i2p TLD)
+    if (purl.scheme == 'https' and not model.host_use_http(purl.host)) or\
+       (purl.scheme == 'http' and model.host_use_http(purl.host)):
+        # normalize the URL
+        return rfc3986.normalize_uri(purl.geturl())
+
+    #
+    return None
+
+
 def load_user_request_list_from_github(github_issue_list) -> list:
     user_request_list = []
     with httpx.Client() as client:
@@ -326,7 +354,7 @@ def load_user_request_list():
         user_request_list += load_user_request_list_from_github(args.github_issue_list)
     if len(args.add_instances) > 0:
         for url in args.add_instances:
-            user_request_list.append(UserRequestAdd(None, None, None, url, ''))
+            user_request_list.append(UserRequestAdd(None, None, None, normalize_url(url), ''))
     if len(args.delete_instances) > 0:
         for url in args.delete_instances:
             user_request_list.append(UserRequestDelete(None, None, None, url, ''))
