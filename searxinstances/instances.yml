@@ -48,6 +48,8 @@ https://mijisou.com: {}
 https://netrangler.host:
   comments:
   - Offline
+https://nibblehole.com:
+  safe: false
 https://null.media: {}
 https://openworlds.info: {}
 https://p9e.de:
