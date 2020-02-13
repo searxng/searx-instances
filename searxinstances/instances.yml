@@ -1,89 +1,42 @@
-http://7jwxg5rakyfvikpi.onion:
-  comments:
-  - Offline
-  - available only as Tor Hidden Service (down on 20190626)
 http://ransack.i2p:
   comments:
   - I2P eepsite, only accessible with
   additional_urls:
     http://mqamk4cfykdvhw5kjez2gnvse56gmnqxn7vkvvbuor4k4j2lbbnq.b32.i2p: base32 address
 http://suche.xyzco456vwisukfg.onion: {}
-http://w6f7cgdm54cyvohcuhraaafhajctyj3ihenrovuxogoagrr5g43qmoid.onion:
-  comments:
-  - Offline
-  - Hidden Service
 https://a.searx.space:
   comments:
-  - Offline
   - unstable, under construction
 https://ai.deafpray.wtf/searx: {}
-https://anyonething.de:
-  comments:
-  - Offline
-  - '(was found to have become a pastebin on or before 20190301)  (Warning: uses Cloudflare)'
+https://anyonething.de: {}
 https://bamboozle.it: {}
-https://bee.jaekr.dev: {}
 https://beezboo.com: {}
 https://burtrum.org/searx: {}
 https://darmarit.cloud/searx: {}
 https://dc.ax: {}
 https://dynabyte.ca: {}
 https://goso.ga: {}
-https://hacktivis.me/searx:
-  comments:
-  - Offline
 https://haku.ahmia.fi: {}
 https://haku.lelux.fi: {}
 https://huyo.me: {}
-https://icebal.com:
-  comments:
-  - Offline
 https://intelme.com: {}
 https://jsearch.pw: {}
 https://le-dahut.com/searx: {}
-https://listi.me:
-  comments:
-  - Running with an incorrect SSL certificate
 https://mijisou.com: {}
-https://netrangler.host:
-  comments:
-  - Offline
 https://nibblehole.com:
   safe: false
 https://null.media: {}
 https://openworlds.info: {}
-https://p9e.de:
-  comments:
-  - Offline
-  - down  timeout
 https://rapu.nz: {}
 https://roteserver.de/searx: {}
-https://rubri.co:
-  comments:
-  - Offline
-https://s.bacafe.xyz:
-  comments:
-  - Offline
 https://s.cmd.gg: {}
-https://s.matejc.com:
-  comments:
-  - Running with an incorrect SSL certificate
 https://search.activemail.de: {}
-https://search.alecpap.com:
-  comments:
-  - Offline
 https://search.anonymize.com: {}
 https://search.azkware.net: {}
 https://search.biboumail.fr: {}
-https://search.blackit.de:
-  comments:
-  - Offline
 https://search.blankenberg.eu: {}
 https://search.d4networks.com: {}
 https://search.datensturm.net: {}
-https://search.deblan.org:
-  comments:
-  - Offline
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
 https://search.fossdaily.xyz: {}
@@ -92,51 +45,19 @@ https://search.gibberfish.org:
   additional_urls:
     http://o2jdk5mdsijm2b7l.onion: Hidden Service
     https://search.gibberfish.org/tor: Proxied through Tor
-https://search.homecomputing.fr:
-  comments:
-  - Offline
-https://search.jollausers.de:
-  comments:
-  - Running with an incorrect SSL certificate
-  - Incorrectly configured
 https://search.jpope.org:
   comments:
-  - Offline
-  - down  timeout
-https://search.kakise.xyz:
-  comments:
-  - Offline
-  - down
-https://search.koehn.com: {}
-https://search.kosebamse.com:
-  comments:
-  - Offline
-https://search.kujiu.org:
-  comments:
-  - Offline
+  - Offline ?
 https://search.lgbtq.cool: {}
-https://search.mailaender.coffee:
-  comments:
-  - Offline
-https://search.matrix.ac:
-  comments:
-  - Offline
 https://search.mdosch.de:
   additional_urls:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
 https://search.modalogi.com: {}
 https://search.moravit.com: {}
-https://search.mypsc.ca:
-  comments:
-  - Offline
-https://search.namedkitten.pw:
-  comments:
-  - Offline
-  - SSL error
 https://search.nebulacentre.net: {}
 https://search.opentunisia.org:
   comments:
-  - Offline
+  - Offline ?
 https://search.paulla.asso.fr: {}
 https://search.paviro.de:
   comments:
@@ -146,89 +67,32 @@ https://search.poal.co: {}
 https://search.privacytools.io:
   comments:
   - Uses Matomo for user tracking and analytics
-https://search.r3d007.com:
-  comments:
-  - Offline
 https://search.seds.nl: {}
 https://search.snopyta.org:
   additional_urls:
     http://juy4e6eicawzdrz7.onion: Hidden Service
 https://search.spaeth.me: {}
 https://search.st8.at: {}
-https://search.static.lu:
-  comments:
-  - Offline
 https://search.stinpriza.org:
   additional_urls:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://search.sudo-i.net: {}
-https://search.teej.xyz:
-  comments:
-  - Offline
-https://search.tolstoevsky.ml: {}
-https://search.wxzm.sx:
-  comments:
-  - Offline
 https://searchsin.com/searx: {}
 https://searchx.mobi: {}
-https://searx.32bitflo.at:
-  comments:
-  - Offline
-https://searx.4ray.co:
-  comments:
-  - Offline
-  - no longer an instance, redirects to main page
-https://searx.abenthung.it:
-  comments:
-  - Running with an incorrect SSL certificate
-https://searx.ahh.si:
-  comments:
-  - Offline
-https://searx.angristan.xyz:
-  comments:
-  - Offline
+https://searx.32bitflo.at: {}
 https://searx.anongoth.pl: {}
-https://searx.antirep.net:
-  comments:
-  - Offline
-  - return a 502 HTTP error
-https://searx.aquilenet.fr:
-  comments:
-  - Offline
-  - down  429 HTTP error
-https://searx.at:
-  comments:
-  - Offline
-  - return "request exception" at every search
 https://searx.be: {}
 https://searx.ca: {}
 https://searx.canox.net: {}
-https://searx.cc:
-  comments:
-  - Offline
-  - down on 20190626
 https://searx.ch:
   comments:
   - Running with an incorrect SSL certificate
   - cert clock problems
-https://searx.coding4schoki.org:
-  comments:
-  - Running with an incorrect SSL certificate
-  - Incorrectly configured
 https://searx.com.au: {}
 https://searx.cybt.de: {}
 https://searx.decatec.de: {}
 https://searx.devol.it: {}
-https://searx.dk:
-  comments:
-  - Offline
-  - down  429 HTTP error
-https://searx.dnswarden.com: {}
-https://searx.drakonix.net: {}
 https://searx.dresden.network: {}
-https://searx.ehrmanns.ch:
-  comments:
-  - Offline
 https://searx.elukerio.org: {}
 https://searx.everdot.org:
   comments:
@@ -238,29 +102,12 @@ https://searx.fossencdi.org:
   additional_urls:
     http://searx.cwuzdtzlubq5uual.onion: Hidden Service
 https://searx.fr32k.de: {}
-https://searx.glibre.net:
-  comments:
-  - Offline
-https://searx.good.one.pl:
-  additional_urls:
-    http://searxl7u2y6gvonm.onion: Hidden Service
 https://searx.gotrust.de:
   additional_urls:
     http://nxhhwbbxc4khvvlw.onion: Hidden Service
 https://searx.hardwired.link: {}
-https://searx.haxors.club:
-  comments:
-  - Running with an incorrect SSL certificate
 https://searx.hlfh.space: {}
-https://searx.infini.fr:
-  comments:
-  - Offline
-  - return a page stating that the website is not installed
 https://searx.info: {}
-https://searx.itunix.eu: {}
-https://searx.jeanphilippemorvan.info:
-  comments:
-  - Offline
 https://searx.john-at-me.net: {}
 https://searx.kvch.me: {}
 https://searx.laquadrature.net:
@@ -269,37 +116,19 @@ https://searx.laquadrature.net:
 https://searx.lavatech.top: {}
 https://searx.lelux.fi: {}
 https://searx.lhorn.de: {}
-https://searx.li: {}
 https://searx.libmail.eu: {}
 https://searx.linux.pizza: {}
-https://searx.lvweb.host:
-  comments:
-  - Offline
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
-https://searx.me:
-  additional_urls:
-    http://ulrn6sryqaifefld.onion: Hidden Service
-https://searx.mrtino.eu:
-  comments:
-  - Offline
 https://searx.mxchange.org: {}
 https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de:
   comments:
-  - Offline
   - error page about GDPR even when browsing it from USA and Asia
-https://searx.new-admin.net:
-  comments:
-  - Offline
 https://searx.nixnet.xyz:
   additional_urls:
     http://searx.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion: Hidden Service
 https://searx.nnto.net: {}
-https://searx.nogafa.org:
-  comments:
-  - Offline
-  - broken CSS
 https://searx.nulltime.net:
   comments:
   - Running with an incorrect SSL certificate
@@ -312,43 +141,15 @@ https://searx.orcadian.net: {}
 https://searx.org: {}
 https://searx.ouahpiti.info: {}
 https://searx.pofilo.fr: {}
-https://searx.potato.hu:
-  comments:
-  - Offline
-  - not a searx instance
 https://searx.prvcy.eu:
   additional_urls:
     http://hmfztxt3pfhevucl.onion: Hidden Service
 https://searx.pwoss.org: {}
 https://searx.ro: {}
 https://searx.ru: {}
-https://searx.rubbeldiekatz.info:
-  comments:
-  - Offline
 https://searx.run: {}
-https://searx.s42.space:
-  comments:
-  - Offline
-https://searx.salcay.hu:
-  comments:
-  - Offline
-  - down  blank page
-https://searx.selea.se:
-  comments:
-  - Offline
-  - '(Leads to default Apache page) Issuer: RapidSSL (HSTS preloaded, DNSSEC)  |'
 https://searx.solusar.de: {}
-https://searx.steinscraft.net:
-  comments:
-  - Offline
 https://searx.targaryen.house: {}
-https://searx.techregion.de:
-  comments:
-  - Offline
-  - domain expired
-https://searx.tognella.com:
-  comments:
-  - Offline
 https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.wegeeks.win: {}
@@ -356,66 +157,28 @@ https://searx.win: {}
 https://searx.world:
   comments:
   - Adds Amazon affiliate links
-https://searx.xi.ht:
-  comments:
-  - Offline
-  - return a 502 HTTP error
 https://searx.xyz: {}
 https://searx.zareldyn.net: {}
 https://searx.zdechov.net: {}
-https://searxist.com:
-  comments:
-  - Offline
 https://seeks.hsbp.org:
-  additional_urls:
-    https://seeks.hsbp.org/cert: PGP signed fingerprints of cert
+  comments:
+  - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
 https://skyn3t.in/srx:
   comments:
   - '| onion'
   additional_urls:
     http://skyn3tb3bas655mw.onion/srx: hidden service
-https://so.sb:
-  comments:
-  - Offline
 https://spot.ecloud.global: {}
-https://srx.stdout.net:
-  comments:
-  - Offline
-https://srx.sx: {}
-https://stemy.me/searx: {}
 https://suche.dasnetzundich.de: {}
 https://suche.elaon.de: {}
 https://suche.uferwerk.org: {}
 https://timdor.noip.me/searx: {}
 https://trovu.komun.org: {}
 https://unmonito.red: {}
-https://win8linux.nohost.me/searx:
-  comments:
-  - Offline
-https://wiznet.tech:
-  comments:
-  - Offline
 https://wtf.roflcopter.fr/searx: {}
 https://www.finden.tk: {}
 https://www.gruble.de: {}
-https://www.mercurius.space:
-  comments:
-  - Offline
-https://www.opengo.nl:
-  comments:
-  - Offline
 https://www.perfectpixel.de/searx: {}
-https://www.ready.pm:
-  comments:
-  - Offline
-https://www.search404.io: {}
 https://www.searx.de: {}
 https://www.searxs.eu: {}
-https://z.awsmppl.com:
-  comments:
-  - Offline
-https://zlsdzh.tk:
-  comments:
-  - Offline
-  - '(down  404 HTTP error) Issuer: TrustAsia Technologies, Inc.  *'
 https://zoek.anchel.nl: {}
