@@ -1,6 +1,7 @@
 ## For searx instance operators
 
 * [Create an issue](https://github.com/dalf/searx-instances/issues/new/choose) to add / remove / edit a searx instance on https://searx.space/
+* If you add a new instance: allow the IPs 2001:41d0:8:de3::1 and 176.31.252.227 to access your instance. https://searx.space/ will check your instance periodically ([source code](https://github.com/dalf/searx-stats2)) 
 * Way for a reviewer to actually change [searxstats/instances.yml](https://github.com/dalf/searx-instances/blob/master/searxinstances/instances.yml)
 
 ## For reviewers
