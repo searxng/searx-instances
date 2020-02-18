@@ -134,7 +134,9 @@ https://searx.openhoofd.nl: {}
 https://searx.openpandora.org: {}
 https://searx.operationtulip.com: {}
 https://searx.orcadian.net: {}
-https://searx.org: {}
+https://searx.org:
+  comments:
+  - Cloudflare bot protection
 https://searx.ouahpiti.info: {}
 https://searx.pofilo.fr: {}
 https://searx.prvcy.eu:
