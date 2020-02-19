@@ -1,6 +1,7 @@
 import argparse
 import re
 import os.path
+from abc import abstractmethod
 
 import git
 import httpx
@@ -24,11 +25,11 @@ class UserRequest:
         self.url = url
         self.message = message
 
-    # pylint: disable=no-self-use
+    @abstractmethod
     def execute(self, instance_list: model.InstanceList, instance_list_update: model.InstanceList):
         raise RuntimeError('Abstract method')
 
-    # pylint: disable=no-self-use
+    @abstractmethod
     def get_content(self, existing_instance_list) -> str:
         raise RuntimeError('Not implemented')
 
@@ -146,8 +147,8 @@ class UserRequestEdit(UserRequest):
             self.get_generic_content()
 
     def execute(self, instance_list: model.InstanceList, instance_list_update: model.InstanceList):
+        del instance_list[self.url]
         for url, instance in instance_list_update.items():
-            del instance_list[url]
             instance_list[url] = instance
 
 
