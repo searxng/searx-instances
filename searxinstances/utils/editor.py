@@ -103,7 +103,7 @@ def edit(filename=None, contents=None, use_tty=None, suffix=''):
     # filename
     tmp = None
     if filename is None:
-        tmp = tempfile.NamedTemporaryFile(suffix=suffix)
+        tmp = tempfile.NamedTemporaryFile(suffix=suffix, delete=False)
         filename = tmp.name
 
     try:
