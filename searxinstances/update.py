@@ -260,14 +260,12 @@ def run_user_request_list(instance_list: model.InstanceList, user_request_list):
                 break
 
 
-TITLE_RE = re.compile('(add|remove|delete|del)[ ]+(.+)', re.IGNORECASE)
-COMMENT_RE = re.compile('<!-- .* -->', re.MULTILINE | re.DOTALL)
-GITHUB_TITLE_PREFIX = {
-    'add': UserRequestAdd,
-    'delete': UserRequestDelete,
-    'remove': UserRequestDelete,
-    'del': UserRequestDelete,
-    'edit': UserRequestEdit
+TITLE_RE = re.compile('[a-z]*[ ]?(http.+)', re.IGNORECASE)
+COMMENT_RE = re.compile('<!--.*-->', re.MULTILINE | re.DOTALL)
+LABEL_TO_CLASS = {
+    'instance add': UserRequestAdd,
+    'instance delete': UserRequestDelete,
+    'instance edit': UserRequestEdit
 }
 
 
@@ -307,6 +305,17 @@ def normalize_url(url):
     return None
 
 
+def get_user_request_class(label_names: list):
+    user_request_class = None
+    for l_name in label_names:
+        if l_name in LABEL_TO_CLASS:
+            if user_request_class is None:
+                user_request_class = LABEL_TO_CLASS[l_name]
+            else:
+                return None
+    return user_request_class
+
+
 def load_user_request_list_from_github(github_issue_list) -> list:
     user_request_list = []
     with httpx.Client() as client:
@@ -318,13 +327,27 @@ def load_user_request_list_from_github(github_issue_list) -> list:
             # and the current issue is not in the list
             continue
         if len(list(filter(lambda label: label.get('name') == 'instance', issue['labels']))):
-            rtitle = re.search(TITLE_RE, issue.get('title'))
             request_number = issue.get('number')
             request_url = issue.get('html_url')
             user = issue.get('user').get('login')
-            message = re.sub(COMMENT_RE, '', issue.get('body')).strip()
-            user_request_class = GITHUB_TITLE_PREFIX.get(rtitle.group(1).lower())
-            url = normalize_url(rtitle.group(2))
+            message = re.sub(COMMENT_RE, '', issue.get('body', '')).strip()
+
+            # url
+            rtitle = re.search(TITLE_RE, issue.get('title', ''))
+            if rtitle is None:
+                print(f'Ignoring #{request_number}: URL not found in the title of issue')
+                continue
+            url = normalize_url(rtitle.group(1))
+
+            # user_request_class
+            label_names = set(map(lambda label: label.get('name'), issue['labels']))
+            user_request_class = get_user_request_class(label_names)
+            if user_request_class is None:
+                # incoherent labels, for example add and edit at the same time
+                print(f'Ignoring #{request_number}: Incoherent labels: {" ".join(label_names)}')
+                continue
+
+            # create and add a new instance of UserRequest
             user_request = user_request_class(request_number, request_url, user, url, message)
             user_request_list.append(user_request)
     return user_request_list
