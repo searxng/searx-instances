@@ -76,6 +76,8 @@ https://search.stinpriza.org:
 https://search.sudo-i.net: {}
 https://searchsin.com/searx: {}
 https://searchx.mobi: {}
+https://searx-anon.duckdns.org:
+  safe: false
 https://searx.32bitflo.at: {}
 https://searx.anongoth.pl: {}
 https://searx.be: {}
