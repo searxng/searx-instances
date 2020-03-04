@@ -146,6 +146,8 @@ https://searx.pofilo.fr: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://hmfztxt3pfhevucl.onion: Hidden Service
+https://searx.pussthecat.org:
+  safe: false
 https://searx.pwoss.org: {}
 https://searx.ro: {}
 https://searx.ru: {}
