@@ -1,4 +1,6 @@
-http://7ea7vegvcqgdzxjz.onion: {}
+http://7ea7vegvcqgdzxjz.onion:
+  comments:
+  - run https://github.com/MarcAbonce/searx/tree/onions
 http://ransack.i2p:
   comments:
   - I2P eepsite, only accessible with
