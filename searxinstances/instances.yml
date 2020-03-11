@@ -124,6 +124,9 @@ https://searx.lhorn.de: {}
 https://searx.libmail.eu: {}
 https://searx.linux.pizza: {}
 https://searx.lnode.net: {}
+https://searx.louifox.house:
+  comments:
+  - IPV6 Only
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
 https://searx.mxchange.org: {}
