@@ -25,23 +25,42 @@ __all__ = [
 
 MACOS_EDITORS = [
     # The -t flag make MacOS open the default *editor* for the file
-    "open -t"
+    'open -t'
 ]
 
-COMMON_EDITORS = ["subl", "vscode", "atom"]
+COMMON_EDITORS = ['code', 'subl', 'atom']
 
 # In some linuxes `vim` and/or `emacs` come preinstalled, but we don't want
 # to throw you to their unfamiliar UI unless there are other options.
 # If you are using them you probably have set your $EDITOR variable anyway.
-LINUX_EDITORS = COMMON_EDITORS + ["kate", "geany", "gedit", "nano", "editor"]
+LINUX_EDITORS = COMMON_EDITORS + ['kate', 'geany', 'gedit', 'nano', 'editor']
 
-WINDOWS_EDITORS = COMMON_EDITORS + ["notepad++.exe", "notepad.exe"]
+WINDOWS_EDITORS = COMMON_EDITORS
 
-EDITORS = {"darwin": MACOS_EDITORS, "linux": LINUX_EDITORS, "win": WINDOWS_EDITORS}
+EDITORS = {'darwin': MACOS_EDITORS, 'linux': LINUX_EDITORS, 'win': WINDOWS_EDITORS}
+
+ARGUMENTS = {
+    'vim': ['-f', '-o'],
+    'gvim': ['-f', '-o'],
+    'vim.basic': ['-f', '-o'],
+    'vim.tiny': ['-f', '-o'],
+    'emacs': ['-nw'],
+    'nano': ['-R'],
+    'gedit': ['-w', '--new-window'],
+    'code': ['-w', '-n'],
+    'atom': ['-w', '-n'],
+    'subl': ['-w', '-n'],
+    'kate': ['-b', '-n']
+}
 
 
 class EditorError(RuntimeError):
     pass
+
+
+def get_editor_args(editor):
+    editor = os.path.basename(os.path.realpath(editor))
+    return ARGUMENTS.get(editor, [])
 
 
 def get_default_editors():
@@ -52,26 +71,6 @@ def get_default_editors():
             return EDITORS[platform]
 
     return COMMON_EDITORS
-
-
-def get_editor_args(editor):
-    if editor in ['vim', 'gvim', 'vim.basic', 'vim.tiny']:
-        return ['-f', '-o']
-
-    elif editor == 'emacs':
-        return ['-nw']
-
-    elif editor == 'gedit':
-        return ['-w', '--new-window']
-
-    elif editor == 'nano':
-        return ['-R']
-
-    elif editor == 'code':
-        return ['-w', '-n']
-
-    else:
-        return []
 
 
 def get_editor():
@@ -86,8 +85,8 @@ def get_editor():
         if path is not None:
             return path
 
-    raise EditorError("Unable to find a viable editor on this system."
-                      "Please consider setting your $EDITOR variable")
+    raise EditorError('Unable to find a viable editor on this system.'
+                      'Please consider setting your $EDITOR variable')
 
 
 def get_tty_filename():
@@ -116,9 +115,7 @@ def edit(filename=None, contents=None, use_tty=None, suffix=''):
                 file_stream.write(contents)
 
         # args
-        args = shlex.split(editor) +\
-            get_editor_args(os.path.basename(os.path.realpath(editor))) +\
-            [filename]
+        args = shlex.split(editor) + get_editor_args(editor) + [filename]
 
         # stdout
         stdout = None
@@ -145,3 +142,36 @@ def edit(filename=None, contents=None, use_tty=None, suffix=''):
                 os.remove(tmp.name)
             except OSError:
                 pass
+
+
+def main():
+    # pylint: disable=import-outside-toplevel
+    import argparse
+    import locale
+
+    def _get_editor(_):
+        print(get_editor())
+
+    def _edit(namespace):
+        contents = namespace.contents
+        if contents is not None:
+            contents = contents.encode(locale.getpreferredencoding())
+        print(edit(filename=namespace.path, contents=contents))
+
+    argument_parser = argparse.ArgumentParser()
+    subparser_action = argument_parser.add_subparsers()
+
+    cmd = subparser_action.add_parser('get-editor')
+    cmd.set_defaults(cmd=_get_editor)
+
+    cmd = subparser_action.add_parser('edit')
+    cmd.set_defaults(cmd=_edit)
+    cmd.add_argument('path', type=str, nargs='?')
+    cmd.add_argument('--contents', type=str)
+
+    namespace = argument_parser.parse_args()
+    namespace.cmd(namespace)
+
+
+if __name__ == '__main__':
+    main()
