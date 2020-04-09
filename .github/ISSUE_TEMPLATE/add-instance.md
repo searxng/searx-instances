@@ -18,8 +18,8 @@ If you have modified searx, please provide a URL to the source code and make sur
 Currently, if you don't give the right to searx.space to check your instance, it is not possible to add your instance to the list.
 
 Be sure to have configured filtron:
-* once your instance is added to searx.space, it will receive requests from different bots.
-* removing your instance from searx.space won't stop the bots.
+* once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
+* removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
 About searx.space:
 * source code: https://github.com/dalf/searx-stats2
