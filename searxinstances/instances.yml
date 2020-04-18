@@ -116,7 +116,9 @@ https://searx.gotrust.de:
     http://nxhhwbbxc4khvvlw.onion: Hidden Service
 https://searx.hardwired.link: {}
 https://searx.hlfh.space: {}
-https://searx.info: {}
+https://searx.info:
+  comments:
+  - Strange searxspm cookie on every page. tracking?
 https://searx.john-at-me.net: {}
 https://searx.kvch.me: {}
 https://searx.lambda.li: {}
