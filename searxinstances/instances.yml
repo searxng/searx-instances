@@ -15,7 +15,9 @@ https://anyonething.de:
   comments:
   - Amazon ad banner
 https://bamboozle.it: {}
-https://beezboo.com: {}
+https://beezboo.com:
+  comments:
+  - Uses Matomo for user tracking and analytics
 https://burtrum.org/searx: {}
 https://darmarit.cloud/searx: {}
 https://dc.ax: {}
