@@ -26,7 +26,9 @@ https://goso.ga: {}
 https://haku.ahmia.fi: {}
 https://haku.lelux.fi: {}
 https://huyo.me: {}
-https://intelme.com: {}
+https://intelme.com:
+  comments:
+  - Uses Google Analytics for user tracking and analytics
 https://jsearch.pw: {}
 https://le-dahut.com/searx: {}
 https://mijisou.com: {}
