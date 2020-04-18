@@ -90,10 +90,7 @@ https://searx.anongoth.pl: {}
 https://searx.be: {}
 https://searx.ca: {}
 https://searx.canox.net: {}
-https://searx.ch:
-  comments:
-  - Running with an incorrect SSL certificate
-  - cert clock problems
+https://searx.ch: {}
 https://searx.com.au: {}
 https://searx.cybt.de: {}
 https://searx.darklun.ch: {}
