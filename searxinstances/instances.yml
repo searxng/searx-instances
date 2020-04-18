@@ -11,7 +11,9 @@ https://a.searx.space:
   comments:
   - unstable, under construction
 https://ai.deafpray.wtf/searx: {}
-https://anyonething.de: {}
+https://anyonething.de:
+  comments:
+  - Amazon ad banner
 https://bamboozle.it: {}
 https://beezboo.com: {}
 https://burtrum.org/searx: {}
