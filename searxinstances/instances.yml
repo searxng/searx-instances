@@ -78,7 +78,9 @@ https://search.stinpriza.org:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://search.sudo-i.net: {}
 https://searchsin.com/searx: {}
-https://searchx.mobi: {}
+https://searchx.mobi:
+  comments:
+  - Uses Google Analytics for user tracking and analytics
 https://searx-anon.duckdns.org:
   safe: false
 https://searx.32bitflo.at: {}
