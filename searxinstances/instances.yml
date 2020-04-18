@@ -183,7 +183,9 @@ https://skyn3t.in/srx:
   additional_urls:
     http://skyn3tb3bas655mw.onion/srx: hidden service
 https://spot.ecloud.global: {}
-https://suche.dasnetzundich.de: {}
+https://suche.dasnetzundich.de:
+  comments:
+  - Uses Matomo for user tracking and analytics
 https://suche.elaon.de: {}
 https://suche.uferwerk.org: {}
 https://timdor.noip.me/searx: {}
