@@ -134,9 +134,7 @@ https://searx.mastodontech.de: {}
 https://searx.mxchange.org: {}
 https://searx.my.id: {}
 https://searx.nakhan.net: {}
-https://searx.netzspielplatz.de:
-  comments:
-  - error page about GDPR even when browsing it from USA and Asia
+https://searx.netzspielplatz.de: {}
 https://searx.ninja: {}
 https://searx.nnto.net: {}
 https://searx.nulltime.net:
