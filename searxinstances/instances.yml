@@ -157,6 +157,7 @@ https://searx.org:
   - Cloudflare bot protection
 https://searx.ouahpiti.info: {}
 https://searx.pofilo.fr: {}
+https://searx.privatenet.cf: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://hmfztxt3pfhevucl.onion: Hidden Service
