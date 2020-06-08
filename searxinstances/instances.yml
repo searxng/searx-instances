@@ -107,6 +107,7 @@ https://searx.everdot.org:
   comments:
   - Crawls using YaCy
 https://searx.foo.li: {}
+https://searx.forked.io: {}
 https://searx.fossencdi.org:
   additional_urls:
     http://searx.cwuzdtzlubq5uual.onion: Hidden Service
