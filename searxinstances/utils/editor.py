@@ -28,7 +28,7 @@ MACOS_EDITORS = [
     'open -t'
 ]
 
-COMMON_EDITORS = ['code', 'subl', 'atom']
+COMMON_EDITORS = ['editor', 'vim', 'emacs', 'nano']
 
 # In some linuxes `vim` and/or `emacs` come preinstalled, but we don't want
 # to throw you to their unfamiliar UI unless there are other options.
