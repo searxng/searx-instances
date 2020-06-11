@@ -61,12 +61,10 @@ class AdditionalUrlList(OrderedDict, yaml.YAMLObject):
 class Instance(yaml.YAMLObject):
 
     yaml_tag = '!Instance'
-    __slots__ = ['safe', 'comments', 'additional_urls']
+    __slots__ = ['comments', 'additional_urls']
 
-    def __init__(self, safe=None, comments=None, additional_urls=None):
+    def __init__(self, comments=None, additional_urls=None):
         # type check
-        if not isinstance(safe, (bool, NoneType)):
-            raise ValueError('safe is not a bool')
         if not isinstance(comments, (list, NoneType)):
             raise ValueError('comments is not a list')
         if not isinstance(additional_urls, (AdditionalUrlList, NoneType)):
@@ -76,13 +74,11 @@ class Instance(yaml.YAMLObject):
         if additional_urls is None:
             additional_urls = AdditionalUrlList()
         # assign
-        self.safe = safe
         self.comments = comments
         self.additional_urls = additional_urls
 
     def to_json(self):
         return dict([
-            ("safe", self.safe),
             ("comments", self.comments),
             ("additional_urls", self.additional_urls)
         ])
@@ -93,8 +89,6 @@ class Instance(yaml.YAMLObject):
     @staticmethod
     def yaml_representer(dumper: yaml.Dumper, instance):
         output = []
-        if instance.safe is not None:
-            output.append(('safe', instance.safe))
         if instance.comments is not None and len(instance.comments) > 0:
             output.append(('comments', instance.comments))
         if instance.additional_urls is not None and len(instance.additional_urls) > 0:

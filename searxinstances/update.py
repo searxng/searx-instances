@@ -114,7 +114,7 @@ class UserRequestAdd(UserRequest):
 
     def get_content(self, existing_instance_list) -> str:
         tmp_instance_list = model.InstanceList()
-        tmp_instance_list[self.url] = model.Instance(False)
+        tmp_instance_list[self.url] = model.Instance()
         content = model.yaml_dump(tmp_instance_list)
         return content + "\n" +\
             self.get_generic_content()
