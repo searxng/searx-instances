@@ -32,8 +32,7 @@ https://intelme.com:
 https://jsearch.pw: {}
 https://le-dahut.com/searx: {}
 https://mijisou.com: {}
-https://nibblehole.com:
-  safe: false
+https://nibblehole.com: {}
 https://null.media: {}
 https://openworlds.info: {}
 https://rapu.nz: {}
@@ -86,8 +85,7 @@ https://searchsin.com/searx: {}
 https://searchx.mobi:
   comments:
   - Uses Google Analytics for user tracking and analytics
-https://searx-anon.duckdns.org:
-  safe: false
+https://searx-anon.duckdns.org: {}
 https://searx.32bitflo.at: {}
 https://searx.anongoth.pl: {}
 https://searx.be: {}
