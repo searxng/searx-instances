@@ -114,6 +114,9 @@ https://searx.fr32k.de: {}
 https://searx.gotrust.de:
   additional_urls:
     http://nxhhwbbxc4khvvlw.onion: Hidden Service
+https://searx.handskemager.xyz:
+  additional_urls:
+    http://searx.ecpuepfcd3nekvh2.onion/: Hidden Service
 https://searx.hardwired.link: {}
 https://searx.hlfh.space: {}
 https://searx.info:
