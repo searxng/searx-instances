@@ -42,8 +42,7 @@ The tool :
 
 An example what is shown in the default editor:
 ```
-https://nibblehole.com:
-  safe: false
+https://nibblehole.com: {}
 
 # Add https://nibblehole.com
 #
