@@ -68,9 +68,7 @@ https://search.opentunisia.org: {}
 https://search.paulla.asso.fr: {}
 https://search.pifferi.info: {}
 https://search.poal.co: {}
-https://search.privacytools.io:
-  comments:
-  - Uses Matomo for user tracking and analytics
+https://search.privacytools.io: {}
 https://search.seds.nl: {}
 https://search.snopyta.org:
   additional_urls:
