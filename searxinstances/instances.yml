@@ -153,6 +153,7 @@ https://searx.nulltime.net:
   - Running with an incorrect SSL certificate
   additional_urls:
     http://searx7gwtu5rh6wr.onion: Hidden Service
+https://searx.olymp.to: {}
 https://searx.openhoofd.nl: {}
 https://searx.openpandora.org: {}
 https://searx.operationtulip.com: {}
