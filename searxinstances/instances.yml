@@ -8,54 +8,31 @@ http://suche.xyzco456vwisukfg.onion: {}
 https://a.searx.space:
   comments:
   - unstable, under construction
-https://abdousearx.ddns.net/searx: {}
-https://ai.deafpray.wtf/searx: {}
-https://anyonething.de:
-  comments:
-  - Amazon ad banner
-https://bamboozle.it: {}
 https://beezboo.com:
   comments:
   - Uses Matomo for user tracking and analytics
 https://burtrum.org/searx: {}
 https://darmarit.org/searx: {}
-https://dc.ax: {}
 https://dynabyte.ca: {}
 https://eulie.de: {}
-https://goso.ga: {}
 https://haku.ahmia.fi: {}
 https://haku.lelux.fi: {}
-https://huyo.me: {}
-https://intelme.com:
-  comments:
-  - Uses Google Analytics for user tracking and analytics
 https://jsearch.pw: {}
-https://le-dahut.com/searx: {}
 https://mijisou.com: {}
 https://nibblehole.com: {}
 https://null.media: {}
 https://openworlds.info: {}
 https://recherche.catmargue.org: {}
 https://roteserver.de/searx: {}
-https://s.cmd.gg: {}
 https://scour.cc: {}
 https://search.0xcb.dev: {}
 https://search.activemail.de: {}
 https://search.anonymize.com: {}
 https://search.azkware.net: {}
 https://search.biboumail.fr: {}
-https://search.blankenberg.eu: {}
 https://search.bunker.is: {}
-https://search.d4networks.com: {}
-https://search.datensturm.net: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
-https://search.fossdaily.xyz: {}
-https://search.galaxy.cat: {}
-https://search.gibberfish.org:
-  additional_urls:
-    http://o2jdk5mdsijm2b7l.onion: Hidden Service
-    https://search.gibberfish.org/tor: Proxied through Tor
 https://search.gougeul.org: {}
 https://search.jigsaw-security.com: {}
 https://search.jpope.org: {}
@@ -64,12 +41,9 @@ https://search.mdosch.de:
   additional_urls:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
 https://search.modalogi.com: {}
-https://search.moravit.com: {}
 https://search.nebulacentre.net: {}
 https://search.opentunisia.org: {}
 https://search.paulla.asso.fr: {}
-https://search.pifferi.info: {}
-https://search.poal.co: {}
 https://search.privacytools.io: {}
 https://search.seds.nl: {}
 https://search.snopyta.org:
@@ -80,8 +54,6 @@ https://search.st8.at: {}
 https://search.stinpriza.org:
   additional_urls:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
-https://search.sudo-i.net: {}
-https://searchsin.com/searx: {}
 https://searchx.mobi:
   comments:
   - Uses Google Analytics for user tracking and analytics
@@ -94,9 +66,7 @@ https://searx.ca: {}
 https://searx.canox.net: {}
 https://searx.ch: {}
 https://searx.com.au: {}
-https://searx.cybt.de: {}
 https://searx.darklun.ch: {}
-https://searx.ddns.net: {}
 https://searx.decatec.de: {}
 https://searx.deepak.pro: {}
 https://searx.devol.it: {}
@@ -113,7 +83,6 @@ https://searx.forked.io: {}
 https://searx.fossencdi.org:
   additional_urls:
     http://searx.cwuzdtzlubq5uual.onion: Hidden Service
-https://searx.fr32k.de: {}
 https://searx.gnu.style: {}
 https://searx.gotrust.de:
   additional_urls:
@@ -126,7 +95,6 @@ https://searx.info:
   comments:
   - Strange searxspm cookie on every page. tracking?
 https://searx.ir: {}
-https://searx.john-at-me.net: {}
 https://searx.kvch.me: {}
 https://searx.lambda.li: {}
 https://searx.laquadrature.net:
@@ -134,7 +102,6 @@ https://searx.laquadrature.net:
     http://searchb5a7tmimez.onion: Hidden Service
 https://searx.lavatech.top: {}
 https://searx.lelux.fi: {}
-https://searx.lhorn.de: {}
 https://searx.libmail.eu: {}
 https://searx.linux.pizza: {}
 https://searx.lnode.net: {}
@@ -144,7 +111,6 @@ https://searx.louifox.house:
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
 https://searx.mxchange.org: {}
-https://searx.my.id: {}
 https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de: {}
 https://searx.nevrlands.de: {}
@@ -161,7 +127,6 @@ https://searx.olymp.to: {}
 https://searx.openhoofd.nl: {}
 https://searx.openpandora.org: {}
 https://searx.operationtulip.com: {}
-https://searx.orcadian.net: {}
 https://searx.org:
   comments:
   - Cloudflare bot protection
@@ -171,7 +136,6 @@ https://searx.privatenet.cf: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://hmfztxt3pfhevucl.onion: Hidden Service
-https://searx.pw: {}
 https://searx.pwoss.org: {}
 https://searx.rasp.fr: {}
 https://searx.ro: {}
@@ -204,7 +168,6 @@ https://spot.ecloud.global: {}
 https://suche.dasnetzundich.de:
   comments:
   - Uses Matomo for user tracking and analytics
-https://suche.elaon.de: {}
 https://suche.mexmail.de: {}
 https://suche.uferwerk.org: {}
 https://suchfeuer.de: {}
