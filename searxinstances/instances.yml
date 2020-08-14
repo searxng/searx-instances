@@ -11,7 +11,6 @@ https://a.searx.space:
 https://beezboo.com:
   comments:
   - Uses Matomo for user tracking and analytics
-https://burtrum.org/searx: {}
 https://darmarit.org/searx: {}
 https://dynabyte.ca: {}
 https://eulie.de: {}
@@ -24,13 +23,11 @@ https://null.media: {}
 https://openworlds.info: {}
 https://recherche.catmargue.org: {}
 https://roteserver.de/searx: {}
-https://scour.cc: {}
 https://search.0xcb.dev: {}
 https://search.activemail.de: {}
 https://search.anonymize.com: {}
 https://search.azkware.net: {}
 https://search.biboumail.fr: {}
-https://search.bunker.is: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
 https://search.gougeul.org: {}
@@ -57,16 +54,12 @@ https://search.stinpriza.org:
 https://searchx.mobi:
   comments:
   - Uses Google Analytics for user tracking and analytics
-https://searx-anon.duckdns.org: {}
 https://searx.32bitflo.at: {}
 https://searx.alec.ninja: {}
-https://searx.anongoth.pl: {}
 https://searx.be: {}
-https://searx.ca: {}
 https://searx.canox.net: {}
 https://searx.ch: {}
 https://searx.com.au: {}
-https://searx.darklun.ch: {}
 https://searx.decatec.de: {}
 https://searx.deepak.pro: {}
 https://searx.devol.it: {}
@@ -117,7 +110,6 @@ https://searx.nevrlands.de: {}
 https://searx.nightmare.life: {}
 https://searx.ninja: {}
 https://searx.nixnet.services: {}
-https://searx.nnto.net: {}
 https://searx.nulltime.net:
   comments:
   - Running with an incorrect SSL certificate
@@ -152,9 +144,6 @@ https://searx.tyil.nl: {}
 https://searx.vitanetworks.link: {}
 https://searx.wegeeks.win: {}
 https://searx.win: {}
-https://searx.world:
-  comments:
-  - Adds Amazon affiliate links
 https://searx.xyz: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zdechov.net: {}
@@ -178,6 +167,5 @@ https://wtf.roflcopter.fr/searx: {}
 https://www.finden.tk: {}
 https://www.gruble.de: {}
 https://www.perfectpixel.de/searx: {}
-https://www.searx.de: {}
 https://www.searxs.eu: {}
 https://zoek.anchel.nl: {}
