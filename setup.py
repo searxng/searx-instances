@@ -29,7 +29,6 @@ def find_version(*file_paths):
 
 long_description = read('README.md')
 requirements = map(str.strip, open('requirements.txt').readlines())
-update_requirements = map(str.strip, open('requirements-update.txt').readlines())
 
 setup(
     name="searxinstances",
@@ -54,6 +53,11 @@ setup(
     author_email='alex.andre@al-f.net',
 
     packages=find_namespace_packages(include=['searxinstances', 'searxinstances.*']),
+    package_data={
+        'searxinstances': [
+            'instances.yml',
+        ]
+    },
     entry_points={
         'console_scripts': [
             'update-searxinstances=searxinstances.__main__:main',
@@ -62,7 +66,4 @@ setup(
     zip_safe=False,
     python_requires=">=3.6",
     install_requires=requirements,
-    extras_require={
-        'update': update_requirements
-    },
 )
