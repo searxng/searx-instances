@@ -11,6 +11,10 @@ assignees: ''
 * [ ] It is my instance.
 * [ ] I give the right to searx.space to check my instance (every 3 hours for the response times, every 24 hours for the other tests).
 
+Pick one:
+* [ ] I have installed [filtron](https://github.com/asciimoo/filtron/), [antibot-proxy](https://github.com/unixfox/antibot-proxy) or another bot protection.
+* [ ] I do recognize that without a bot protection, my instance will be flooded by bots and could have some of its engines stop working (an example is Google).
+
 <!--
 
 If you have modified searx, please provide a URL to the source code and make sure that the same URL is publicly accessible in your instance's site.
