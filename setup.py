@@ -28,7 +28,7 @@ def find_version(*file_paths):
 
 
 long_description = read('README.md')
-requirements = map(str.strip, open('requirements.txt').readlines())
+requirements = list(map(str.strip, open('requirements.txt').readlines()))
 
 setup(
     name="searxinstances",
@@ -46,7 +46,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.6",
     ],
-    url='https://github.com/dalf/searx-instances',
+    url='https://github.com/searx/searx-instances',
     keywords='searx',
 
     author='Alexandre Flament',

@@ -26,7 +26,7 @@ Be sure to have configured filtron:
 * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
 About searx.space:
-* source code: https://github.com/dalf/searx-stats2
+* source code: https://github.com/searx/searx-stats2
 * your instance will receive requests from the host check.searx.space (the IP addresses of this host may change in the future)
 
 If you are using Apache, Nginx, you can use https://ssl-config.mozilla.org to get A+ TLS grade.
