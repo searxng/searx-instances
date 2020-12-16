@@ -111,7 +111,9 @@ https://searx.lwhr.xyz: {}
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
 https://searx.maxxblow.de: {}
-https://searx.monicz.pl: {}
+https://searx.monicz.pl:
+  additional_urls:
+    http://upzhip7hatfbsi5xcwyw6n2bpappt3j4gkvwjmyb7qo6urcyhmlekpad.onion: Hidden Service
 https://searx.mxchange.org: {}
 https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de: {}
