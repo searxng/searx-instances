@@ -13,7 +13,7 @@ assignees: ''
 
 Pick one:
 * [ ] I have installed [filtron](https://github.com/asciimoo/filtron/), [antibot-proxy](https://github.com/unixfox/antibot-proxy) or another bot protection.
-* [ ] I do recognize that without a bot protection, my instance will be flooded by bots and could have some of its engines stop working (an example is Google).
+* [ ] I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google).
 
 <!--
 
