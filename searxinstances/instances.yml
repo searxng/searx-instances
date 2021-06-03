@@ -103,9 +103,6 @@ https://searx.info:
 https://searx.ir: {}
 https://searx.kvch.me: {}
 https://searx.lambda.li: {}
-https://searx.laquadrature.net:
-  additional_urls:
-    http://searchb5a7tmimez.onion: Hidden Service
 https://searx.lavatech.top: {}
 https://searx.lelux.fi: {}
 https://searx.libmail.eu: {}
