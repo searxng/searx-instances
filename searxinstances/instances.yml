@@ -76,7 +76,9 @@ https://searx.com.au: {}
 https://searx.decatec.de: {}
 https://searx.deepak.pro: {}
 https://searx.devol.it: {}
-https://searx.divided-by-zero.eu: {}
+https://searx.divided-by-zero.eu:
+  additional_urls:
+    http://f4qfqajszpx5b7itzxt6mb7kj4ktpgbdq7lq6xaiqyqx6a7de3epptad.onion: Hidden Service
 https://searx.dojocasts.com: {}
 https://searx.dresden.network: {}
 https://searx.elukerio.org: {}
