@@ -21,7 +21,6 @@ https://haku.lelux.fi: {}
 https://hmsearx.h0meserver.com: {}
 https://jsearch.pw: {}
 https://metasearch.nl: {}
-https://methylcraft.com/search: {}
 https://mijisou.com: {}
 https://nibblehole.com: {}
 https://null.media: {}
@@ -41,7 +40,6 @@ https://search.biboumail.fr: {}
 https://search.bluelock.org: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
-https://search.gougeul.org: {}
 https://search.jigsaw-security.com: {}
 https://search.jpope.org: {}
 https://search.lgbtq.cool: {}
@@ -50,7 +48,6 @@ https://search.mdosch.de:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
 https://search.modalogi.com: {}
 https://search.opentunisia.org: {}
-https://search.paulla.asso.fr: {}
 https://search.privacytools.io: {}
 https://search.seds.nl: {}
 https://search.snopyta.org:
@@ -71,9 +68,7 @@ https://searx.alec.ninja: {}
 https://searx.bar: {}
 https://searx.be: {}
 https://searx.bissisoft.com: {}
-https://searx.canox.net: {}
 https://searx.ch: {}
-https://searx.com.au: {}
 https://searx.decatec.de: {}
 https://searx.deepak.pro: {}
 https://searx.devol.it: {}
@@ -98,21 +93,16 @@ https://searx.gotrust.de:
   additional_urls:
     http://nxhhwbbxc4khvvlw.onion: Hidden Service
 https://searx.guillaumea.fr: {}
-https://searx.handskemager.xyz:
-  additional_urls:
-    http://searx.ecpuepfcd3nekvh2.onion/: Hidden Service
 https://searx.hardwired.link: {}
 https://searx.info:
   comments:
   - Strange searxspm cookie on every page. tracking?
 https://searx.ir: {}
-https://searx.kvch.me: {}
 https://searx.lambda.li: {}
 https://searx.lavatech.top: {}
 https://searx.lelux.fi: {}
 https://searx.libmail.eu: {}
 https://searx.likkle.monster: {}
-https://searx.linux.pizza: {}
 https://searx.lnode.net: {}
 https://searx.louifox.house:
   comments:
@@ -150,14 +140,12 @@ https://searx.prvcy.eu:
     http://hmfztxt3pfhevucl.onion: Hidden Service
 https://searx.pwoss.org: {}
 https://searx.rasp.fr: {}
-https://searx.ro: {}
 https://searx.roughs.ru: {}
 https://searx.ru: {}
 https://searx.run: {}
 https://searx.rxyz.rocks: {}
 https://searx.semipvt.com: {}
 https://searx.silkky.cloud: {}
-https://searx.simonoener.com: {}
 https://searx.sk: {}
 https://searx.slash-dev.de: {}
 https://searx.solusar.de: {}
@@ -173,7 +161,6 @@ https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.vitanetworks.link: {}
 https://searx.webheberg.info: {}
-https://searx.wegeeks.win: {}
 https://searx.win: {}
 https://searx.xyz: {}
 https://searx.zackptg5.com: {}
@@ -195,11 +182,9 @@ https://suche.mexmail.de: {}
 https://suche.uferwerk.org: {}
 https://suchfeuer.de: {}
 https://timdor.noip.me/searx: {}
-https://tromland.org/searx/: {}
 https://trovu.komun.org: {}
 https://unmonito.red: {}
 https://wtf.roflcopter.fr/searx: {}
-https://www.finden.tk: {}
 https://www.gruble.de: {}
 https://www.perfectpixel.de/searx: {}
 https://www.searxs.eu: {}
