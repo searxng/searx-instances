@@ -160,6 +160,9 @@ https://searx.tyil.nl: {}
 https://searx.vitanetworks.link: {}
 https://searx.webheberg.info: {}
 https://searx.win: {}
+https://searx.xkek.net:
+  additional_urls:
+    http://searx.bsbvtqi5oq2cqzn32zt4cr2f2z2rwots3dq7gmdcnlyqoxko2wx6reqd.onion: Hidden Service
 https://searx.xyz: {}
 https://searx.zackptg5.com: {}
 https://searx.zapashcanon.fr: {}
