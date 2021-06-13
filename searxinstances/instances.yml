@@ -108,7 +108,6 @@ https://searx.louifox.house:
 https://searx.lwhr.xyz: {}
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
-https://sx.fedi.tech: {}
 https://searx.monicz.pl:
   additional_urls:
     http://upzhip7hatfbsi5xcwyw6n2bpappt3j4gkvwjmyb7qo6urcyhmlekpad.onion: Hidden Service
@@ -182,6 +181,7 @@ https://suche.dasnetzundich.de:
 https://suche.mexmail.de: {}
 https://suche.uferwerk.org: {}
 https://suchfeuer.de: {}
+https://sx.fedi.tech: {}
 https://timdor.noip.me/searx: {}
 https://trovu.komun.org: {}
 https://unmonito.red: {}
