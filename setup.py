@@ -29,6 +29,7 @@ def find_version(*file_paths):
 
 long_description = read('README.md')
 requirements = list(map(str.strip, open('requirements.txt').readlines()))
+requirements_update = list(map(str.strip, open('requirements-update.txt').readlines()))
 
 setup(
     name="searxinstances",
@@ -60,10 +61,13 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'update-searxinstances=searxinstances.__main__:main',
+            'searxinstances=searxinstances.update:main',
         ],
     },
     zip_safe=False,
     python_requires=">=3.6",
     install_requires=requirements,
+    extras_require={
+        "update": requirements_update,
+    },
 )

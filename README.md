@@ -6,15 +6,13 @@
 
 ## For reviewers
 
-* on each commit, instances.yml is checked
-* ```python -m searxinstances.update``` allows to edit the instances.yml
+* create a virtualenv, and then install `searxinstances`:
 
+```python -m pip install .[update]```
+
+* then `searxinstances` can help to edit instances.yml :
 ```
-usage: update.py [-h]
-                 [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]]
-                 [--add [ADD_INSTANCES [ADD_INSTANCES ...]]]
-                 [--delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]]
-                 [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]]
+usage: searxinstances [-h] [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]] [--add [ADD_INSTANCES [ADD_INSTANCES ...]]] [--delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]] [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]]
 
 Update the instance list according to the github issues.
 
