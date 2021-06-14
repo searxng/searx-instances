@@ -173,7 +173,8 @@ https://seeks.hsbp.org:
 https://skyn3t.in/srx:
   additional_urls:
     http://skyn3tb3bas655mw.onion/srx: hidden service
-https://spot.ecloud.global: {}
+https://spot.ecloud.global:
+  git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://start.paulgo.io: {}
 https://suche.dasnetzundich.de:
   comments:
