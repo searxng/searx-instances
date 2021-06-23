@@ -64,7 +64,6 @@ https://searchx.mobi:
   comments:
   - Uses Google Analytics for user tracking and analytics
 https://searx.32bitflo.at: {}
-https://searx.7m.ee: {}
 https://searx.alec.ninja: {}
 https://searx.bar: {}
 https://searx.be: {}
@@ -111,6 +110,7 @@ https://searx.louifox.house:
 https://searx.lwhr.xyz: {}
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
+https://searx.mha.fi: {}
 https://searx.monicz.pl:
   additional_urls:
     http://upzhip7hatfbsi5xcwyw6n2bpappt3j4gkvwjmyb7qo6urcyhmlekpad.onion: Hidden Service
