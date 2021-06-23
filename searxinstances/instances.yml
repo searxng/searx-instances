@@ -68,7 +68,9 @@ https://searx.7m.ee: {}
 https://searx.alec.ninja: {}
 https://searx.bar: {}
 https://searx.be: {}
-https://searx.bissisoft.com: {}
+https://searx.bissisoft.com:
+  additional_urls:
+    http://zbuc3bbzbfdqqo2x46repx2ddajbha6fpsjeeptjhhhhzji3zopxdqyd.onion/: Hidden Service
 https://searx.ch: {}
 https://searx.decatec.de: {}
 https://searx.deepak.pro: {}
