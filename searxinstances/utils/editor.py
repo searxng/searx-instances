@@ -6,6 +6,7 @@
 # both use an Apache 2 license.
 # both use distutils.spawn.find_executable which is a problem with pytest
 # see https://github.com/fmoo/python-editor/issues/29
+# pylint: disable=consider-using-with
 
 
 import sys
