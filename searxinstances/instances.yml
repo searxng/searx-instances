@@ -25,7 +25,6 @@ https://metasearch.nl: {}
 https://mijisou.com: {}
 https://nibblehole.com: {}
 https://northboot.xyz: {}
-https://null.media: {}
 https://opengo.nl: {}
 https://openworlds.info: {}
 https://privatesearch.app: {}
@@ -34,18 +33,15 @@ https://recherche.catmargue.org: {}
 https://roteserver.de/searx: {}
 https://s.zhaocloud.net: {}
 https://search.076.ne.jp: {}
-https://search.0xcb.dev: {}
 https://search.activemail.de: {}
 https://search.anonymize.com: {}
 https://search.asynchronousexchange.com: {}
-https://search.azkware.net: {}
 https://search.biboumail.fr: {}
 https://search.bluelock.org: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
 https://search.jigsaw-security.com: {}
 https://search.jpope.org: {}
-https://search.lgbtq.cool: {}
 https://search.mdosch.de:
   additional_urls:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
@@ -170,9 +166,6 @@ https://searxzh.cn: {}
 https://seeks.hsbp.org:
   comments:
   - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
-https://skyn3t.in/srx:
-  additional_urls:
-    http://skyn3tb3bas655mw.onion/srx: hidden service
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://start.paulgo.io: {}
@@ -181,7 +174,6 @@ https://suche.dasnetzundich.de:
   - Uses Matomo for user tracking and analytics
 https://suche.mexmail.de: {}
 https://suche.uferwerk.org: {}
-https://suchfeuer.de: {}
 https://swag.pw: {}
 https://sx.fedi.tech: {}
 https://timdor.noip.me/searx: {}
