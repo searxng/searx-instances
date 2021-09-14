@@ -108,9 +108,6 @@ https://searx.lavatech.top: {}
 https://searx.lelux.fi: {}
 https://searx.libmail.eu: {}
 https://searx.likkle.monster: {}
-https://searx.louifox.house:
-  comments:
-  - IPV6 Only
 https://searx.lwhr.xyz: {}
 https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
@@ -147,7 +144,6 @@ https://searx.rasp.fr: {}
 https://searx.roughs.ru: {}
 https://searx.ru: {}
 https://searx.run: {}
-https://searx.rxyz.rocks: {}
 https://searx.s1gm4.eu: {}
 https://searx.semipvt.com: {}
 https://searx.silkky.cloud: {}
@@ -159,7 +155,6 @@ https://searx.sulu.me: {}
 https://searx.sunless.cloud: {}
 https://searx.thegreenwebfoundation.org: {}
 https://searx.tiekoetter.com: {}
-https://searx.tunkki.xyz: {}
 https://searx.tux.land: {}
 https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
@@ -200,4 +195,3 @@ https://www.perfectpixel.de/searx: {}
 https://www.searxs.eu: {}
 https://www.searxzh.cn: {}
 https://xeek.com: {}
-https://zoek.anchel.nl: {}
