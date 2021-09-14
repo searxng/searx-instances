@@ -93,6 +93,7 @@ https://searx.forked.io: {}
 https://searx.fossencdi.org:
   additional_urls:
     http://searx.cwuzdtzlubq5uual.onion: Hidden Service
+https://searx.gnous.eu: {}
 https://searx.gnu.style: {}
 https://searx.gotrust.de:
   additional_urls:
