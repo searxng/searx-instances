@@ -35,6 +35,9 @@ https://s.zhaocloud.net: {}
 https://search.076.ne.jp: {}
 https://search.activemail.de: {}
 https://search.anonymize.com: {}
+https://search.antonkling.se:
+  additional_urls:
+    http://z34ambyi6makk6ta7ksog2sljly2ctt2sa3apekb7wkllk72sxecdtad.onion: Hidden Service
 https://search.asynchronousexchange.com: {}
 https://search.biboumail.fr: {}
 https://search.bluelock.org: {}
