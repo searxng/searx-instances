@@ -16,21 +16,15 @@ https://beezboo.com:
 https://darmarit.org/searx: {}
 https://dynabyte.ca: {}
 https://engo.mint.lgbt: {}
-https://eulie.de: {}
 https://haku.ahmia.fi: {}
-https://haku.lelux.fi: {}
-https://hmsearx.h0meserver.com: {}
 https://jsearch.pw: {}
 https://metasearch.nl: {}
-https://mijisou.com: {}
 https://nibblehole.com: {}
 https://northboot.xyz: {}
 https://opengo.nl: {}
-https://openworlds.info: {}
 https://privatesearch.app: {}
 https://procurx.pt: {}
 https://recherche.catmargue.org: {}
-https://roteserver.de/searx: {}
 https://s.zhaocloud.net: {}
 https://search.076.ne.jp: {}
 https://search.activemail.de: {}
@@ -48,13 +42,10 @@ https://search.jpope.org: {}
 https://search.mdosch.de:
   additional_urls:
     http://search.4bkxscubgtxwvhpe.onion: Hidden Service
-https://search.modalogi.com: {}
-https://search.opentunisia.org: {}
 https://search.privacytools.io: {}
 https://search.snopyta.org:
   additional_urls:
     http://juy4e6eicawzdrz7.onion: Hidden Service
-https://search.spaeth.me: {}
 https://search.st8.at: {}
 https://search.stinpriza.org:
   git_url: https://salsa.debian.org/debian/searx
@@ -62,52 +53,30 @@ https://search.stinpriza.org:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://search.trom.tf: {}
 https://search.zdechov.net: {}
-https://searchx.mobi:
-  comments:
-  - Uses Google Analytics for user tracking and analytics
-https://searx.32bitflo.at: {}
-https://searx.alec.ninja: {}
 https://searx.bar: {}
 https://searx.be: {}
 https://searx.bissisoft.com:
   additional_urls:
     http://zbuc3bbzbfdqqo2x46repx2ddajbha6fpsjeeptjhhhhzji3zopxdqyd.onion/: Hidden Service
-https://searx.ch: {}
-https://searx.deepak.pro: {}
 https://searx.devol.it: {}
 https://searx.divided-by-zero.eu:
   additional_urls:
     http://f4qfqajszpx5b7itzxt6mb7kj4ktpgbdq7lq6xaiqyqx6a7de3epptad.onion: Hidden Service
-https://searx.dojocasts.com: {}
 https://searx.dresden.network: {}
-https://searx.elukerio.org: {}
 https://searx.everdot.org:
   comments:
   - Crawls using YaCy
 https://searx.feneas.org: {}
 https://searx.fmac.xyz: {}
-https://searx.foo.li: {}
-https://searx.forked.io: {}
 https://searx.fossencdi.org:
   additional_urls:
     http://searx.cwuzdtzlubq5uual.onion: Hidden Service
 https://searx.gnous.eu: {}
 https://searx.gnu.style: {}
-https://searx.gotrust.de:
-  additional_urls:
-    http://nxhhwbbxc4khvvlw.onion: Hidden Service
-https://searx.guillaumea.fr: {}
 https://searx.hardwired.link: {}
 https://searx.hummel-web.at: {}
 https://searx.info: {}
-https://searx.ir: {}
-https://searx.lambda.li: {}
 https://searx.lavatech.top: {}
-https://searx.lelux.fi: {}
-https://searx.libmail.eu: {}
-https://searx.likkle.monster: {}
-https://searx.lwhr.xyz: {}
-https://searx.lynnesbian.space: {}
 https://searx.mastodontech.de: {}
 https://searx.mha.fi: {}
 https://searx.monicz.pl:
@@ -117,23 +86,13 @@ https://searx.mxchange.org: {}
 https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de: {}
 https://searx.nevrlands.de: {}
-https://searx.nightmare.life: {}
 https://searx.ninja: {}
 https://searx.nixnet.services: {}
-https://searx.nulltime.net:
-  comments:
-  - Running with an incorrect SSL certificate
-  additional_urls:
-    http://searx7gwtu5rh6wr.onion: Hidden Service
-https://searx.olymp.to: {}
 https://searx.openhoofd.nl: {}
-https://searx.openpandora.org: {}
 https://searx.operationtulip.com: {}
 https://searx.org:
   comments:
   - Cloudflare bot protection
-https://searx.ouahpiti.info: {}
-https://searx.privatenet.cf: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://hmfztxt3pfhevucl.onion: Hidden Service
@@ -158,13 +117,11 @@ https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.vitanetworks.link: {}
 https://searx.webheberg.info: {}
-https://searx.win: {}
 https://searx.xkek.net:
   additional_urls:
     http://searx.bsbvtqi5oq2cqzn32zt4cr2f2z2rwots3dq7gmdcnlyqoxko2wx6reqd.onion: Hidden Service
 https://searx.xyz: {}
 https://searx.zackptg5.com: {}
-https://searx.zapashcanon.fr: {}
 https://searx.zecircle.xyz: {}
 https://searxzh.cn: {}
 https://seeks.hsbp.org:
@@ -176,16 +133,13 @@ https://start.paulgo.io: {}
 https://suche.dasnetzundich.de:
   comments:
   - Uses Matomo for user tracking and analytics
-https://suche.mexmail.de: {}
 https://suche.uferwerk.org: {}
 https://swag.pw: {}
 https://sx.fedi.tech: {}
 https://timdor.noip.me/searx: {}
 https://trovu.komun.org: {}
-https://unmonito.red: {}
 https://wtf.roflcopter.fr/searx: {}
 https://www.gruble.de: {}
 https://www.perfectpixel.de/searx: {}
 https://www.searxs.eu: {}
-https://www.searxzh.cn: {}
 https://xeek.com: {}
