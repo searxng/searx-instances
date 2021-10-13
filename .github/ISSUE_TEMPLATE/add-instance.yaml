@@ -1,6 +1,6 @@
 name: Add a new instance
 description: Add a new instance to searx.space
-title: "Add <instance URL>"
+title: "Add https://<instance URL>"
 labels:
   - instance add
   - instance
