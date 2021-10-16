@@ -22,6 +22,7 @@ https://metasearch.nl: {}
 https://nibblehole.com: {}
 https://northboot.xyz: {}
 https://opengo.nl: {}
+https://paulgo.io: {}
 https://privatesearch.app: {}
 https://procurx.pt: {}
 https://recherche.catmargue.org: {}
@@ -132,7 +133,6 @@ https://seeks.hsbp.org:
   - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
-https://start.paulgo.io: {}
 https://suche.dasnetzundich.de:
   comments:
   - Uses Matomo for user tracking and analytics
