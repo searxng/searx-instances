@@ -83,9 +83,6 @@ https://searx.info: {}
 https://searx.lavatech.top: {}
 https://searx.mastodontech.de: {}
 https://searx.mha.fi: {}
-https://searx.monicz.pl:
-  additional_urls:
-    http://upzhip7hatfbsi5xcwyw6n2bpappt3j4gkvwjmyb7qo6urcyhmlekpad.onion: Hidden Service
 https://searx.mxchange.org: {}
 https://searx.nakhan.net: {}
 https://searx.netzspielplatz.de: {}
