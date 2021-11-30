@@ -115,7 +115,9 @@ https://searx.stuehieyr.com: {}
 https://searx.sunless.cloud: {}
 https://searx.theanonymouse.xyz: {}
 https://searx.thegreenwebfoundation.org: {}
-https://searx.tiekoetter.com: {}
+https://searx.tiekoetter.com:
+  additional_urls:
+    http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tk: {}
 https://searx.tux.land: {}
 https://searx.tuxcloud.net: {}
