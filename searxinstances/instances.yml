@@ -146,6 +146,9 @@ https://suche.dasnetzundich.de:
   - Uses Matomo for user tracking and analytics
 https://suche.uferwerk.org: {}
 https://swag.pw: {}
+https://swivro.net:
+  additional_urls:
+    http://sdupg55ie7jpj3urdgyhxzgcv5ube7bq5gzbdtvpa3k44wdlxoeuvpid.onion: Hidden Service
 https://sx.catgirl.cloud: {}
 https://sx.fedi.tech: {}
 https://timdor.noip.me/searx: {}
