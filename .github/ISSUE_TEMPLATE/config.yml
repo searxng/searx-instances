@@ -2,8 +2,8 @@
 # blank_issues_enabled: false
 contact_links:
   - name: Submit feedback about a SearX public instance
-    url: https://github.com/searx/searx/discussions/categories/public-searx-instances-feedback
+    url: https://github.com/searxng/searxng/discussions/categories/public-searx-instances-feedback
     about: Submit your feedback about an existing instance on searx.space
   - name: Report a bug about a SearX public instance
-    url: https://github.com/searx/searx/discussions/categories/public-searx-instances-report-a-bug
+    url: https://github.com/searxng/searxng/discussions/categories/public-searx-instances-report-a-bug
     about: Report a bug or an issue about an existing instance on searx.space
