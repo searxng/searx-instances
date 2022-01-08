@@ -34,7 +34,7 @@ requirements_update = list(map(str.strip, open('requirements-update.txt').readli
 setup(
     name="searxinstances",
     version=find_version("searxinstances", "__version__.py"),
-    description="Searx instances.",
+    description="SearXNG & searx instances.",
     long_description=long_description,
 
     license='GNU Affero General Public License',
@@ -50,8 +50,8 @@ setup(
     url='https://github.com/searxng/searx-instances',
     keywords='searxng',
 
-    author='Alexandre Flament',
-    author_email='alex.andre@al-f.net',
+    author='SearXNG dev team',
+    author_email='contact@searxng.org',
 
     packages=find_namespace_packages(include=['searxinstances', 'searxinstances.*']),
     package_data={
