@@ -48,7 +48,7 @@ body:
       label: Source code URL
       description: |
         If you have modified the source code, please publish it to an URL and make sure that the URL is publicly accessible in your instance's site
-        ( Check your [buildenv](https://docs.searxng.org/dev/makefile.html#make-buildenv) )
+        ( For searx instance, not for SearXNG instance: check your [settings.yml](https://github.com/searx/searx/blob/e88bea53ebf220648685cdb8eff017357728494e/searx/settings.yml#L8) )
         In case of issue, please specify the GIT URL here
     validations:
       required: false
