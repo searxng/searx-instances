@@ -47,11 +47,11 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.6",
     ],
-    url='https://github.com/searx/searx-instances',
+    url='https://github.com/searxng/searx-instances',
     keywords='searx',
 
-    author='Alexandre Flament',
-    author_email='alex.andre@al-f.net',
+    author='SearXNG dev team',
+    author_email='contact@searxng.org',
 
     packages=find_namespace_packages(include=['searxinstances', 'searxinstances.*']),
     package_data={

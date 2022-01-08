@@ -1,8 +1,8 @@
 ## For searx instance operators
 
-* [Create an issue](https://github.com/searx/searx-instances/issues/new/choose) to add / remove / edit a searx instance on https://searx.space/
+* [Create an issue](https://github.com/searxng/searx-instances/issues/new/choose) to add / remove / edit a searx instance on https://searx.space/
 * If you add a new instance, allow the IPs of ```check.searx.space``` to access your instance. It will checks your instance periodically ([source code](https://github.com/searx/searx-stats2)). The results are displayed on https://searx.space/
-* Wait for a reviewer to actually change [searxstats/instances.yml](https://github.com/searx/searx-instances/blob/master/searxinstances/instances.yml)
+* Wait for a reviewer to actually change [searxstats/instances.yml](https://github.com/searxng/searx-instances/blob/master/searxinstances/instances.yml)
 
 ## For reviewers
 
@@ -34,7 +34,7 @@ The tool :
 * once the user quits the editor, the script checks everything is okay, if not it goes back to the editor with the error added at the end of the buffer.
 * if everything is okay, the script modifies the instances.yml file.
 * then it creates a commit.
-* The ```--github-issues``` options reads the [github issues](https://github.com/searx/searx-instances/issues).
+* The ```--github-issues``` options reads the [github issues](https://github.com/searxng/searx-instances/issues).
 
 ---
 
@@ -44,7 +44,7 @@ https://nibblehole.com: {}
 
 # Add https://nibblehole.com
 #
-# Close https://github.com/searx/searx-instances/issues/2
+# Close https://github.com/searxng/searx-instances/issues/2
 # From @dalf
 
 #> The above text is the commit message
