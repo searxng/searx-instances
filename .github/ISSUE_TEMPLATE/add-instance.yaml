@@ -10,7 +10,7 @@ body:
     attributes:
       label: General
       description: |
-        Enter your instance URL in the title above ( For example: `Add https://searx.example.com` )
+        Enter your instance URL in the title above ( For example: `Add https://searxng.example.com` )
 
         Your instance will receive requests from the host `check.searx.space` (the IP addresses of this host may change in the future).
         Currently, if you don't give the right to `check.searx.space` to check your instance, it is not possible to add your instance to the list.
@@ -31,9 +31,9 @@ body:
         * once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
         * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
-        We recommend the usage of [filtron](https://github.com/asciimoo/filtron) for the bot protection or you may also take a look at [antibot-proxy](https://github.com/unixfox/antibot-proxy/).
-        
-        ⚠️ If you have installed [filtron](https://github.com/asciimoo/filtron), we urge you to use the [rules from searx-docker](https://github.com/searx/searx-docker/blob/master/rules.json). Please double check if you are using them.
+        We recommend the usage of [filtron](https://github.com/searxng/filtron) for the bot protection or you may also take a look at [antibot-proxy](https://github.com/unixfox/antibot-proxy/).
+
+        ⚠️ If you have installed [filtron](https://github.com/searxng/filtron), we urge you to use the [rules from searx-docker](https://github.com/searxng/searx-docker/blob/master/rules.json). Please double check if you are using them.
       options:
         - "No, I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google)."
         - "Yes, I have installed filtron (rules.json from searx-docker)."
@@ -48,7 +48,7 @@ body:
       label: Source code URL
       description: |
         If you have modified the source code, please publish it to an URL and make sure that the URL is publicly accessible in your instance's site
-        ( Check your [settings.yml](https://github.com/searx/searx/blob/e88bea53ebf220648685cdb8eff017357728494e/searx/settings.yml#L8) )
+        ( For searx instance, not for SearXNG instance: check your [settings.yml](https://github.com/searx/searx/blob/e88bea53ebf220648685cdb8eff017357728494e/searx/settings.yml#L8) )
         In case of issue, please specify the GIT URL here
     validations:
       required: false
@@ -59,6 +59,6 @@ body:
       label: Comment
       description: |
         If you are using Apache, Nginx, you can use https://ssl-config.mozilla.org to get A+ TLS grade.
-        You can use https://github.com/searx/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ HTML grade.
+        You can use https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ HTML grade.
 
         Optional comment about your instance

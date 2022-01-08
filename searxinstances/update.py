@@ -319,7 +319,7 @@ def get_user_request_class(label_names: list):
 def load_user_request_list_from_github(github_issue_list) -> list:
     user_request_list = []
     with httpx.Client() as client:
-        response = client.get('https://api.github.com/repos/searx/searx-instances/issues?state=open')
+        response = client.get('https://api.github.com/repos/searxng/searx-instances/issues?state=open')
         rjson = response.json()
     for issue in rjson:
         if len(github_issue_list) > 0 and issue.get('number') not in github_issue_list:
