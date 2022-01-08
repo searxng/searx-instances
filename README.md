@@ -1,7 +1,7 @@
 ## For SearXNG instance operators
 
 * [Create an issue](https://github.com/searxng/searx-instances/issues/new/choose) to add / remove / edit a searx instance on https://searx.space/
-* If you add a new instance, allow the IPs of ```check.searx.space``` to access your instance. It will checks your instance periodically ([source code](https://github.com/searxng/searx-stats2)). The results are displayed on https://searx.space/
+* If you add a new instance, allow the IPs of ```check.searx.space``` to access your instance. It will checks your instance periodically ([source code](https://github.com/searxng/searx-space)). The results are displayed on https://searx.space/
 * Wait for a reviewer to actually change [searxstats/instances.yml](https://github.com/searxng/searx-instances/blob/master/searxinstances/instances.yml)
 
 ## For reviewers
