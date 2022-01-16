@@ -11,9 +11,6 @@ https://a.searx.space:
   comments:
   - unstable, under construction
 https://anon.sx: {}
-https://beezboo.com:
-  comments:
-  - Uses Matomo for user tracking and analytics
 https://darmarit.org/searx: {}
 https://dynabyte.ca: {}
 https://engo.mint.lgbt: {}
@@ -25,23 +22,15 @@ https://northboot.xyz:
     http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion: Hidden Service
 https://paulgo.io: {}
 https://procurx.pt: {}
-https://putin.agency: {}
 https://quickso.eu.org: {}
 https://s.zhaocloud.net: {}
-https://search.076.ne.jp: {}
-https://search.activemail.de: {}
-https://search.anonymize.com: {}
 https://search.antonkling.se:
   additional_urls:
     http://z34ambyi6makk6ta7ksog2sljly2ctt2sa3apekb7wkllk72sxecdtad.onion: Hidden Service
 https://search.asynchronousexchange.com: {}
 https://search.biboumail.fr: {}
-https://search.blou.xyz: {}
-https://search.bluelock.org: {}
-https://search.bus-hit.me: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
-https://search.jigsaw-security.com: {}
 https://search.jpope.org: {}
 https://search.mdosch.de:
   additional_urls:
@@ -89,7 +78,6 @@ https://searx.nevrlands.de: {}
 https://searx.ninja: {}
 https://searx.nixnet.services: {}
 https://searx.openhoofd.nl: {}
-https://searx.operationtulip.com: {}
 https://searx.org:
   comments:
   - Cloudflare bot protection
@@ -101,14 +89,12 @@ https://searx.rasp.fr: {}
 https://searx.roughs.ru: {}
 https://searx.ru: {}
 https://searx.run: {}
-https://searx.s1gm4.eu: {}
 https://searx.sadblog.xyz: {}
 https://searx.semipvt.com: {}
 https://searx.slash-dev.de: {}
 https://searx.solusar.de: {}
 https://searx.sp-codes.de: {}
 https://searx.stuehieyr.com: {}
-https://searx.sunless.cloud: {}
 https://searx.theanonymouse.xyz: {}
 https://searx.thegreenwebfoundation.org: {}
 https://searx.tiekoetter.com:
@@ -127,10 +113,6 @@ https://searx.xyz: {}
 https://searx.zackptg5.com: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zecircle.xyz: {}
-https://searxzh.cn: {}
-https://seeks.hsbp.org:
-  comments:
-  - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
 https://serx.cf:
   comments:
   - Use Matomo analytics software
@@ -147,7 +129,5 @@ https://timdor.noip.me/searx: {}
 https://trovu.komun.org: {}
 https://wtf.roflcopter.fr/searx: {}
 https://www.gruble.de: {}
-https://www.perfectpixel.de/searx: {}
-https://www.searxs.eu: {}
 https://www.webrats.xyz: {}
 https://xeek.com: {}
