@@ -131,6 +131,9 @@ https://searxzh.cn: {}
 https://seeks.hsbp.org:
   comments:
   - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
+https://serx.cf:
+  comments:
+  - Use Matomo analytics software
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://suche.dasnetzundich.de:
