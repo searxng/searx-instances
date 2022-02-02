@@ -70,7 +70,6 @@ https://searx.esmailelbob.xyz: {}
 https://searx.everdot.org:
   comments:
   - Crawls using YaCy
-https://searx.feneas.org: {}
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org:
   additional_urls:
