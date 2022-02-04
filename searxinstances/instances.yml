@@ -112,6 +112,7 @@ https://searx.zackptg5.com: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zecircle.xyz: {}
 https://serx.cf:
+  analytics: true
   comments:
   - Use Matomo analytics software
 https://spot.ecloud.global:
