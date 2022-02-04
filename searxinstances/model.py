@@ -61,9 +61,9 @@ class AdditionalUrlList(OrderedDict, yaml.YAMLObject):
 class Instance(yaml.YAMLObject):
 
     yaml_tag = '!Instance'
-    __slots__ = ['comments', 'additional_urls', 'git_url']
+    __slots__ = ['comments', 'additional_urls', 'git_url', 'analytics']
 
-    def __init__(self, comments=None, additional_urls=None, git_url=None):
+    def __init__(self, comments=None, additional_urls=None, git_url=None, analytics=False):
         # type check
         if not isinstance(comments, (list, NoneType)):
             raise ValueError('comments is not a list')
@@ -79,12 +79,14 @@ class Instance(yaml.YAMLObject):
         self.comments = comments
         self.additional_urls = additional_urls
         self.git_url = git_url
+        self.analytics = analytics
 
     def to_json(self):
         return dict([
             ("comments", self.comments),
             ("additional_urls", self.additional_urls),
             ("git_url", self.git_url),
+            ("analytics", self.analytics),
         ])
 
     def __repr__(self):
@@ -99,6 +101,8 @@ class Instance(yaml.YAMLObject):
             output.append(('comments', instance.comments))
         if instance.additional_urls is not None and len(instance.additional_urls) > 0:
             output.append(('additional_urls', instance.additional_urls))
+        if instance.analytics:
+            output.append(('analytics', instance.analytics))
         return dumper.represent_dict(output)
 
     @staticmethod
