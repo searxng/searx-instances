@@ -129,6 +129,7 @@ https://seeks.hsbp.org:
   comments:
   - https://seeks.hsbp.org/cert PGP signed fingerprints of cert
 https://serx.cf:
+  analytics: true
   comments:
   - Use Matomo analytics software
 https://spot.ecloud.global:
