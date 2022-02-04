@@ -61,9 +61,9 @@ class AdditionalUrlList(OrderedDict, yaml.YAMLObject):
 class Instance(yaml.YAMLObject):
 
     yaml_tag = '!Instance'
-    __slots__ = ['comments', 'additional_urls', 'git_url', 'analytics']
+    __slots__ = ['analytics', 'comments', 'additional_urls', 'git_url']
 
-    def __init__(self, comments=None, additional_urls=None, git_url=None, analytics=False):
+    def __init__(self, analytics=False, comments=None, additional_urls=None, git_url=None):
         # type check
         if not isinstance(comments, (list, NoneType)):
             raise ValueError('comments is not a list')
@@ -76,17 +76,17 @@ class Instance(yaml.YAMLObject):
         if additional_urls is None:
             additional_urls = AdditionalUrlList()
         # assign
+        self.analytics = analytics
         self.comments = comments
         self.additional_urls = additional_urls
         self.git_url = git_url
-        self.analytics = analytics
 
     def to_json(self):
         return dict([
+            ("analytics", self.analytics),
             ("comments", self.comments),
             ("additional_urls", self.additional_urls),
             ("git_url", self.git_url),
-            ("analytics", self.analytics),
         ])
 
     def __repr__(self):
@@ -95,14 +95,14 @@ class Instance(yaml.YAMLObject):
     @staticmethod
     def yaml_representer(dumper: yaml.Dumper, instance):
         output = []
+        if instance.analytics:
+            output.append(('analytics', instance.analytics))
         if instance.git_url is not None:
             output.append(('git_url', instance.git_url))
         if instance.comments is not None and len(instance.comments) > 0:
             output.append(('comments', instance.comments))
         if instance.additional_urls is not None and len(instance.additional_urls) > 0:
             output.append(('additional_urls', instance.additional_urls))
-        if instance.analytics:
-            output.append(('analytics', instance.analytics))
         return dumper.represent_dict(output)
 
     @staticmethod
