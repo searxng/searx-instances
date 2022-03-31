@@ -3,7 +3,6 @@ http://ransack.i2p:
   additional_urls:
     http://mqamk4cfykdvhw5kjez2gnvse56gmnqxn7vkvvbuor4k4j2lbbnq.b32.i2p: base32 address
 http://searxbgetrkiwxhdwi6svpgh7eotopqyxhbqiokrwzg7dcte44t36kyd.onion: {}
-http://suche.xyzco456vwisukfg.onion: {}
 http://w5rl6wsd7mzj4bdkbuqvzidet5osdsm5jhg2f7nvfidakfq5exda5wid.onion/:
   comments:
   - run https://github.com/MarcAbonce/searx/tree/onions
