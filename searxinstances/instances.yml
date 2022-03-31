@@ -2,8 +2,6 @@ http://3afisqjw2rxm6z7mmstyt5rx75qfqrgxnkzftknbp2vhipr2nrmrjdyd.onion: {}
 http://ransack.i2p:
   additional_urls:
     http://mqamk4cfykdvhw5kjez2gnvse56gmnqxn7vkvvbuor4k4j2lbbnq.b32.i2p: base32 address
-http://searxbgetrkiwxhdwi6svpgh7eotopqyxhbqiokrwzg7dcte44t36kyd.onion: {}
-http://suche.xyzco456vwisukfg.onion: {}
 http://w5rl6wsd7mzj4bdkbuqvzidet5osdsm5jhg2f7nvfidakfq5exda5wid.onion/:
   comments:
   - run https://github.com/MarcAbonce/searx/tree/onions
@@ -27,9 +25,7 @@ https://search.bus-hit.me: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
 https://search.jpope.org: {}
-https://search.mdosch.de:
-  additional_urls:
-    http://search.4bkxscubgtxwvhpe.onion: Hidden Service
+https://search.mdosch.de: {}
 https://search.neet.works: {}
 https://search.ononoki.org: {}
 https://search.snopyta.org:
@@ -57,9 +53,7 @@ https://searx.everdot.org:
   comments:
   - Crawls using YaCy
 https://searx.fmac.xyz: {}
-https://searx.fossencdi.org:
-  additional_urls:
-    http://searx.cwuzdtzlubq5uual.onion: Hidden Service
+https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
 https://searx.gnu.style: {}
 https://searx.hardwired.link: {}
