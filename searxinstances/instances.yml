@@ -55,9 +55,7 @@ https://searx.everdot.org:
   comments:
   - Crawls using YaCy
 https://searx.fmac.xyz: {}
-https://searx.fossencdi.org:
-  additional_urls:
-    http://searx.cwuzdtzlubq5uual.onion: Hidden Service
+https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
 https://searx.gnu.style: {}
 https://searx.hardwired.link: {}
