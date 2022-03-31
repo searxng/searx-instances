@@ -52,9 +52,6 @@ https://searx.divided-by-zero.eu:
 https://searx.dresden.network: {}
 https://searx.ebnar.xyz: {}
 https://searx.esmailelbob.xyz: {}
-https://searx.everdot.org:
-  comments:
-  - Crawls using YaCy
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
