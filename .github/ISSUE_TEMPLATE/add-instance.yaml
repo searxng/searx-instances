@@ -38,7 +38,8 @@ body:
         - "No, I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google)."
         - "Yes, I have installed filtron (rules.json from searx-docker)."
         - "Yes, I have installed filtron (other rules)."
-        - "Yes, I have installed antibot-proxy or another bot protection."
+        - "Yes, I have enabled the limiter plugin built in SearXNG."
+        - "Yes, I have installed another bot protection."
     validations:
       required: true
 
