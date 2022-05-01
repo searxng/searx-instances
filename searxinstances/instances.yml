@@ -101,10 +101,6 @@ https://searx.xyz: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zecircle.xyz: {}
 https://searxng.zackptg5.com: {}
-https://serx.cf:
-  analytics: true
-  comments:
-  - Use Matomo analytics software
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://suche.dasnetzundich.de:
