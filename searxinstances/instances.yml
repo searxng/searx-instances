@@ -28,7 +28,9 @@ https://search.ethibox.fr: {}
 https://search.jpope.org: {}
 https://search.mdosch.de: {}
 https://search.neet.works: {}
-https://search.ononoki.org: {}
+https://search.ononoki.org:
+  additional_urls:
+    http://fpamcnxokg4lzz6b2y7jdwoujmnixfxrh7ptddehctqzoptn4wpdvjid.onion: Hidden Service
 https://search.privacyguides.net: {}
 https://search.rabbit-company.com: {}
 https://search.roombob.cat: {}
