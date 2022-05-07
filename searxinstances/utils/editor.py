@@ -67,9 +67,9 @@ def get_editor_args(editor):
 def get_default_editors():
     sys_platform = sys.platform
 
-    for platform in EDITORS:
+    for platform, editor in EDITORS.items():
         if sys_platform.startswith(platform):
-            return EDITORS[platform]
+            return editor
 
     return COMMON_EDITORS
 
