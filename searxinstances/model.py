@@ -228,7 +228,7 @@ def yaml_load(content: str) -> InstanceList:
 
 
 def load(filename: str = FILENAME) -> InstanceList:
-    with open(filename, 'r') as input_file:
+    with open(filename, 'r', encoding='utf-8') as input_file:
         instance_list = yaml.load(input_file, Loader=ILLoader)
         assert isinstance(instance_list, InstanceList)
         return instance_list
@@ -236,7 +236,7 @@ def load(filename: str = FILENAME) -> InstanceList:
 
 def save(instance_list: InstanceList, filename: str = FILENAME):
     output_content = yaml_dump(instance_list)
-    with open(filename, 'w') as output_file:
+    with open(filename, 'w', encoding='utf-8') as output_file:
         output_file.write(output_content)
 
 

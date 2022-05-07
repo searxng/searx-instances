@@ -1,7 +1,7 @@
 ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 install:
-	python -m pip install --upgrade pip
+	python -m pip install --upgrade pip wheel setuptools
 	pip install -r requirements.txt
 
 install-update:

@@ -9,12 +9,13 @@ def run_instance_diff(content_after: str):
     with tempfile.NamedTemporaryFile(delete=False) as tmpfile:
         tmpfile.write(content_after)
         tmpfile.flush()
-    subprocess.Popen(['diff', tmpfile.name, model.FILENAME])
+    with subprocess.Popen(['diff', tmpfile.name, model.FILENAME]):
+        pass
 
 
 def check():
     print(f'Checking {model.FILENAME}')
-    with open(model.FILENAME, 'r') as input_file:
+    with open(model.FILENAME, 'r', encoding='utf-8') as input_file:
         content = input_file.read()
     instance_list = model.yaml_load(content)
     content_after = model.yaml_dump(instance_list)
