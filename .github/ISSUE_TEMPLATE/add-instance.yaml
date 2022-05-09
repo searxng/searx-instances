@@ -33,7 +33,7 @@ body:
 
         We recommend the usage of [filtron](https://github.com/searxng/filtron) for the bot protection or you may also take a look at [antibot-proxy](https://github.com/unixfox/antibot-proxy/).
 
-        ⚠️ If you have installed [filtron](https://github.com/searxng/filtron), we urge you to use the [rules from searx-docker](https://github.com/searxng/searx-docker/blob/master/rules.json). Please double check if you are using them.
+        ⚠️ If you have installed [filtron](https://github.com/searxng/filtron), we urge you to use the [rules from searx-docker](https://github.com/searx/searx-docker/blob/master/rules.json). Please double check if you are using them.
       options:
         - "No, I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google)."
         - "Yes, I have installed filtron (rules.json from searx-docker)."
