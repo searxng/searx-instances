@@ -33,7 +33,7 @@ body:
         * once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
         * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
-        We recommend the usage of [filtron](https://github.com/searxng/filtron) for the bot protection or you may also take a look at [antibot-proxy](https://github.com/unixfox/antibot-proxy/).
+        We recommend the usage of [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) if you are using SearXNG or [filtron](https://github.com/searxng/filtron) if you are using SearX.
 
         ⚠️ If you have installed [filtron](https://github.com/searxng/filtron), we urge you to use the [rules from searx-docker](https://github.com/searx/searx-docker/blob/master/rules.json). Please double check if you are using them.
       options:
