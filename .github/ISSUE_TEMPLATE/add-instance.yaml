@@ -19,6 +19,8 @@ body:
         required: true
       - label: "I give the right to check.searx.space to check my instance (every 3 hours for the response times, every 24 hours for the other tests)."
         required: true
+      - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
+        required: true
 
   - type: dropdown
     id: version
