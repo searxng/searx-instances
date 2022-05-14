@@ -80,6 +80,7 @@ https://searx.org:
   comments:
   - Cloudflare bot protection
 https://searx.orion-hub.fr: {}
+https://searx.ppeb.me: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://rq2w52kyrif3xpfihkgjnhqm3a5aqhoikpv72z3drpjglfzc2wr5z4yd.onion: Hidden Service
