@@ -112,7 +112,9 @@ https://searx.xyz: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zecircle.xyz: {}
 https://searxng.zackptg5.com: {}
-https://serx.ml: {}
+https://serx.ml:
+  comments:
+  - uses google recaptcha
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://suche.dasnetzundich.de:
