@@ -21,6 +21,8 @@ body:
         required: true
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
+      - label: "I guarantee to keep an uptime per month of my instance at **minimum 90%**. Your instance will be removed if you don't respect this rule."
+        required: true
 
   - type: dropdown
     id: version
