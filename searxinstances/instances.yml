@@ -34,6 +34,9 @@ https://search.ononoki.org:
 https://search.privacyguides.net: {}
 https://search.rabbit-company.com: {}
 https://search.roombob.cat: {}
+https://search.sapti.me:
+  additional_urls:
+    http://gbat2pbpg7ys3fi3pbp64667tt5x66mg45xok35bxdw7v55brm7a27yd.onion: Hidden Service
 https://search.snopyta.org:
   additional_urls:
     http://yra4tke2pwcnatxjkufpw6kvebu3h3ti2jca2lcdpgx3mpwol326lzid.onion: Hidden Service
