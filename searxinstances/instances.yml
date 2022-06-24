@@ -118,6 +118,9 @@ https://searx.xkek.net:
 https://searx.xyz: {}
 https://searx.youshitsune.me: {}
 https://searx.zapashcanon.fr: {}
+https://searx.zcyph.cc:
+  additional_urls:
+    http://4tz2vlnwk2apf2rpinkqv6uxvfgo5xjx6vl5vp7lxgaiooumetjpstqd.onion: Hidden Service
 https://searxng.au/searx: {}
 https://searxng.ir: {}
 https://searxng.tordenskjold.de: {}
