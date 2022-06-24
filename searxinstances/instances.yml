@@ -125,9 +125,7 @@ https://searxng.au/searx: {}
 https://searxng.ir: {}
 https://searxng.tordenskjold.de: {}
 https://searxng.zackptg5.com: {}
-https://serx.ml:
-  comments:
-  - uses google recaptcha
+https://serx.ml: {}
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://suche.dasnetzundich.de:
