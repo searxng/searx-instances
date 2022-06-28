@@ -20,14 +20,10 @@ https://opnxng.com: {}
 https://paulgo.io: {}
 https://procurx.pt: {}
 https://s.zhaocloud.net: {}
-https://search.antonkling.se:
-  additional_urls:
-    http://z34ambyi6makk6ta7ksog2sljly2ctt2sa3apekb7wkllk72sxecdtad.onion: Hidden Service
 https://search.ashs.club:
   additional_urls:
     http://search3q76rqpektbrchlf2rjq4fnbxzeov6rljdywg3nwbunpgd7bid.onion: Hidden Service
 https://search.bus-hit.me: {}
-https://search.chemicals-in-the-water.eu: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
 https://search.jpope.org: {}
@@ -38,7 +34,6 @@ https://search.ononoki.org:
     http://searchoorwalty5a2ailrboa2asqyts2u7bdoqwnjefpgjobpvtzn4qd.onion/: Hidden Service
 https://search.privacyguides.net: {}
 https://search.rabbit-company.com: {}
-https://search.roombob.cat: {}
 https://search.sapti.me:
   additional_urls:
     http://gbat2pbpg7ys3fi3pbp64667tt5x66mg45xok35bxdw7v55brm7a27yd.onion: Hidden Service
@@ -54,7 +49,6 @@ https://search.vojkovic.xyz: {}
 https://search.zzls.xyz:
   additional_urls:
     http://searxdr3pqz4nydgnqocsia2xbywptxbkympa2emn7zlgggrir4bkfad.onion: Hidden Service
-https://searx.albony.xyz: {}
 https://searx.be: {}
 https://searx.becomesovran.com: {}
 https://searx.bissisoft.com:
@@ -90,7 +84,6 @@ https://searx.org:
   comments:
   - Cloudflare bot protection
 https://searx.orion-hub.fr: {}
-https://searx.ppeb.me: {}
 https://searx.priv.pw:
   additional_urls:
     http://searx.privpw3tndpkw6pnp3g727zfgfdzbu3k6a7chv226s3xymv2p4eiuqyd.onion: Hidden Service
@@ -104,7 +97,6 @@ https://searx.run: {}
 https://searx.semipvt.com: {}
 https://searx.sethforprivacy.com: {}
 https://searx.sev.monster: {}
-https://searx.solusar.de: {}
 https://searx.sp-codes.de: {}
 https://searx.stuehieyr.com: {}
 https://searx.tiekoetter.com:
@@ -113,9 +105,6 @@ https://searx.tiekoetter.com:
 https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.webheberg.info: {}
-https://searx.xkek.net:
-  additional_urls:
-    http://searx.bsbvtqi5oq2cqzn32zt4cr2f2z2rwots3dq7gmdcnlyqoxko2wx6reqd.onion: Hidden Service
 https://searx.xyz: {}
 https://searx.youshitsune.me: {}
 https://searx.zapashcanon.fr: {}
