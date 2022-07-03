@@ -126,6 +126,7 @@ https://searxng.zackptg5.com: {}
 https://serx.ml: {}
 https://spot.ecloud.global:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
+https://srx.cosmohub.io: {}
 https://suche.dasnetzundich.de:
   comments:
   - Uses Matomo for user tracking and analytics
