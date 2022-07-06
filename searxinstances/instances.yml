@@ -73,6 +73,9 @@ https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
 https://searx.gnu.style: {}
 https://searx.josie.lol: {}
+https://searx.kavin.rocks:
+  additional_urls:
+    http://searxubx2oo7bgt3zff2kx2kt665hdnfllhtemniyw5s3kvyd4rh7oqd.onion/: Hidden Service
 https://searx.kujonello.cf: {}
 https://searx.loafland.xyz: {}
 https://searx.mastodontech.de: {}
