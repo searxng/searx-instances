@@ -1,2 +1,2 @@
-httpx==0.22.0
+httpx==0.23.0
 GitPython==3.1.27
