@@ -6,32 +6,59 @@ labels:
   - instance
 
 body:
-  - type: checkboxes
+  - type: markdown
     attributes:
-      label: General
-      description: |
+      value: |
+        ### General
+
         Enter your instance URL in the title above ( For example: `Add https://searxng.example.com` )
 
         Your instance will receive requests from the host `check.searx.space` (the IP addresses of this host may change in the future).
         Currently, if you don't give the right to `check.searx.space` to check your instance, it is not possible to add your instance to the list.
+
+  - type: checkboxes
+    attributes:
+      label: Requirements
+      description: |
+        If you don't respect all the requirements your instance can't be added.
+        And if later after we add your instance, we found out that your instance fail to respect all requirements, we will remove it.
       options:
       - label: "It is my instance."
         required: true
-      - label: "I give the right to check.searx.space to check my instance (every 3 hours for the response times, every 24 hours for the other tests)."
+      - label: "I give the right to `check.searx.space` to check my instance (every 3 hours for the response times, every 24 hours for the other tests)."
+        required: true
+      - label: "I acknowledge that managing a public instance is not an easy task and require spending time to keep the instance in good health. E.g. look after your instance by using a monitoring system."
+        required: true
+      - label: "I guarantee to keep an uptime per month of my instance at **minimum 90%**. Please ask for a removal of your instance if there is a planned long downtime."
+        required: true
+      - label: "I do not track the users of my instance with any analytics or tracking software."
         required: true
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
-      - label: "I guarantee to keep an uptime per month of my instance at **minimum 90%**. Your instance will be removed if you don't respect this rule."
-        required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Recommendations for your instance
+
+        - Try to not use Cloudflare or any other commercial solution that analyze the HTTP traffic between the user and the server.
+          It's bad for the privacy because the provider can see all the HTTP traffic between the users and your server.
+          Prefer using [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) for SearxNG or [filtron](https://github.com/searxng/filtron) for SearX.
+        - Don't block JavaScript users with CAPTCHA that only work with JavaScript, page that verify the user with JavaScript and so on.
+        - Try to harden the TLS security of your server by getting an A+ TLS grade on https://cryptcheck.fr.
+          You can use https://ssl-config.mozilla.org to get A+ TLS grade.
+        - Try to harden the security of your users when they use your instance by getting an A+ CSP grade on https://observatory.mozilla.org.
+          Look into https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ CSP grade.
+        - Enable the parameter `use_mobile_ui` in the `settings.yml` file for the Google engine. This will avoid any future rate limit errors from Google.
 
   - type: dropdown
     id: version
     attributes:
       label: Bot protection
       description: |
-        Do you have installed a bot protection ?
+        Did you install a bot protection ?
 
-        Be sure to have configured a bot protection:
+        Be sure to configure a bot protection:
         * once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
         * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
@@ -63,7 +90,4 @@ body:
     attributes:
       label: Comment
       description: |
-        If you are using Apache, Nginx, you can use https://ssl-config.mozilla.org to get A+ TLS grade.
-        You can use https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ HTML grade.
-
-        Optional comment about your instance
+        Optional comments about your instance.
