@@ -19,9 +19,6 @@ https://northboot.xyz:
 https://opnxng.com: {}
 https://paulgo.io: {}
 https://priv.au: {}
-https://private-searx.ml:
-  additional_urls:
-    http://x5gdjh6t7kb4yubpufhtc3l3df2acev3emxdasd5vyuyoon5rzf5zkyd.onion: Hidden Service
 https://privatus.live: {}
 https://s.frlt.one: {}
 https://s.zhaocloud.net: {}
