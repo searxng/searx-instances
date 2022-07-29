@@ -22,7 +22,9 @@ https://priv.au: {}
 https://privatus.live: {}
 https://s.frlt.one: {}
 https://s.zhaocloud.net: {}
-https://saber.tk: {}
+https://saber.tk:
+  additional_urls:
+    http://b6sxmon57qza6dt36li7huabie5ntrvjr4q5rc2vvbn4hqvzd4phrvyd.onion: Hidden Service
 https://search.affusio.com: {}
 https://search.ashs.club:
   additional_urls:
