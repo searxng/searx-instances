@@ -29,7 +29,7 @@ body:
         required: true
       - label: "I acknowledge that managing a public instance is not an easy task and require spending time to keep the instance in good health. E.g. look after your instance by using a monitoring system."
         required: true
-      - label: "I guarantee to keep an uptime per month of my instance at **minimum 90%**. Please ask for a removal of your instance if there is a planned long downtime or notifying us [here](https://github.com/searxng/searx-instances/discussions/categories/report-instance-downtime) for a short downtime."
+      - label: "I guarantee to keep an uptime per month of my instance at **minimum 90%**. Please ask for a removal of your instance if there is a planned long downtime or notify us [here](https://github.com/searxng/searx-instances/discussions/categories/report-instance-downtime) for a short downtime."
         required: true
       - label: "I do not track the users of my instance with any analytics or tracking software."
         required: true
