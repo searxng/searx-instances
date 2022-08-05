@@ -73,7 +73,9 @@ https://searx.divided-by-zero.eu:
 https://searx.dresden.network: {}
 https://searx.ebnar.xyz: {}
 https://searx.ericaftereric.top: {}
-https://searx.esmailelbob.xyz: {}
+https://searx.esmailelbob.xyz:
+  additional_urls:
+    http://searx.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion: Hidden Service
 https://searx.fi: {}
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
