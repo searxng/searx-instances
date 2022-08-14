@@ -6,6 +6,8 @@
 
 ## For reviewers
 
+### Add a new instance to the public list
+
 * create a virtualenv, and then install `searxinstances`:
 
 ```python -m pip install .[update]```
@@ -55,3 +57,6 @@ https://nibblehole.com: {}
 ```
 
 Here is it possible to modify the yaml, the commit message and validate or delete the whole buffer to cancel.
+
+### Add a new instance to be tracked for their uptime without adding it on the public list
+Add the website on https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml
