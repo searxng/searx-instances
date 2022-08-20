@@ -142,6 +142,9 @@ https://suche.tromdienste.de: {}
 https://suche.uferwerk.org: {}
 https://sx.catgirl.cloud: {}
 https://timdor.noip.me/searx: {}
+https://trydex.tk/searxng:
+  comments:
+  - Direct connection to icons.duckduckgo.com
 https://wtf.roflcopter.fr/searx: {}
 https://www.gruble.de: {}
 https://www.higgssearch.com: {}
