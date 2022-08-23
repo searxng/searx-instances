@@ -75,7 +75,9 @@ https://searx.ericaftereric.top: {}
 https://searx.esmailelbob.xyz:
   additional_urls:
     http://searx.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion: Hidden Service
-https://searx.fi: {}
+https://searx.fi:
+  additional_urls:
+    http://searxfilowxokbogygrigir4wqxfxqzuxofxgdon7dg6rsii4yxzytyd.onion: Hidden Service
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
