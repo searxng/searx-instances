@@ -132,7 +132,9 @@ https://searx.zcyph.cc:
     http://4tz2vlnwk2apf2rpinkqv6uxvfgo5xjx6vl5vp7lxgaiooumetjpstqd.onion: Hidden Service
 https://searxng.au/searx: {}
 https://searxng.ir: {}
-https://searxng.nicfab.it: {}
+https://searxng.nicfab.it:
+  additional_urls:
+    http://zpqi3eorbszyks36k6jsicg64wm6el7fom4o2ds3hqqcqcapfin3qfid.onion: Hidden Service
 https://searxng.tordenskjold.de: {}
 https://searxng.zackptg5.com: {}
 https://serx.ml: {}
