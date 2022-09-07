@@ -19,7 +19,9 @@ https://northboot.xyz:
 https://notsearch.uk: {}
 https://opnxng.com: {}
 https://paulgo.io: {}
-https://priv.au: {}
+https://priv.au:
+  additional_urls:
+    http://privateoz3u5utrimal2edr56j3r5caakektxxgixigdkycuxigvquid.onion: Hidden Service
 https://privatus.live: {}
 https://s.frlt.one: {}
 https://s.zhaocloud.net: {}
