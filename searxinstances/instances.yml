@@ -31,7 +31,6 @@ https://saber.tk:
 https://search.0relay.com: {}
 https://search.affusio.com: {}
 https://search.bus-hit.me: {}
-https://search.chemicals-in-the-water.eu: {}
 https://search.cronobox.one: {}
 https://search.disroot.org: {}
 https://search.ethibox.fr: {}
@@ -122,9 +121,6 @@ https://searx.slipfox.xyz/searx:
     http://fub6vgedgeadlu3ctskrpkcqjruh76tckwtj5swfhyblgml2tzgzckqd.onion/searx: Hidden Service
 https://searx.sp-codes.de: {}
 https://searx.stuehieyr.com: {}
-https://searx.tiekoetter.com:
-  additional_urls:
-    http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.vanwa.tech: {}
@@ -139,7 +135,6 @@ https://searxng.ir: {}
 https://searxng.nicfab.it:
   additional_urls:
     http://zpqi3eorbszyks36k6jsicg64wm6el7fom4o2ds3hqqcqcapfin3qfid.onion: Hidden Service
-https://searxng.tordenskjold.de: {}
 https://searxng.zackptg5.com: {}
 https://serx.ml: {}
 https://sh0.it: {}
