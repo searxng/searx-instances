@@ -51,7 +51,9 @@ https://search.rowie.at: {}
 https://search.sapti.me:
   additional_urls:
     http://gbat2pbpg7ys3fi3pbp64667tt5x66mg45xok35bxdw7v55brm7a27yd.onion: Hidden Service
-https://search.serginho.dev: {}
+https://search.serginho.dev:
+  additional_urls:
+    http://b2c7fvbhnfvwnl6oh2tydhzfx4i37kmmrycq42heqbbe7wovq3uzenid.onion: Hidden Service
 https://search.smnz.de: {}
 https://search.snopyta.org:
   additional_urls:
