@@ -153,9 +153,6 @@ https://soek.allesbeste.com: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://srx.cosmohub.io: {}
-https://suche.dasnetzundich.de:
-  comments:
-  - Uses Matomo for user tracking and analytics
 https://suche.tromdienste.de: {}
 https://swag.pw: {}
 https://sx.catgirl.cloud: {}
