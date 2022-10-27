@@ -50,6 +50,7 @@ body:
         - Try to harden the security of your users when they use your instance by getting an A+ CSP grade on https://observatory.mozilla.org.
           Look into https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ CSP grade.
         - Enable the parameter `use_mobile_ui` in the `settings.yml` file for the Google engine. This will avoid any future rate limit errors from Google.
+        - Configure IPv6 on your server, if your provider supports it please enable it. The future of the internet will thank you, see [why here](https://old.reddit.com/r/explainlikeimfive/comments/1k45y7/eli5_what_is_ipv6_and_why_is_it_so_important/).
 
   - type: dropdown
     id: version
