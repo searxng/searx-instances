@@ -35,14 +35,17 @@ body:
         required: true
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
+      - label: "I control the final webserver that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: PaaS, managed HTTP load balancers (e.g. AWS ALB), Cloudflare, shared Web hosting."
+        required: true
 
   - type: markdown
     attributes:
       value: |
         ### Recommendations for your instance
 
-        - Try to not use Cloudflare or any other commercial solution that analyze the HTTP traffic between the user and the server.
-          It's bad for the privacy because the provider can see all the HTTP traffic between the users and your server.
+        - Do not use Cloudflare or any other commercial solution that analyze the HTTP traffic between the user and the server.
+          It's forbidden because you are not in control of the final webserver.
+          Also, it's bad for the privacy because the provider can see all the HTTP traffic between the users and your server.
           Prefer using [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) for SearxNG or [filtron](https://github.com/searxng/filtron) for SearX.
         - Don't block JavaScript users with CAPTCHA that only work with JavaScript, page that verify the user with JavaScript and so on.
         - Try to harden the TLS security of your server by getting an A+ TLS grade on https://cryptcheck.fr.
