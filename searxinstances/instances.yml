@@ -140,7 +140,6 @@ https://searx.zapashcanon.fr: {}
 https://searx.zcyph.cc:
   additional_urls:
     http://4tz2vlnwk2apf2rpinkqv6uxvfgo5xjx6vl5vp7lxgaiooumetjpstqd.onion: Hidden Service
-https://searxng.dupa.edu.pl: {}
 https://searxng.ir: {}
 https://searxng.nicfab.eu:
   additional_urls:
