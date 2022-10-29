@@ -131,6 +131,7 @@ https://searx.tyil.nl: {}
 https://searx.vanwa.tech: {}
 https://searx.webheberg.info: {}
 https://searx.win: {}
+https://searx.work: {}
 https://searx.xyz: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zcyph.cc:
@@ -141,7 +142,6 @@ https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
 https://searxng.zackptg5.com: {}
-https://serx.ml: {}
 https://sh0.it: {}
 https://soek.allesbeste.com: {}
 https://spot.murena.io:
