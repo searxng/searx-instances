@@ -23,7 +23,7 @@ body:
         If you don't respect all the requirements your instance can't be added.
         And if later after we add your instance, we found out that your instance fail to respect all requirements, we will remove it.
       options:
-      - label: "It is my instance."
+      - label: "It is my instance. I bought the domain myself and I own this domain. Free domains (e.g. Freenom) and shared domains (e.g. noip.com) are not allowed."
         required: true
       - label: "I give the right to `check.searx.space` to check my instance (every 3 hours for the response times, every 24 hours for the other tests)."
         required: true
