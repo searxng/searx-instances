@@ -107,9 +107,6 @@ https://searx.namejeff.xyz: {}
 https://searx.netzspielplatz.de: {}
 https://searx.nixnet.services: {}
 https://searx.oakleycord.dev: {}
-https://searx.org:
-  comments:
-  - Cloudflare bot protection
 https://searx.orion-hub.fr: {}
 https://searx.priv.pw:
   additional_urls:
@@ -119,7 +116,6 @@ https://searx.prvcy.eu:
     http://rq2w52kyrif3xpfihkgjnhqm3a5aqhoikpv72z3drpjglfzc2wr5z4yd.onion: Hidden Service
 https://searx.rimkus.it: {}
 https://searx.ru: {}
-https://searx.run: {}
 https://searx.semipvt.com: {}
 https://searx.sethforprivacy.com: {}
 https://searx.sev.monster: {}
