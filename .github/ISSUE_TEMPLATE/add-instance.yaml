@@ -35,7 +35,7 @@ body:
         required: true
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
-      - label: "I control the final webserver that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: PaaS, managed (hosting provider controlled) HTTP(S) load balancer (e.g. AWS ALB), Cloudflare, shared Web hosting. TCP load balancer is fine."
+      - label: "I control the final webserver (software) that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: PaaS, managed (hosting provider controlled) HTTP(S) load balancer (e.g. AWS ALB), Cloudflare, shared Web hosting. TCP load balancer is fine."
         required: true
 
   - type: markdown
