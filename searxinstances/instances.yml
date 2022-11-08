@@ -56,9 +56,6 @@ https://search.serginho.dev:
   additional_urls:
     http://b2c7fvbhnfvwnl6oh2tydhzfx4i37kmmrycq42heqbbe7wovq3uzenid.onion: Hidden Service
 https://search.smnz.de: {}
-https://search.snopyta.org:
-  additional_urls:
-    http://yra4tke2pwcnatxjkufpw6kvebu3h3ti2jca2lcdpgx3mpwol326lzid.onion: Hidden Service
 https://search.stinpriza.org:
   git_url: https://salsa.debian.org/debian/searx
   additional_urls:
