@@ -145,7 +145,6 @@ https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
 https://sh0.it: {}
-https://soek.allesbeste.com: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://srx.cosmohub.io: {}
