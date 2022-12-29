@@ -30,7 +30,9 @@ https://s.frlt.one: {}
 https://s.trung.fun: {}
 https://s.zhaocloud.net: {}
 https://search.0relay.com: {}
-https://search.0xgingi.com: {}
+https://search.0xgingi.com:
+  additional_urls:
+    http://searxyqdegtqksicnwpxa24ipnb2ylmp6iutnnwtazbhup4dit4eeyqd.onion: Hidden Service
 https://search.affusio.com: {}
 https://search.bus-hit.me: {}
 https://search.charleseroop.com: {}
