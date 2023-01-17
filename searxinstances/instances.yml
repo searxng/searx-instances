@@ -12,7 +12,6 @@ https://dynabyte.ca: {}
 https://etsi.me: {}
 https://gsch.eu: {}
 https://intelwinds.com: {}
-https://jackgoss.xyz: {}
 https://jsearch.pw: {}
 https://northboot.xyz:
   additional_urls:
@@ -50,7 +49,6 @@ https://search.ononoki.org:
   additional_urls:
     http://searchvrzxoqa4k76duqh4wtzpr553hfl53qpytclxf7zci53lwklfyd.onion: Hidden Service
 https://search.privacyguides.net: {}
-https://search.projectsegfau.lt: {}
 https://search.rabbit-company.com: {}
 https://search.rhscz.eu: {}
 https://search.rowie.at: {}
@@ -104,7 +102,6 @@ https://searx.mha.fi:
   additional_urls:
     http://searx.micohauwkjbyw5meacrb4ipicwvwg4xtzl7y7viv53kig2mdcsvwkyyd.onion: Hidden Service
 https://searx.mxchange.org: {}
-https://searx.nakhan.net: {}
 https://searx.namejeff.xyz: {}
 https://searx.netzspielplatz.de: {}
 https://searx.nixnet.services: {}
@@ -143,14 +140,12 @@ https://searxng.fingerbib.xyz: {}
 https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
-https://sh0.it: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://srx.cosmohub.io: {}
 https://suche.tromdienste.de: {}
 https://swag.pw: {}
 https://sx.catgirl.cloud: {}
-https://sx.fukt.lol: {}
 https://www.gruble.de: {}
 https://www.jabber-germany.de/searx: {}
 https://xo.wtf: {}
