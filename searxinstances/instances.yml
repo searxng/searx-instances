@@ -68,7 +68,6 @@ https://search.suenram.us: {}
 https://search.trom.tf: {}
 https://search.unlocked.link: {}
 https://search.us.projectsegfau.lt: {}
-https://search.uspersec.com: {}
 https://search.zzls.xyz:
   additional_urls:
     http://searxdr3pqz4nydgnqocsia2xbywptxbkympa2emn7zlgggrir4bkfad.onion: Hidden Service
@@ -124,7 +123,6 @@ https://searx.slipfox.xyz/searx:
   additional_urls:
     http://fub6vgedgeadlu3ctskrpkcqjruh76tckwtj5swfhyblgml2tzgzckqd.onion/searx: Hidden Service
 https://searx.sp-codes.de: {}
-https://searx.stuehieyr.com: {}
 https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
