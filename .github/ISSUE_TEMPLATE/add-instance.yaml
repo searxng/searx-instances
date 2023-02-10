@@ -18,7 +18,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: Requirements
+      label: Requirements (make sure to read all of them)
       description: |
         If you don't respect all the requirements your instance can't be added.
         And if later after we add your instance, we found out that your instance fail to respect all requirements, we will remove it.
