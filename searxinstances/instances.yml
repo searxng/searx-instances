@@ -137,6 +137,7 @@ https://searxng.fingerbib.xyz: {}
 https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
+https://searxng.tordenskjold.de: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://srx.cosmohub.io: {}
