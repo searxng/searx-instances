@@ -88,9 +88,6 @@ https://searx.ericaftereric.top: {}
 https://searx.esmailelbob.xyz:
   additional_urls:
     http://searx.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion: Hidden Service
-https://searx.fi:
-  additional_urls:
-    http://searxfilowxokbogygrigir4wqxfxqzuxofxgdon7dg6rsii4yxzytyd.onion: Hidden Service
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
 https://searx.gnous.eu: {}
@@ -133,7 +130,6 @@ https://searx.zapashcanon.fr: {}
 https://searxng.au: {}
 https://searxng.bandarawela.net: {}
 https://searxng.diadz.de: {}
-https://searxng.fingerbib.xyz: {}
 https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
