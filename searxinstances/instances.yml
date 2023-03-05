@@ -11,7 +11,6 @@ https://darmarit.org/searx: {}
 https://dynabyte.ca: {}
 https://etsi.me: {}
 https://freesearch.club: {}
-https://intelwinds.com: {}
 https://jsearch.pw: {}
 https://myprivatesrx.us: {}
 https://northboot.xyz:
@@ -28,7 +27,6 @@ https://privatus.live: {}
 https://s.frlt.one: {}
 https://s.trung.fun: {}
 https://s.zhaocloud.net: {}
-https://search.0relay.com: {}
 https://search.0xgingi.com:
   additional_urls:
     http://searxyqdegtqksicnwpxa24ipnb2ylmp6iutnnwtazbhup4dit4eeyqd.onion: Hidden Service
@@ -68,7 +66,6 @@ https://search.stinpriza.org:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://search.suenram.us: {}
 https://search.trom.tf: {}
-https://search.unlocked.link: {}
 https://search.us.projectsegfau.lt: {}
 https://search.zzls.xyz:
   additional_urls:
