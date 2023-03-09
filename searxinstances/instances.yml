@@ -121,6 +121,9 @@ https://searx.sp-codes.de: {}
 https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
+https://searx.thefloatinglab.world:
+  additional_urls:
+    http://iziatwmtwhrp2kjm3tkrurj3b25qjhznleztdwqc6jgoxmxfvkmh3mid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
 https://searx.tyil.nl: {}
 https://searx.webheberg.info: {}
