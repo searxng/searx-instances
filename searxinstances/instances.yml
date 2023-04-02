@@ -114,9 +114,6 @@ https://searx.ru: {}
 https://searx.semipvt.com: {}
 https://searx.sev.monster: {}
 https://searx.si: {}
-https://searx.slipfox.xyz/searx:
-  additional_urls:
-    http://fub6vgedgeadlu3ctskrpkcqjruh76tckwtj5swfhyblgml2tzgzckqd.onion/searx: Hidden Service
 https://searx.sp-codes.de: {}
 https://searx.thefloatinglab.world:
   additional_urls:
