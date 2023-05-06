@@ -55,10 +55,6 @@ https://search.sapti.me:
   additional_urls:
     http://gbat2pbpg7ys3fi3pbp64667tt5x66mg45xok35bxdw7v55brm7a27yd.onion: Hidden Service
 https://search.smnz.de: {}
-https://search.stinpriza.org:
-  git_url: https://salsa.debian.org/debian/searx
-  additional_urls:
-    http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
 https://search.trom.tf: {}
 https://search.us.projectsegfau.lt: {}
 https://search.whateveritworks.org: {}
@@ -77,29 +73,23 @@ https://searx.divided-by-zero.eu:
   additional_urls:
     http://f4qfqajszpx5b7itzxt6mb7kj4ktpgbdq7lq6xaiqyqx6a7de3epptad.onion: Hidden Service
 https://searx.doofpot.nl: {}
-https://searx.dresden.network: {}
 https://searx.ericaftereric.top: {}
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
 https://searx.headpat.exchange: {}
 https://searx.juancord.xyz: {}
 https://searx.kutay.dev: {}
-https://searx.mastodontech.de: {}
 https://searx.mha.fi:
   additional_urls:
     http://searx.micohauwkjbyw5meacrb4ipicwvwg4xtzl7y7viv53kig2mdcsvwkyyd.onion: Hidden Service
-https://searx.mxchange.org: {}
 https://searx.namejeff.xyz: {}
 https://searx.netzspielplatz.de: {}
-https://searx.nixnet.services: {}
 https://searx.oakleycord.dev: {}
 https://searx.ox2.fr: {}
 https://searx.perennialte.ch: {}
 https://searx.prvcy.eu:
   additional_urls:
     http://rq2w52kyrif3xpfihkgjnhqm3a5aqhoikpv72z3drpjglfzc2wr5z4yd.onion: Hidden Service
-https://searx.roflcopter.fr: {}
-https://searx.ru: {}
 https://searx.sev.monster: {}
 https://searx.si: {}
 https://searx.techsaviours.org: {}
@@ -111,7 +101,6 @@ https://searx.tiekoetter.com:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
 https://searx.work: {}
-https://searx.zapashcanon.fr: {}
 https://searx.zhenyapav.com: {}
 https://searxng.ch: {}
 https://searxng.nicfab.eu:
