@@ -32,22 +32,21 @@ jobs:
             const execa = require('execa')
             var issueTitleParseUrl = linkify.find(issueInfo.title);
             if (issueTitleParseUrl.length !== 0) {
-                var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
-                const { stdout } = await execa(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`);
-                if (stdout !== "") {
-                  var replyComment =
-                    ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
-                    '',
-                    '```',
-                    ].join('\n');
-                  replyComment = replyComment + "\n" + stdout + "\n```";
-                  await github.rest.issues.createComment({
-                    issue_number: context.issue.number,
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    body: replyComment
-                  })
-                }
+              var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
+              const { stdout } = await execa(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`);
+              if (stdout !== "") {
+                var replyComment =
+                  ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
+                  '',
+                  '```',
+                  ].join('\n');
+                replyComment = replyComment + "\n" + stdout + "\n```";
+                await github.rest.issues.createComment({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: replyComment
+                })
               }
             }
             else {
