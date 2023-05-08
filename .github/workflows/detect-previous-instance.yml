@@ -2,7 +2,7 @@ name: Detect instances previously submitted
 
 on:
   issues:
-    types: [opened, reopened]
+    types: [opened]
 
 jobs:
 
