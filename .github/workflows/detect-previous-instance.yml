@@ -29,7 +29,6 @@ jobs:
               repo: context.repo.repo,
             })).data;
             var linkify = require("linkifyjs");
-            const { exec } = require('node:child_process')
             var issueTitleParseUrl = linkify.find(issueInfo.title);
             if (issueTitleParseUrl.length !== 0) {
                 var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
