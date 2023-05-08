@@ -46,18 +46,13 @@ jobs:
                 }
               };
               await exec.exec('git', ['log', '-S', instanceHostname, '--pretty=format:Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n'], options);
-              console.log("test output :")
-              console.log(myOutput)
-              console.log("test error :")
-              console.log(myError)
-              console.log("next")
               if (myOutput !== "") {
                 var replyComment =
                   ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
                   '',
                   '```',
                   ].join('\n');
-                replyComment = replyComment + "\n" + myOutput + "\n```";
+                replyComment = replyComment + "\n" + myOutput + "```";
                 await github.rest.issues.createComment({
                   issue_number: context.issue.number,
                   owner: context.repo.owner,
