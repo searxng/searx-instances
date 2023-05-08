@@ -1,0 +1,79 @@
+name: Detect instances previously submitted
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+
+  replycomment:
+
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v3
+        if: contains(github.event.issue.labels.*.name, 'instance add')
+      - uses: actions/setup-node@v3
+        if: contains(github.event.issue.labels.*.name, 'instance add')
+        with:
+          node-version: 16
+      - run: npm install request linkifyjs
+        if: contains(github.event.issue.labels.*.name, 'instance add')
+      - uses: actions/github-script@v6
+        if: contains(github.event.issue.labels.*.name, 'instance add')
+        with:
+          script: |
+            var issueInfo = (await github.rest.issues.get({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })).data;
+            var linkify = require("linkifyjs");
+            const { exec } = require('node:child_process')
+            var issueTitleParseUrl = linkify.find(issueInfo.title);
+            if (issueTitleParseUrl.length !== 0) {
+                var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
+                exec(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`, (err, output) => {
+                    // once the command has completed, the callback function is called
+                    if (err) {
+                        // log and return if we encounter an error
+                        console.error("could not execute command: ", err)
+                        return
+                    }
+                    // log the output received from the command
+                    if (output !== "") {
+                      var replyComment =
+                        ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
+                        '',
+                        '```',
+                        ].join('\n');
+                      replyComment = replyComment + "\n" + output + "\n```";
+                      await github.rest.issues.createComment({
+                        issue_number: context.issue.number,
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        body: replyComment
+                      })
+                    }
+                })
+              }
+            }
+            else {
+              var replyComment = 
+                ['Domain not detected in the title, please edit the title by correcting it like this and reopen the issue:',
+                  'Issue title example: `Add https://myinstance.com`'
+                ].join('\n');
+
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: replyComment
+              })
+              await github.rest.issues.update({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'closed'
+              })
+            }
