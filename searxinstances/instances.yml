@@ -8,9 +8,7 @@ http://w5rl6wsd7mzj4bdkbuqvzidet5osdsm5jhg2f7nvfidakfq5exda5wid.onion:
 https://baresearch.org: {}
 https://coppedge.info: {}
 https://darmarit.org/searx: {}
-https://dynabyte.ca: {}
 https://etsi.me: {}
-https://freesearch.club: {}
 https://myprivatesrx.us: {}
 https://northboot.xyz:
   additional_urls:
@@ -23,17 +21,13 @@ https://paulgo.io: {}
 https://priv.au:
   additional_urls:
     http://privateoz3u5utrimal2edr56j3r5caakektxxgixigdkycuxigvquid.onion: Hidden Service
-https://privatus.live: {}
 https://s.frlt.one: {}
 https://s.trung.fun: {}
 https://s.zhaocloud.net: {}
 https://search.0xgingi.com:
   additional_urls:
     http://searxyqdegtqksicnwpxa24ipnb2ylmp6iutnnwtazbhup4dit4eeyqd.onion: Hidden Service
-https://search.affusio.com: {}
-https://search.berryez.xyz: {}
 https://search.bus-hit.me: {}
-https://search.charleseroop.com: {}
 https://search.chemicals-in-the-water.eu: {}
 https://search.cronobox.one: {}
 https://search.disroot.org: {}
@@ -70,7 +64,6 @@ https://search.stinpriza.org:
   git_url: https://salsa.debian.org/debian/searx
   additional_urls:
     http://z5vawdol25vrmorm4yydmohsd4u6rdoj2sylvoi3e3nqvxkvpqul7bqd.onion: Hidden Service
-https://search.suenram.us: {}
 https://search.trom.tf: {}
 https://search.us.projectsegfau.lt: {}
 https://search.zzls.xyz:
@@ -116,7 +109,6 @@ https://searx.prvcy.eu:
     http://rq2w52kyrif3xpfihkgjnhqm3a5aqhoikpv72z3drpjglfzc2wr5z4yd.onion: Hidden Service
 https://searx.roflcopter.fr: {}
 https://searx.ru: {}
-https://searx.semipvt.com: {}
 https://searx.sev.monster: {}
 https://searx.si: {}
 https://searx.sp-codes.de: {}
@@ -127,13 +119,10 @@ https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
-https://searx.tyil.nl: {}
 https://searx.webheberg.info: {}
 https://searx.work: {}
-https://searx.xyz: {}
 https://searx.zapashcanon.fr: {}
 https://searxng.au: {}
-https://searxng.bandarawela.net: {}
 https://searxng.diadz.de: {}
 https://searxng.nicfab.eu:
   additional_urls:
@@ -141,7 +130,6 @@ https://searxng.nicfab.eu:
 https://searxng.no-logs.com: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
-https://srx.cosmohub.io: {}
 https://stalk.antelope.day: {}
 https://suche.tromdienste.de: {}
 https://swag.pw: {}
