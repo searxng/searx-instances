@@ -58,5 +58,12 @@ https://nibblehole.com: {}
 
 Here is it possible to modify the yaml, the commit message and validate or delete the whole buffer to cancel.
 
-### Add a new instance to be tracked for their uptime without adding it on the public list
-Add the website on https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml
+### Add a previously submitted instance
+
+1. Look in the commit history if the instance was already added and got removed due to errors or bad uptime.
+   The bot may help you with that.
+2. If the instance was previously removed only once for bad uptime or errors then add the domain on https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml.
+  But if the instance was removed multiple times, do not add the instance or make an exception in exceptional cases.
+3. Add the label `wait-1-week`.
+4. If the uptime is more than 95% (8 hours) after 1 week the instance can be normally added back and remove it from the custom file.  
+   If not do not add the instance.

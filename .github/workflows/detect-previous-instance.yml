@@ -49,6 +49,7 @@ jobs:
               if (myOutput !== "") {
                 var replyComment =
                   ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
+                  'See here for more information: https://github.com/searxng/searx-instances#add-a-previously-submitted-instance',
                   '',
                   '```',
                   ].join('\n');
