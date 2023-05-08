@@ -45,8 +45,8 @@ jobs:
                   myError += data.toString();
                 }
               };
-              await exec.exec(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`, options);
-              if (myOutput !== "") {
+              await exec.exec('git', ['log', '-S', instanceHostname, '--pretty=format:Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n'], options);
+              if (myError !== "") {
                 var replyComment =
                   ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
                   '',
