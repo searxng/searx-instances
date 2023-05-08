@@ -60,6 +60,8 @@ Here is it possible to modify the yaml, the commit message and validate or delet
 
 ### Add a previously submitted instance
 
+Was discussed in https://github.com/searxng/searx-instances/discussions/150
+
 1. Look in the commit history if the instance was already added and got removed due to errors or bad uptime.
    The bot may help you with that.
 2. If the instance was previously removed only once for bad uptime or errors then add the domain on https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml.
