@@ -32,7 +32,7 @@ jobs:
             var issueTitleParseUrl = linkify.find(issueInfo.title);
             if (issueTitleParseUrl.length !== 0) {
                 var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
-                exec(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`, (err, output) => {
+                exec(`git log -S "${instanceHostname}" --pretty=format:"Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n"`, async (err, output) => {
                     // once the command has completed, the callback function is called
                     if (err) {
                         // log and return if we encounter an error
