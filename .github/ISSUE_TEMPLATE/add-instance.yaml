@@ -22,6 +22,7 @@ body:
       description: |
         If you don't respect all the requirements your instance can't be added.
         And if later after we add your instance, we found out that your instance fail to respect all requirements, we will remove it.
+        We may in the future adapt these rules, but you will be notified if your instance fails to respect the new rules.
       options:
       - label: "It is my instance. I bought the domain myself and I own this domain. Free domains (e.g. Freenom) and shared domains (e.g. noip.com) are not allowed."
         required: true
@@ -36,6 +37,8 @@ body:
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
       - label: "I control the final webserver (software) that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: PaaS, managed (hosting provider controlled) HTTP(S) load balancer (e.g. AWS ALB), Cloudflare, shared Web hosting. TCP load balancer is fine."
+        required: true
+      - label: "If needed, I can restrict users from accessing my instance for the only sole reason of keeping my instance in working conditions for the other users ([detailed description](https://github.com/searxng/searx-instances/pull/346) - evidence need to be provided when asked). Other means of restriction is forbidden."
         required: true
 
   - type: markdown
