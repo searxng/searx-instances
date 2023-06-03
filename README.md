@@ -30,6 +30,11 @@ optional arguments:
                         Edit instance(s)
 ```
 
+Or if you don't want to use virtualenv:
+
+1. `pip install .[update]`
+2. `python -m searxinstances.update`
+
 The tool :
 * is only an helper. instances.yml can be edited directly.
 * shows the default editor to only edit one instance at a time.
