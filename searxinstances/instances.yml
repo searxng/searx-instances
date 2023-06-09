@@ -123,6 +123,7 @@ https://searxng.diadz.de: {}
 https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
+https://searxng.xcxc.eu: {}
 https://searxng.no-logs.com: {}
 https://spot.murena.io:
   git_url: https://gitlab.e.foundation/e/cloud/my-spot
