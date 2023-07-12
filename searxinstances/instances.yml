@@ -13,7 +13,6 @@ https://myprivatesrx.us: {}
 https://northboot.xyz:
   additional_urls:
     http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion: Hidden Service
-https://notsearch.uk: {}
 https://offtheradar.info: {}
 https://ooglester.com: {}
 https://opnxng.com: {}
@@ -89,7 +88,6 @@ https://searx.dresden.network: {}
 https://searx.ericaftereric.top: {}
 https://searx.fmac.xyz: {}
 https://searx.fossencdi.org: {}
-https://searx.gnous.eu: {}
 https://searx.juancord.xyz: {}
 https://searx.kutay.dev: {}
 https://searx.mastodontech.de: {}
@@ -101,7 +99,6 @@ https://searx.namejeff.xyz: {}
 https://searx.netzspielplatz.de: {}
 https://searx.nixnet.services: {}
 https://searx.oakleycord.dev: {}
-https://searx.orion-hub.fr: {}
 https://searx.ox2.fr: {}
 https://searx.prvcy.eu:
   additional_urls:
