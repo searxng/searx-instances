@@ -9,7 +9,6 @@ https://baresearch.org: {}
 https://copp.gg: {}
 https://darmarit.org/searx: {}
 https://etsi.me: {}
-https://myprivatesrx.us: {}
 https://northboot.xyz:
   additional_urls:
     http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion: Hidden Service
@@ -121,6 +120,7 @@ https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
 https://searxng.no-logs.com: {}
+https://searxng.online: {}
 https://searxng.se: {}
 https://searxng.xcxc.eu: {}
 https://spot.murena.io:
