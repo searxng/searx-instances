@@ -53,7 +53,6 @@ https://search.rowie.at: {}
 https://search.sapti.me:
   additional_urls:
     http://gbat2pbpg7ys3fi3pbp64667tt5x66mg45xok35bxdw7v55brm7a27yd.onion: Hidden Service
-https://search.shininglea.dev: {}
 https://search.smnz.de: {}
 https://search.stinpriza.org:
   git_url: https://salsa.debian.org/debian/searx
