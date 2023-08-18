@@ -36,7 +36,7 @@ body:
         required: true
       - label: "I won't try to manipulate the ranking of my instance in a way that give an unfair advantage over the other public instances in the list. (e.g. caching requests for searx.space server)"
         required: true
-      - label: "I control the final webserver (software) that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: PaaS, managed (hosting provider controlled) HTTP(S) load balancer (e.g. AWS ALB), Cloudflare, shared Web hosting. TCP load balancer is fine."
+      - label: "I control the final webserver (software) that is serving the requests to the users of my instance. Here is a non-exhaustive list of forbidden hosting types: Cloudflare, PaaS, managed (hosting provider controlled) HTTP(S) load balancer (e.g. AWS ALB), shared Web hosting. TCP load balancer is fine. Cloudflare DNS only (grey cloud) is fine."
         required: true
       - label: "If needed, I can restrict users from accessing my instance for the only sole reason of keeping my instance in working conditions for the other users ([detailed description](https://github.com/searxng/searx-instances/pull/346) - evidence need to be provided when asked). Other means of restriction is forbidden."
         required: true
@@ -49,13 +49,12 @@ body:
         - Do not use Cloudflare or any other commercial solution that analyze the HTTP traffic between the user and the server.
           It's forbidden because you are not in control of the final webserver.
           Also, it's bad for the privacy because the provider can see all the HTTP traffic between the users and your server.
-          Prefer using [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) for SearxNG or [filtron](https://github.com/searxng/filtron) for SearX.
+          Prefer using [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin).
         - Don't block JavaScript users with CAPTCHA that only work with JavaScript, page that verify the user with JavaScript and so on.
         - Try to harden the TLS security of your server by getting an A+ TLS grade on https://cryptcheck.fr.
           You can use https://ssl-config.mozilla.org to get A+ TLS grade.
         - Try to harden the security of your users when they use your instance by getting an A+ CSP grade on https://observatory.mozilla.org.
           Look into https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ CSP grade.
-        - Enable the parameter `use_mobile_ui` in the `settings.yml` file for the Google engine. This will avoid any future rate limit errors from Google.
         - Configure IPv6 on your server, if your provider supports it please enable it. The future of the internet will thank you, see [why here](https://old.reddit.com/r/explainlikeimfive/comments/1k45y7/eli5_what_is_ipv6_and_why_is_it_so_important/).
 
   - type: dropdown
