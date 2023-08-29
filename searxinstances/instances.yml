@@ -37,11 +37,9 @@ https://search.kiwitalk.de: {}
 https://search.kokomo.cloud: {}
 https://search.laksith.dev: {}
 https://search.leptons.xyz: {}
-https://search.listi.me: {}
 https://search.lvkaszus.pl: {}
 https://search.mdosch.de: {}
 https://search.modalogi.com: {}
-https://search.neet.works: {}
 https://search.ononoki.org:
   additional_urls:
     http://searchvrzxoqa4k76duqh4wtzpr553hfl53qpytclxf7zci53lwklfyd.onion: Hidden Service
@@ -116,7 +114,6 @@ https://searx.work: {}
 https://searx.zapashcanon.fr: {}
 https://searx.zhenyapav.com: {}
 https://searxng.ch: {}
-https://searxng.diadz.de: {}
 https://searxng.nicfab.eu:
   additional_urls:
     http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
