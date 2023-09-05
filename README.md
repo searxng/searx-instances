@@ -1,3 +1,7 @@
+## How to add your instance to the list?
+
+Create a new issue here: https://github.com/searxng/searx-instances/issues/new/choose
+
 ## For SearXNG instance operators
 
 * [Create an issue](https://github.com/searxng/searx-instances/issues/new/choose) to add / remove / edit a SearXNG instance on https://searx.space/
