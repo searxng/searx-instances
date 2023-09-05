@@ -130,3 +130,6 @@ https://sx.catgirl.cloud: {}
 https://www.gruble.de: {}
 https://www.jabber-germany.de/searx: {}
 https://xo.wtf: {}
+https://zotop.zaclys.com: {
+  git_url: https://gitea.zaclys.com/ZaclysIndustries/searxngRebrandZaclys
+}
