@@ -1,14 +1,14 @@
 ---
 name: Delete an instance
-about: Delete an existing searx instance from searx.space
-title: Delete <searx instance url>
+about: Delete an existing SearXNG instance from searx.space
+title: Delete <SearXNG instance url>
 labels: instance delete, instance
 assignees: ''
 
 ---
 
 <!--
-Replace <searx instance url> by the searx instance URL.
+Replace <SearXNG instance url> by the SearXNG instance URL.
 Replace the ?? below.
 -->
 

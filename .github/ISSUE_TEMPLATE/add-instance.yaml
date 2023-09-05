@@ -68,13 +68,10 @@ body:
         * once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
         * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
 
-        We recommend the usage of [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) if you are using SearXNG or [filtron](https://github.com/searxng/filtron) if you are using SearX.
+        We recommend the usage of [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) if you are using SearXNG
 
-        ⚠️ If you have installed [filtron](https://github.com/searxng/filtron), we urge you to use the [rules from searx-docker](https://github.com/searx/searx-docker/blob/master/rules.json). Please double check if you are using them.
       options:
         - "No, I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google)."
-        - "Yes, I have installed filtron (rules.json from searx-docker)."
-        - "Yes, I have installed filtron (other rules)."
         - "Yes, I have enabled the limiter plugin built in SearXNG."
         - "Yes, I have installed another bot protection."
     validations:
@@ -86,7 +83,6 @@ body:
       label: Source code URL
       description: |
         If you have modified the source code, please publish it to an URL and make sure that the URL is publicly accessible in your instance's site
-        ( For searx instance, not for SearXNG instance: check your [settings.yml](https://github.com/searx/searx/blob/e88bea53ebf220648685cdb8eff017357728494e/searx/settings.yml#L8) )
         In case of issue, please specify the GIT URL here
     validations:
       required: false

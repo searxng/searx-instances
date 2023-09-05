@@ -1,12 +1,12 @@
 # see https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository
 # blank_issues_enabled: false
 contact_links:
-  - name: Report downtime about your SearX(NG) instance
+  - name: Report downtime about your SearXNG instance
     url: https://github.com/searxng/searx-instances/discussions/categories/report-instance-downtime
     about: Tell us if your instance is going to have a planned downtime.
-  - name: Submit feedback about a SearX(NG) public instance
+  - name: Submit feedback about a SearXNG public instance
     url: https://github.com/searxng/searx-instances/discussions/categories/feedback-public-instance
     about: Submit your feedback about an existing instance on searx.space
-  - name: Report a bug about a SearX(NG) public instance
+  - name: Report a bug about a SearXNG public instance
     url: https://github.com/searxng/searx-instances/discussions/categories/report-bug-public-instance
     about: Report a bug or an issue about an existing instance on searx.space
