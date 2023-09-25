@@ -57,25 +57,16 @@ body:
           Look into https://github.com/searxng/searx-docker/blob/master/Caddyfile#L33-L84 to get A+ CSP grade.
         - Configure IPv6 on your server, if your provider supports it please enable it. The future of the internet will thank you, see [why here](https://old.reddit.com/r/explainlikeimfive/comments/1k45y7/eli5_what_is_ipv6_and_why_is_it_so_important/).
 
-  - type: dropdown
-    id: version
+  - type: checkboxes
     attributes:
-      label: Bot protection
+      label: Bot protection requirement
       description: |
-        Did you install a bot protection ?
-
-        Be sure to configure a bot protection:
-        * once your instance is added to searx.space, it will receive requests from different bots which may increase its chance of getting blocked by various search engines.
-        * removing your instance from searx.space won't stop the bots and thus will most likely not unblock it from the various search engines.
-
-        We recommend the usage of [the built-in limiter plugin](https://docs.searxng.org/src/searx.plugins.limiter.html#limiter-plugin) if you are using SearXNG
-
+        Please enable the `server.public_instance` parameter as explained in this documentation: https://gist.github.com/unixfox/4e22730769540fe5b9f1943a86439761
+        We can make exceptions in case you really do not want to enable our bot limiter solution, but you will have to send us proofs as a comment in the issue:
+        clearly stating how you detect bots, how you actively deal with them and also prove that it really works.
       options:
-        - "No, I have not installed a bot protection and I do recognize that without one, my instance will be flooded by bots and could have some of its engines stop working (an example is Google)."
-        - "Yes, I have enabled the limiter plugin built in SearXNG."
-        - "Yes, I have installed another bot protection."
-    validations:
-      required: true
+      - label: "Yes I have configured the `server.public_instance` parameter."
+        required: true
 
   - type: input
     id: source-code-url
