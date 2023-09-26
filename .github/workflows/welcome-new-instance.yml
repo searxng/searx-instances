@@ -1,4 +1,4 @@
-name: Add instance to uptimerobot
+name: Welcome message
 
 on:
   issues:
