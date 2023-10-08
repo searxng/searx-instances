@@ -105,8 +105,6 @@ https://searxng.ch: {}
 https://searxng.no-logs.com: {}
 https://searxng.online: {}
 https://searxng.xcxc.eu: {}
-https://spot.murena.io:
-  git_url: https://gitlab.e.foundation/e/cloud/my-spot
 https://suche.tromdienste.de: {}
 https://sx.catgirl.cloud: {}
 https://www.gruble.de: {}
