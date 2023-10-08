@@ -103,9 +103,6 @@ https://searx.tuxcloud.net: {}
 https://searx.work: {}
 https://searx.zhenyapav.com: {}
 https://searxng.ch: {}
-https://searxng.nicfab.eu:
-  additional_urls:
-    http://lgmekfnpealdqhnctyg3p5fuelpdwnbqbwnl2ickpdoodzatzgz27ryd.onion: Hidden Service
 https://searxng.no-logs.com: {}
 https://searxng.online: {}
 https://searxng.xcxc.eu: {}
