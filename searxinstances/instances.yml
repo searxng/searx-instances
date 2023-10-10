@@ -1,6 +1,3 @@
-http://ransack.i2p:
-  additional_urls:
-    http://mqamk4cfykdvhw5kjez2gnvse56gmnqxn7vkvvbuor4k4j2lbbnq.b32.i2p: base32 address
 https://331221.xyz: {}
 https://baresearch.org: {}
 https://copp.gg: {}
@@ -44,7 +41,6 @@ https://search.ononoki.org:
 https://search.ovh: {}
 https://search.projectsegfau.lt:
   additional_urls:
-    http://pjsfwklrellqoj275kzeu2tz4c3j5zktnqod56s7l5dc25ro3wgq.b32.i2p: I2P Address
     http://search.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion: Hidden Service
 https://search.rabbit-company.com: {}
 https://search.rhscz.eu: {}
