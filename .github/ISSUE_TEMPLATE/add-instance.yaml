@@ -61,7 +61,7 @@ body:
     attributes:
       label: Bot protection requirement
       description: |
-        Please enable the `server.public_instance` parameter as explained in this documentation: https://gist.github.com/unixfox/4e22730769540fe5b9f1943a86439761
+        Please enable the `server.public_instance` parameter as explained in this documentation: https://github.com/searxng/searx-instances/discussions/417
         We can make exceptions in case you really do not want to enable our bot limiter solution, but you will have to send us proofs as a comment in the issue:
         clearly stating how you detect bots, how you actively deal with them and also prove that it really works.
       options:
