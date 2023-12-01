@@ -3,14 +3,12 @@ https://baresearch.org: {}
 https://copp.gg: {}
 https://darmarit.org/searx: {}
 https://etsi.me: {}
-https://fgiggle.com: {}
 https://find.m3wz.su: {}
 https://freesearch.club: {}
 https://northboot.xyz:
   additional_urls:
     http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion: Hidden Service
 https://nyc1.sx.ggtyler.dev: {}
-https://offtheradar.info: {}
 https://ooglester.com: {}
 https://opnxng.com: {}
 https://paulgo.io: {}
@@ -77,9 +75,6 @@ https://searx.prvcy.eu:
 https://searx.sev.monster: {}
 https://searx.si: {}
 https://searx.techsaviours.org: {}
-https://searx.thefloatinglab.world:
-  additional_urls:
-    http://iziatwmtwhrp2kjm3tkrurj3b25qjhznleztdwqc6jgoxmxfvkmh3mid.onion: Hidden Service
 https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
