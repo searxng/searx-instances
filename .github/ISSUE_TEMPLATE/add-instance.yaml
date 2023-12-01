@@ -26,6 +26,8 @@ body:
       options:
       - label: "It is my instance. I bought the domain myself and I own this domain. Free domains (e.g. Freenom) and shared domains (e.g. noip.com) are not allowed."
         required: true
+      - label: "I'll keep my instance up to date, at the very least 1 week old. Example program for keeping up to date: watchtower, cron, ouroboros."
+        required: true
       - label: "I give the right to `check.searx.space` to check my instance (every 3 hours for the response times, every 24 hours for the other tests)."
         required: true
       - label: "I acknowledge that managing a public instance is not an easy task and require spending time to keep the instance in good health. E.g. look after your instance by using a monitoring system."
