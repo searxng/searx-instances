@@ -54,7 +54,9 @@ https://search.zzls.xyz:
 https://searx.baczek.me: {}
 https://searx.be: {}
 https://searx.catfluori.de: {}
-https://searx.cthd.icu: {}
+https://searx.cthd.icu:
+  additional_urls:
+    http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion: Hidden Service
 https://searx.daetalytica.io: {}
 https://searx.divided-by-zero.eu: {}
 https://searx.fmac.xyz: {}
