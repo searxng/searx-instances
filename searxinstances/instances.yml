@@ -18,8 +18,6 @@ https://s.mble.dk: {}
 https://s.trung.fun: {}
 https://search.bus-hit.me: {}
 https://search.demoniak.ch: {}
-https://search.disroot.org: {}
-https://search.dojoro.de: {}
 https://search.gcomm.ch: {}
 https://search.hbubli.cc: {}
 https://search.im-in.space: {}
@@ -55,7 +53,6 @@ https://searx.cthd.icu:
   additional_urls:
     http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion: Hidden Service
 https://searx.daetalytica.io: {}
-https://searx.divided-by-zero.eu: {}
 https://searx.fmac.xyz: {}
 https://searx.headpat.exchange: {}
 https://searx.juancord.xyz: {}
@@ -78,9 +75,6 @@ https://searx.tuxcloud.net: {}
 https://searx.work: {}
 https://searx.zhenyapav.com: {}
 https://searxng.ch: {}
-https://searxng.no-logs.com: {}
-https://searxng.online: {}
-https://searxng.xcxc.eu: {}
 https://sex.finaltek.net: {}
 https://sx.catgirl.cloud: {}
 https://sx.t-1.org: {}
