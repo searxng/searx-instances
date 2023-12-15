@@ -3,7 +3,6 @@ https://baresearch.org: {}
 https://copp.gg: {}
 https://darmarit.org/searx: {}
 https://etsi.me: {}
-https://find.m3wz.su: {}
 https://freesearch.club: {}
 https://northboot.xyz:
   additional_urls:
@@ -45,7 +44,6 @@ https://search.rhscz.eu: {}
 https://search.rowie.at: {}
 https://search.sapti.me: {}
 https://search.smnz.de: {}
-https://search.whateveritworks.org: {}
 https://search.zzls.xyz:
   additional_urls:
     http://searxdr3pqz4nydgnqocsia2xbywptxbkympa2emn7zlgggrir4bkfad.onion: Hidden Service
@@ -70,9 +68,6 @@ https://searx.nobulart.com:
 https://searx.oakleycord.dev: {}
 https://searx.ox2.fr: {}
 https://searx.perennialte.ch: {}
-https://searx.prvcy.eu:
-  additional_urls:
-    http://rq2w52kyrif3xpfihkgjnhqm3a5aqhoikpv72z3drpjglfzc2wr5z4yd.onion: Hidden Service
 https://searx.sev.monster: {}
 https://searx.si: {}
 https://searx.techsaviours.org: {}
