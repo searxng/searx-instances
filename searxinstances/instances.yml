@@ -29,6 +29,9 @@ https://search.itstechtime.com: {}
 https://search.leptons.xyz: {}
 https://search.lvkaszus.pl: {}
 https://search.mdosch.de: {}
+https://search.nadeko.net:
+  additional_urls:
+    http://search.nadekonfkhwlxwwk4ycbvq42zvcjmvo5iakl4tajojjwxd4a5dcetuyd.onion: Hidden Service
 https://search.ononoki.org:
   additional_urls:
     http://searchvrzxoqa4k76duqh4wtzpr553hfl53qpytclxf7zci53lwklfyd.onion: Hidden Service
@@ -41,9 +44,6 @@ https://search.rowie.at: {}
 https://search.sapti.me: {}
 https://search.smnz.de: {}
 https://search.upinmars.com: {}
-https://search.nadeko.net:
-  additional_urls:
-    http://search.nadekonfkhwlxwwk4ycbvq42zvcjmvo5iakl4tajojjwxd4a5dcetuyd.onion: Hidden Service
 https://searx.ankha.ac: {}
 https://searx.baczek.me: {}
 https://searx.be: {}
