@@ -17,10 +17,10 @@ https://s.mble.dk: {}
 https://s.trung.fun: {}
 https://search.broker: {}
 https://search.bus-hit.me: {}
-https://search.demoniak.ch: {}
 https://search.datura.network:
   additional_urls:
     http://search.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion: Hidden Service
+https://search.demoniak.ch: {}
 https://search.gcomm.ch: {}
 https://search.hbubli.cc: {}
 https://search.im-in.space: {}
