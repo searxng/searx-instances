@@ -86,6 +86,9 @@ https://searx.zhenyapav.com: {}
 https://searxng.brihx.fr: {}
 https://searxng.ca: {}
 https://searxng.ch: {}
+https://searxng.cryptocalcu.top:
+  additional_urls:
+    http://searxng.uqhlcmp5d73yoarvgqevosv3iio62fuhdztdbw62l2qkzewolu4dvqyd.onion: Hidden Service
 https://searxng.online: {}
 https://searxng.site: {}
 https://sex.finaltek.net: {}
