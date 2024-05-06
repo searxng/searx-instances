@@ -37,7 +37,9 @@ https://search.mdosch.de: {}
 https://search.nadeko.net:
   additional_urls:
     http://search.nadekonfkhwlxwwk4ycbvq42zvcjmvo5iakl4tajojjwxd4a5dcetuyd.onion: Hidden Service
-https://search.nerdvpn.de: {}
+https://search.nerdvpn.de:
+  additional_urls:
+    http://nerdvpn4iln4didgzcw7pgvjv4p3pwn3e3dq732oxwidfv6bacnyuvad.onion: Hidden Service
 https://search.ngn.tf: {}
 https://search.ononoki.org:
   additional_urls:
