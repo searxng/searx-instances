@@ -64,7 +64,6 @@ https://searx.dresden.network: {}
 https://searx.foss.family:
   additional_urls:
     http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion: Hidden Service
-https://searx.headpat.exchange: {}
 https://searx.hu: {}
 https://searx.juancord.xyz: {}
 https://searx.lunar.icu: {}
