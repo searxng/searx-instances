@@ -28,6 +28,9 @@ https://search.hbubli.cc: {}
 https://search.im-in.space: {}
 https://search.in.projectsegfau.lt: {}
 https://search.incogniweb.net: {}
+https://search.indst.eu:
+  additional_urls:
+    http://whereissky27lxfdrs7ct7a5ievor3tl67qi77rv5luga7wod5jf2mad.onion: Hidden Service
 https://search.inetol.net:
   additional_urls:
     http://searchpie7fejn4wctzm6fgm6oz5vnziltfzzuec6b4qmkr3wrqaoqqd.onion: Hidden Service
