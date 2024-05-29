@@ -4,7 +4,6 @@ https://copp.gg: {}
 https://darmarit.org/searx: {}
 https://etsi.me: {}
 https://fairsuch.net: {}
-https://freesearch.club: {}
 https://northboot.xyz:
   additional_urls:
     http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion: Hidden Service
@@ -36,7 +35,6 @@ https://search.indst.eu:
 https://search.inetol.net:
   additional_urls:
     http://searchpie7fejn4wctzm6fgm6oz5vnziltfzzuec6b4qmkr3wrqaoqqd.onion: Hidden Service
-https://search.ldne.xyz: {}
 https://search.leptons.xyz: {}
 https://search.mdosch.de: {}
 https://search.nadeko.net:
