@@ -95,6 +95,9 @@ https://searxng.online: {}
 https://searxng.shreven.org: {}
 https://searxng.site: {}
 https://skyrimhater.com: {}
+https://sx.ca.zorby.top:
+  additional_urls:
+    http://vwf4ktksblwk5oiitj73mh4dqtpiv7b7wy7i3o6dhxubuon5xwtq5vqd.onion: Hidden Service
 https://sx.catgirl.cloud: {}
 https://sx.thatxtreme.dev:
   additional_urls:
