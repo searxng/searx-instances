@@ -41,7 +41,6 @@ https://search.nadeko.net:
 https://search.nerdvpn.de:
   additional_urls:
     http://nerdvpn4iln4didgzcw7pgvjv4p3pwn3e3dq732oxwidfv6bacnyuvad.onion: Hidden Service
-https://search.ngn.tf: {}
 https://search.nordh.tech: {}
 https://search.ononoki.org: {}
 https://search.privacyredirect.com: {}
@@ -91,7 +90,4 @@ https://searxng.shreven.org: {}
 https://seek.fyi: {}
 https://skyrimhater.com: {}
 https://sx.catgirl.cloud: {}
-https://sx.thatxtreme.dev:
-  additional_urls:
-    http://xtsearxafzi6c3gtant62idszhoenkmprc24vxn5m5fnomxtpkaffjad.onion: Hidden Service
 https://www.gruble.de: {}
