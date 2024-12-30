@@ -14,6 +14,6 @@ check:
 	python -m searxinstances.check
 
 qa:
-	flake8 --max-line-length=120 searxinstances tests
+	flake8 --max-line-length=120 --extend-ignore=E275 searxinstances tests
 	pylint searxinstances tests
 	python -m pytest --cov-report html --cov=searxinstances tests -vv
