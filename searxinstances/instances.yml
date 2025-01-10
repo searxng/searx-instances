@@ -69,16 +69,12 @@ https://searx.mbuf.net: {}
 https://searx.mv-software.de: {}
 https://searx.mxchange.org: {}
 https://searx.namejeff.xyz: {}
-https://searx.nobulart.com:
-  additional_urls:
-    http://tnd4del36xwmip5z3agrgfmga7pora3ddyzh7t5lng2u2wgjbpxbmcyd.onion: Hidden Service
 https://searx.oakleycord.dev: {}
 https://searx.ox2.fr: {}
 https://searx.perennialte.ch: {}
 https://searx.rhscz.eu: {}
 https://searx.ro: {}
 https://searx.sev.monster: {}
-https://searx.technicalvoid.dev: {}
 https://searx.thefloatinglab.world: {}
 https://searx.tiekoetter.com:
   additional_urls:
@@ -86,7 +82,6 @@ https://searx.tiekoetter.com:
 https://searx.tuxcloud.net: {}
 https://searx.zhenyapav.com: {}
 https://searxng.brihx.fr: {}
-https://searxng.ch: {}
 https://searxng.hweeren.com: {}
 https://searxng.shreven.org: {}
 https://searxng.site: {}
