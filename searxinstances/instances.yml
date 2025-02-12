@@ -69,6 +69,9 @@ https://searx.mv-software.de: {}
 https://searx.mxchange.org: {}
 https://searx.namejeff.xyz: {}
 https://searx.oakleycord.dev: {}
+https://searx.oloke.xyz:
+  additional_urls:
+    http://searxokthnxmo7ndis35jpts2tawcwvbovuy47qtavwo7oq4jgcm5gqd.onion: Hidden Service
 https://searx.ox2.fr: {}
 https://searx.perennialte.ch: {}
 https://searx.rhscz.eu: {}
