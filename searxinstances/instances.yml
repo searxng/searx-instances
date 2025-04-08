@@ -86,6 +86,7 @@ https://searx.tuxcloud.net: {}
 https://searx.zhenyapav.com: {}
 https://searxng.biz: {}
 https://searxng.brihx.fr: {}
+https://searxng.deliberate.world: {}
 https://searxng.f24o.zip:
   additional_urls:
     http://searxng.f24ozipdw2v3qudr5udqhz5sme2im4ytyufb25liyaba7zjx7ui6kxqd.onion: Hidden Service
