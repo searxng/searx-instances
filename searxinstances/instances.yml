@@ -53,7 +53,9 @@ https://searx.ankha.ac: {}
 https://searx.be: {}
 https://searx.cespedes.fr: {}
 https://searx.dresden.network: {}
-https://searx.foobar.vip: {}
+https://searx.foobar.vip:
+  additional_urls:
+    http://qmha5d7v5lpck2xcwiwmpejw6wf5l5uump7tqisfk5ddzseng47eshyd.onion: Hidden Service
 https://searx.foss.family:
   additional_urls:
     http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion: Hidden Service
