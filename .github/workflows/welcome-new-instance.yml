@@ -23,7 +23,7 @@ jobs:
           script: |
             var replyComment = 
               ['Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#searxng:matrix.org',
-              'then pinging @ unixfox, @ dalf and @ mrpaulblack for asking to be invited to the Matrix room.',
+              'then pinging @ return42, @ bnyro and @ mrpaulblack for asking to be invited to the Matrix room.',
               'We discuss troubles managing a public instance, sharing some advices (like how to protect against bots), announcing big changes in searxng and more.'
               ].join('\n');
 
