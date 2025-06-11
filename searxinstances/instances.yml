@@ -24,6 +24,9 @@ https://search.canine.tools: {}
 https://search.catboy.house: {}
 https://search.citw.lgbt: {}
 https://search.einfachzocken.eu: {}
+https://search.federicociro.com:
+  additional_urls:
+    http://x5okencj67ew6xfma5wbbfhfcnajmpgb57d6kdvion5yajth666oggyd.onion: Hidden Service
 https://search.fredix.xyz: {}
 https://search.gcomm.ch: {}
 https://search.hbubli.cc: {}
@@ -56,9 +59,6 @@ https://search.sapti.me: {}
 https://search.url4irl.com: {}
 https://searx.ankha.ac: {}
 https://searx.dresden.network: {}
-https://search.federicociro.com:
-  additional_urls:
-    http://x5okencj67ew6xfma5wbbfhfcnajmpgb57d6kdvion5yajth666oggyd.onion: Hidden Service
 https://searx.foobar.vip:
   additional_urls:
     http://qmha5d7v5lpck2xcwiwmpejw6wf5l5uump7tqisfk5ddzseng47eshyd.onion: Hidden Service
