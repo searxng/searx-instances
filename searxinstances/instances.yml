@@ -42,7 +42,9 @@ https://search.nerdvpn.de:
   additional_urls:
     http://nerdvpn4iln4didgzcw7pgvjv4p3pwn3e3dq732oxwidfv6bacnyuvad.onion: Hidden Service
 https://search.nordh.tech: {}
-https://search.oh64.moe: {}
+https://search.oh64.moe:
+  additional_urls:
+    http://vp5dnvfg352ohj674xi6owkddy3daftkmyfsbbt73sb5gt7qxctfcqad.onion: Hidden Service
 https://search.ohaa.xyz: {}
 https://search.ononoki.org: {}
 https://search.privacyredirect.com: {}
