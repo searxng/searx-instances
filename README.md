@@ -67,14 +67,14 @@ https://nibblehole.com: {}
 
 Here is it possible to modify the yaml, the commit message and validate or delete the whole buffer to cancel.
 
-### Add a previously submitted instance
+### 2-week hold for new instances
 
-Was discussed in https://github.com/searxng/searx-instances/discussions/150
+All new instance requests must wait 2 weeks before being added. Apply the `wait-2-weeks` label when an instance has been deemed ready for addition. After 2 weeks, verify the instance has been kept up to date before adding it to the list.
 
-1. Look in the commit history if the instance was already added and got removed due to errors or bad uptime.
-   The bot may help you with that.
-2. If the instance was previously removed only once for bad uptime or errors then add the domain on https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml.
-  But if the instance was removed multiple times, do not add the instance or make an exception in exceptional cases.
-3. Add the label `wait-1-week`.
-4. If the uptime is more than 95% (8 hours) after 1 week the instance can be normally added back and remove it from the custom file.  
-   If not do not add the instance.
+### Adding a previously submitted instance
+
+This applies only to instances that were previously added to the list and later removed (e.g. due to errors or bad uptime):
+
+1. Add the domain to the uptime tracker custom list to monitor stability: https://github.com/searxng/searx-instances-uptime/blob/master/.upptimerc-custom.yml
+2. Follow the general 2-week hold.
+3. After this period, verify the instance has been kept up to date and meets the uptime requirement of >95% (16.8h). If it does, it can be added back and removed from the custom list. If not, do not add the instance.

@@ -16,6 +16,8 @@ body:
         Your instance will receive requests from the host `check.searx.space` (the IP addresses of this host may change in the future).
         Currently, if you don't give the right to `check.searx.space` to check your instance, it is not possible to add your instance to the list.
 
+        New instance requests are subject to a 2-week hold before being added. This period helps verify the maintainer keeps the instance healthy and up to date.
+
   - type: checkboxes
     attributes:
       label: Requirements (make sure to read all of them)

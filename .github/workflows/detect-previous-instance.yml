@@ -48,8 +48,7 @@ jobs:
               await exec.exec('git', ['log', '-S', instanceHostname, '--pretty=format:Commit ID: %H%n - Date: %ad%n - Description: %s%n - Author: %an%n'], options);
               if (myOutput !== "") {
                 var replyComment =
-                  ['@maintainers Warning, instance found in the commit history, make sure to wait 1 week before adding the instance if needed.',
-                  'See here for more information: https://github.com/searxng/searx-instances#add-a-previously-submitted-instance',
+                  ['@maintainers - instance found in the commit history.',
                   '',
                   '```',
                   ].join('\n');
