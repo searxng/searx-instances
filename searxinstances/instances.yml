@@ -23,7 +23,6 @@ https://search.anoni.net:
     http://search.anoninetru5tflukgfaehun7q6khowgmymcff3gtk5oyesqazhmfxtyd.onion: Hidden Service
 https://search.bladerunn.in: {}
 https://search.buddyverse.net: {}
-https://search.canine.tools: {}
 https://search.catboy.house: {}
 https://search.charliewhiskey.net: {}
 https://search.einfachzocken.eu: {}
@@ -94,6 +93,7 @@ https://searx.tiekoetter.com:
 https://searx.tuxcloud.net: {}
 https://searx.zhenyapav.com: {}
 https://searxng.biz: {}
+https://searxng.canine.tools: {}
 https://searxng.deliberate.world: {}
 https://searxng.f24o.zip:
   additional_urls:
