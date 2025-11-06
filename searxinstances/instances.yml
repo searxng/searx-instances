@@ -60,9 +60,6 @@ https://search.unredacted.org: {}
 https://search.url4irl.com: {}
 https://searx.ankha.ac: {}
 https://searx.dresden.network: {}
-https://searx.foss.family:
-  additional_urls:
-    http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion: Hidden Service
 https://searx.juancord.xyz: {}
 https://searx.lunar.icu: {}
 https://searx.mbuf.net: {}
