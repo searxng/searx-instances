@@ -82,6 +82,16 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: matrix-username
+    attributes:
+      label: Matrix username
+      description: |
+        By providing your Matrix username, you will receive an invite to the private instance owners room. 
+        We discuss the troubles of managing a public instance, share advice (like how to defend your instance against bots), and also announce any big changes to searxng that may affect you.
+    validations:
+      required: false
+
   - type: textarea
     id: comments
     attributes:
