@@ -81,9 +81,6 @@ https://searx.tuxcloud.net: {}
 https://searxng.biz: {}
 https://searxng.canine.tools: {}
 https://searxng.cups.moe: {}
-https://searxng.f24o.zip:
-  additional_urls:
-    http://searxng.f24ozipdw2v3qudr5udqhz5sme2im4ytyufb25liyaba7zjx7ui6kxqd.onion: Hidden Service
 https://searxng.hweeren.com: {}
 https://searxng.shreven.org: {}
 https://searxng.site: {}
