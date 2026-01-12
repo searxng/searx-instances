@@ -3,6 +3,7 @@ https://copp.gg: {}
 https://etsi.me: {}
 https://find.xenorio.xyz: {}
 https://grep.vim.wtf: {}
+https://hopniss.net: {}
 https://kantan.cat:
   additional_urls:
     http://kantanrucloofzrfn7vqlsxbhipkqv55qygn4oxogbnjpfex54bw4gad.onion: Hidden Service
@@ -11,6 +12,8 @@ https://ooglester.com: {}
 https://opnxng.com: {}
 https://paulgo.io: {}
 https://priv.au: {}
+https://s.adast.dk: {}
+https://s.chatoyer.de: {}
 https://s.mble.dk: {}
 https://search.2b9t.xyz: {}
 https://search.abohiccups.com: {}
@@ -19,14 +22,17 @@ https://search.anoni.net:
     http://search.anoninetru5tflukgfaehun7q6khowgmymcff3gtk5oyesqazhmfxtyd.onion: Hidden Service
 https://search.atl.tools: {}
 https://search.bladerunn.in: {}
-https://search.buddyverse.net: {}
 https://search.catboy.house: {}
 https://search.charliewhiskey.net: {}
 https://search.darkness.services: {}
+https://search.disroot.org: {}
 https://search.einfachzocken.eu: {}
+https://search.elbinario.net: {}
 https://search.ethibox.fr: {}
 https://search.femboy.ad: {}
+https://search.fredix.xyz: {}
 https://search.freestater.org: {}
+https://search.fuckoffgoogle.net: {}
 https://search.hbubli.cc: {}
 https://search.im-in.space: {}
 https://search.indst.eu:
@@ -36,9 +42,9 @@ https://search.inetol.net: {}
 https://search.internetsucks.net: {}
 https://search.ipsys.bf: {}
 https://search.ipv6s.net: {}
-https://search.leptons.xyz: {}
 https://search.mdosch.de: {}
 https://search.minus27315.dev: {}
+https://search.nolog.cz: {}
 https://search.oh64.moe:
   additional_urls:
     http://vp5dnvfg352ohj674xi6owkddy3daftkmyfsbbt73sb5gt7qxctfcqad.onion: Hidden Service
@@ -49,13 +55,15 @@ https://search.rhscz.eu:
     http://ls67zxncmcqgn2vg74ckcwxgu5p3e5mf2khues3egkumhcqtbsg4kqyd.onion: Hidden Service
 https://search.rowie.at: {}
 https://search.sapti.me: {}
+https://search.slowb.ro: {}
 https://search.undertale.uk: {}
 https://search.unredacted.org: {}
-https://search.url4irl.com: {}
 https://search.wdpserver.com: {}
 https://search.zina.dev: {}
 https://searx.ankha.ac: {}
+https://searx.be: {}
 https://searx.dresden.network: {}
+https://searx.konggdev.eu: {}
 https://searx.lunar.icu: {}
 https://searx.mbuf.net: {}
 https://searx.mxchange.org: {}
@@ -70,12 +78,14 @@ https://searx.rhscz.eu:
   additional_urls:
     http://ieqzkvy4bf3xi4bzsfzfax42t4iuqcbqn6oah4uwrm4ip354gavsviad.onion: Hidden Service
 https://searx.ro: {}
+https://searx.rtrace.io: {}
 https://searx.sev.monster: {}
 https://searx.stream: {}
 https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
+https://searx.yorgis.net: {}
 https://searxng.biz: {}
 https://searxng.canine.tools: {}
 https://searxng.cups.moe: {}
@@ -83,5 +93,9 @@ https://searxng.shreven.org: {}
 https://searxng.site: {}
 https://searxng.website: {}
 https://seek.fyi: {}
+https://spot.murena.io: {}
+https://starless.dk: {}
+https://sx.articexploit.xyz: {}
 https://sx.catgirl.cloud: {}
+https://sxng.violets-purgatory.dev: {}
 https://www.gruble.de: {}
