@@ -3,6 +3,7 @@ https://copp.gg: {}
 https://etsi.me: {}
 https://find.xenorio.xyz: {}
 https://grep.vim.wtf: {}
+https://hopniss.net: {}
 https://kantan.cat:
   additional_urls:
     http://kantanrucloofzrfn7vqlsxbhipkqv55qygn4oxogbnjpfex54bw4gad.onion: Hidden Service
@@ -11,6 +12,8 @@ https://ooglester.com: {}
 https://opnxng.com: {}
 https://paulgo.io: {}
 https://priv.au: {}
+https://s.adast.dk: {}
+https://s.chatoyer.de: {}
 https://s.mble.dk: {}
 https://search.2b9t.xyz: {}
 https://search.abohiccups.com: {}
@@ -39,6 +42,7 @@ https://search.ipv6s.net: {}
 https://search.leptons.xyz: {}
 https://search.mdosch.de: {}
 https://search.minus27315.dev: {}
+https://search.nolog.cz: {}
 https://search.oh64.moe:
   additional_urls:
     http://vp5dnvfg352ohj674xi6owkddy3daftkmyfsbbt73sb5gt7qxctfcqad.onion: Hidden Service
@@ -56,6 +60,7 @@ https://search.wdpserver.com: {}
 https://search.zina.dev: {}
 https://searx.ankha.ac: {}
 https://searx.dresden.network: {}
+https://searx.konggdev.eu: {}
 https://searx.lunar.icu: {}
 https://searx.mbuf.net: {}
 https://searx.mxchange.org: {}
@@ -76,6 +81,7 @@ https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tuxcloud.net: {}
+https://searx.yorgis.net: {}
 https://searxng.biz: {}
 https://searxng.canine.tools: {}
 https://searxng.cups.moe: {}
@@ -83,5 +89,8 @@ https://searxng.shreven.org: {}
 https://searxng.site: {}
 https://searxng.website: {}
 https://seek.fyi: {}
+https://starless.ch: {}
+https://sx.articexploit.xyz: {}
 https://sx.catgirl.cloud: {}
 https://www.gruble.de: {}
+https://www.safesearch.center: {}
