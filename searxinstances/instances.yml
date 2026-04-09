@@ -11,7 +11,9 @@ https://o5.gg: {}
 https://ooglester.com: {}
 https://opnxng.com: {}
 https://paulgo.io: {}
-https://priv.au: {}
+https://priv.au:
+  additional_urls:
+    http://privateoz3u5utrimal2edr56j3r5caakektxxgixigdkycuxigvquid.onion: Hidden Service
 https://s.mble.dk: {}
 https://search.2b9t.xyz: {}
 https://search.abohiccups.com: {}
