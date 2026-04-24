@@ -1,25 +1,12 @@
-https://baresearch.org: {}
 https://copp.gg: {}
-https://etsi.me: {}
 https://failsearx.culturanerd.it: {}
-https://find.xenorio.xyz: {}
-https://grep.vim.wtf: {}
 https://kantan.cat:
   additional_urls:
     http://kantanrucloofzrfn7vqlsxbhipkqv55qygn4oxogbnjpfex54bw4gad.onion: Hidden Service
 https://o5.gg: {}
-https://ooglester.com: {}
-https://opnxng.com: {}
-https://paulgo.io: {}
-https://priv.au:
-  additional_urls:
-    http://privateoz3u5utrimal2edr56j3r5caakektxxgixigdkycuxigvquid.onion: Hidden Service
 https://s.mble.dk: {}
 https://search.2b9t.xyz: {}
 https://search.abohiccups.com: {}
-https://search.anoni.net:
-  additional_urls:
-    http://search.anoninetru5tflukgfaehun7q6khowgmymcff3gtk5oyesqazhmfxtyd.onion: Hidden Service
 https://search.bladerunn.in: {}
 https://search.catboy.house: {}
 https://search.charliewhiskey.net: {}
@@ -28,7 +15,6 @@ https://search.datenkrake.ch: {}
 https://search.einfachzocken.eu: {}
 https://search.ethibox.fr: {}
 https://search.femboy.ad: {}
-https://search.freestater.org: {}
 https://search.hbubli.cc: {}
 https://search.im-in.space: {}
 https://search.indst.eu:
@@ -36,7 +22,6 @@ https://search.indst.eu:
     http://whereissky27lxfdrs7ct7a5ievor3tl67qi77rv5luga7wod5jf2mad.onion: Hidden Service
 https://search.inetol.net: {}
 https://search.internetsucks.net: {}
-https://search.mdosch.de: {}
 https://search.minus27315.dev: {}
 https://search.ononoki.org: {}
 https://search.pereira.is: {}
@@ -51,15 +36,12 @@ https://search.seddens.net: {}
 https://search.serpensin.com:
   additional_urls:
     http://searxngorpgnztkcftpz3ycdpyajd4q55y2nejw3tbszocht5zdh4lyd.onion: Hidden Service
-https://search.undertale.uk: {}
 https://search.unredacted.org: {}
 https://search.url4irl.com: {}
 https://search.wdpserver.com: {}
 https://search.zina.dev: {}
 https://searx.ankha.ac: {}
-https://searx.dresden.network: {}
 https://searx.mbuf.net: {}
-https://searx.mxchange.org: {}
 https://searx.namejeff.xyz: {}
 https://searx.oloke.xyz:
   additional_urls:
@@ -77,9 +59,6 @@ https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tsmdt.de: {}
-https://searx.tuxcloud.net: {}
-https://searxng.canine.tools: {}
-https://searxng.cups.moe: {}
 https://searxng.deggo.fyi: {}
 https://searxng.fishfvch.com: {}
 https://searxng.gdebest.net: {}
@@ -88,4 +67,3 @@ https://searxng.site: {}
 https://searxng.website: {}
 https://seek.fyi: {}
 https://sx.catgirl.cloud: {}
-https://www.gruble.de: {}
