@@ -36,7 +36,6 @@ https://search.liuzj.net: {}
 https://search.mdosch.de: {}
 https://search.mectov.my.id: {}
 https://search.minus27315.dev: {}
-https://search.ononoki.org: {}
 https://search.pereira.is: {}
 https://search.pi.vps.pw: {}
 https://search.privacyredirect.com: {}
@@ -62,6 +61,7 @@ https://searx.namejeff.xyz: {}
 https://searx.oloke.xyz:
   additional_urls:
     http://searxokthnxmo7ndis35jpts2tawcwvbovuy47qtavwo7oq4jgcm5gqd.onion: Hidden Service
+https://searx.ononoki.org: {}
 https://searx.party: {}
 https://searx.perennialte.ch: {}
 https://searx.rajimayur.me: {}
