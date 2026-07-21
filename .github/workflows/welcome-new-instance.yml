@@ -1,0 +1,42 @@
+name: Welcome message
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+
+  replycomment:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        if: contains(github.event.issue.labels.*.name, 'instance add')
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const match = body.match(/### Matrix username\s*\n+([^\n#]+)/i);
+            const matrixUsername = match ? match[1].trim() : '';
+            const isEmpty = !matrixUsername || matrixUsername === '_No response_';
+
+            if (!isEmpty) {
+              console.log(`Matrix username provided: ${matrixUsername}`);
+              return;
+            }
+
+            const replyComment = [
+              'Hi, thanks for your instance addition request - looks like you left the **Matrix username** empty.',
+              '',
+              'If you would like an invite to the private instance owners room, please edit your request to include your Matrix ID (for example `@foobar:matrix.org`).',
+              '',
+              'We discuss the troubles of managing a public instance, share advice (like how to defend your instance against bots), and also announce any big changes that may affect you so it is highly recommended that you join.',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: replyComment
+            })
