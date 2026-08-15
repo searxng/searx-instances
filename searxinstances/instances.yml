@@ -83,6 +83,9 @@ https://searx.tiekoetter.com:
   additional_urls:
     http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion: Hidden Service
 https://searx.tsmdt.de: {}
+https://searxng.buffon.cloud:
+  additional_urls:
+    http://b352n7tub42bhdsta3lzksshayuvp6or2jbwdsw5spme65af6tetq4id.onion: Hidden Service
 https://searxng.canine.tools: {}
 https://searxng.cups.moe: {}
 https://searxng.deggo.fyi: {}
