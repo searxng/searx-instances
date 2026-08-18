@@ -6,7 +6,9 @@ Create a new issue here: https://github.com/searxng/searx-instances/issues/new/c
 
 * [Create an issue](https://github.com/searxng/searx-instances/issues/new/choose) to add / remove / edit a SearXNG instance on https://searx.space/
 * If you add a new instance, allow the IPs of ```check.searx.space``` to access your instance. It will checks your instance periodically ([source code](https://github.com/searxng/searx-space)). The results are displayed on https://searx.space/
-* Wait for a reviewer to actually change [searxstats/instances.yml](https://github.com/searxng/searx-instances/blob/master/searxinstances/instances.yml)
+* Wait for a reviewer to add your instance to [instances.yml](https://github.com/searxng/searx-instances/blob/master/searxinstances/instances.yml)
+
+---
 
 ## For reviewers
 
@@ -18,20 +20,7 @@ Create a new issue here: https://github.com/searxng/searx-instances/issues/new/c
 
 * then `searxinstances` can help to edit instances.yml :
 ```
-usage: searxinstances [-h] [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]] [--add [ADD_INSTANCES [ADD_INSTANCES ...]]] [--delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]] [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]]
-
-Update the instance list according to the github issues.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]
-                        Github issue number to process, by default all
-  --add [ADD_INSTANCES [ADD_INSTANCES ...]]
-                        Add instance(s)
-  --delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]
-                        Delete instance(s)
-  --edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]
-                        Edit instance(s)
+usage: searxinstances [-h] [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]] [--add [ADD_INSTANCES [ADD_INSTANCES ...]]] [--delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]] [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]] [-m [MESSAGE]]
 ```
 
 Or if you don't want to use virtualenv:
@@ -46,6 +35,7 @@ The tool :
 * if everything is okay, the script modifies the instances.yml file.
 * then it creates a commit.
 * The ```--github-issues``` options reads the [github issues](https://github.com/searxng/searx-instances/issues).
+* `-m` skips the editor and uses that text as the extra commit message:
 
 ---
 

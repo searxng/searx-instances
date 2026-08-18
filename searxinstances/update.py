@@ -14,16 +14,19 @@ from .utils import editor
 
 class UserRequest:
 
-    __slots__ = ['request_id', 'request_url', 'user', 'command', 'url', 'message']
+    __slots__ = ['request_id', 'request_url', 'user', 'command', 'url', 'message',
+                 'commit_extra']
     user_request_name = None
 
-    # pylint: disable=too-many-arguments
-    def __init__(self, request_id: str, request_url: str, user: str, url: str, message: str):
+    # pylint: disable=too-many-arguments,too-many-positional-arguments
+    def __init__(self, request_id: str, request_url: str, user: str, url: str, message: str, *,
+                 commit_extra=None):
         self.request_id = request_id
         self.request_url = request_url
         self.user = user
         self.url = url
         self.message = message
+        self.commit_extra = commit_extra
 
     @abstractmethod
     def execute(self, instance_list: model.InstanceList, instance_list_update: model.InstanceList):
@@ -42,6 +45,9 @@ class UserRequest:
         if self.user is not None:
             commit_message += f"From @{self.user}\n"
 
+        if self.commit_extra:
+            commit_message += f"{self.commit_extra.strip()}\n"
+
         return add_comment_prefix(commit_message) + "\n" +\
             "#> The above text is the commit message\n" +\
             "#> Delete the whole buffer to cancel the request\n" +\
@@ -50,62 +56,25 @@ class UserRequest:
             add_comment_prefix(self.message, prefix='#> ') + "\n"
 
     def run(self, instance_list):
-        # set after the while
-        instance_list_update = model.InstanceList()
-        commit_message = None
-
-        #
         content = self.get_content(instance_list)  # pylint: disable=assignment-from-no-return
-        valid = False
-        edit = True
         error_msg = None
-
-        # edit until no error and no content
-        while edit:
-            content = call_editor(content, error_msg)
-
-            # no content: stop
-            if content.strip() == '':
-                edit = False
-                error_msg = None
-                continue
-
-            # parse content
+        while True:
+            if self.commit_extra is None:
+                content = call_editor(content, error_msg)
             try:
+                if content.strip() == '':
+                    return (False, None)
                 instance_list_update = model.yaml_load(content)
                 commit_message = extract_commit_message(content)
-                error_msg = None
-            except Exception as ex:
+                self.execute(instance_list.copy(), instance_list_update)
+                self.execute(instance_list, instance_list_update)
+                model.save(instance_list)
+                return (True, commit_message)
+            except Exception as ex:  # pylint: disable=broad-except
                 print(ex)
-                edit = True
+                if self.commit_extra is not None:
+                    return (False, None)
                 error_msg = exception_to_error_msg(ex)
-                continue
-
-            # try to add the new instance(s)
-            error_msg = None
-            try:
-                dummy_instance_list = instance_list.copy()
-                self.execute(dummy_instance_list, instance_list_update)
-            except ValueError as ex:
-                edit = True
-                error_msg = exception_to_error_msg(ex)
-                continue
-
-            # exit while if no error
-            if error_msg is None:
-                # done
-                edit = False
-                valid = True
-
-        if valid:
-            # update
-            self.execute(instance_list, instance_list_update)
-            model.save(instance_list)
-
-            # commit
-            return (True, commit_message)
-        else:
-            return (False, None)
 
 
 class UserRequestAdd(UserRequest):
@@ -353,7 +322,7 @@ def load_user_request_list_from_github(github_issue_list) -> list:
     return user_request_list
 
 
-def load_user_request_list():
+def load_user_request_list(argv=None):
     parser = argparse.ArgumentParser(description='Update the instance list according to the github issues.')
     parser.add_argument('--github-issues',
                         type=int, nargs='*', dest='github_issue_list',
@@ -371,20 +340,24 @@ def load_user_request_list():
                         type=str, nargs='*', dest='edit_instances',
                         help='Edit instance(s)',
                         default=[])
-    args = parser.parse_args()
+    parser.add_argument('-m', '--message',
+                        nargs='?', const='', default=None,
+                        help='Commit with this extra message instead of opening an editor')
+    args = parser.parse_args(argv)
 
     user_request_list = []
     if args.github_issue_list is not None:
-        user_request_list += load_user_request_list_from_github(args.github_issue_list)
-    if len(args.add_instances) > 0:
-        for url in args.add_instances:
-            user_request_list.append(UserRequestAdd(None, None, None, normalize_url(url), ''))
-    if len(args.delete_instances) > 0:
-        for url in args.delete_instances:
-            user_request_list.append(UserRequestDelete(None, None, None, url, ''))
-    if len(args.edit_instances) > 0:
-        for url in args.edit_instances:
-            user_request_list.append(UserRequestEdit(None, None, None, url, ''))
+        for req in load_user_request_list_from_github(args.github_issue_list):
+            req.commit_extra = args.message
+            user_request_list.append(req)
+    for cls, urls in (
+            (UserRequestAdd, args.add_instances),
+            (UserRequestDelete, args.delete_instances),
+            (UserRequestEdit, args.edit_instances),
+    ):
+        for url in urls:
+            user_request_list.append(cls(None, None, None, normalize_url(url) or url, '',
+                                         commit_extra=args.message))
     return user_request_list
 
 
