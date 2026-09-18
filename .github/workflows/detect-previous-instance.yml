@@ -11,17 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
         if: contains(github.event.issue.labels.*.name, 'instance add')
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v7
         if: contains(github.event.issue.labels.*.name, 'instance add')
         with:
-          node-version: 16
+          node-version: 22
       - run: npm install linkifyjs
         if: contains(github.event.issue.labels.*.name, 'instance add')
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v9
         if: contains(github.event.issue.labels.*.name, 'instance add')
         with:
           script: |
