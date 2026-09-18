@@ -46,11 +46,12 @@ jobs:
         with:
           github-token: ${{ secrets.GH_PAT }}
           script: |
+            const sha = (await exec.getExecOutput('git', ['rev-parse', 'HEAD'])).stdout.trim()
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `Added by @${context.actor}. Welcome to the public instances list!`,
+              body: `Added by @${context.actor} in ${context.payload.repository.html_url}/commit/${sha}. Welcome to the public instances list @${context.payload.issue.user.login}!`,
             })
             await github.rest.issues.update({
               owner: context.repo.owner,
@@ -69,3 +70,18 @@ jobs:
               issue_number: context.issue.number,
               body: `Instance auto add failed ([log](${context.payload.repository.html_url}/actions/runs/${context.runId})).`,
             })
+      - if: always()
+        uses: actions/github-script@v9
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'auto-add',
+              })
+            } catch (e) {
+              if (e.status !== 404) throw e
+            }
