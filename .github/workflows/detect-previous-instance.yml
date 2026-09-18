@@ -21,7 +21,7 @@ jobs:
           node-version: 16
       - run: npm install linkifyjs
         if: contains(github.event.issue.labels.*.name, 'instance add')
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v9
         if: contains(github.event.issue.labels.*.name, 'instance add')
         with:
           script: |
