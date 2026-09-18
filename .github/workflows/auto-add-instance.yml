@@ -1,0 +1,71 @@
+name: Auto add instance
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add:
+    if: >
+      github.event.label.name == 'auto-add' &&
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'instance add')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GH_PAT }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: actions/github-script@v9
+        with:
+          script: |
+            const { data } = await github.rest.repos.getCollaboratorPermissionLevel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              username: context.actor,
+            });
+            if (!['admin', 'maintain', 'write'].includes(data.permission)) {
+              core.setFailed(`@${context.actor} cannot do auto add (no permissions)`);
+            }
+      - run: |
+          python -m pip install --upgrade pip
+          python -m pip install .[update]
+          git config user.name 'searxng-bot'
+          git config user.email 'searxng-bot@users.noreply.github.com'
+          before=$(git rev-parse HEAD)
+          python -m searxinstances.update --github-issues ${{ github.event.issue.number }} -m
+          test "$(git rev-parse HEAD)" != "$before"
+          git push
+      - if: success()
+        uses: actions/github-script@v9
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Added by @${context.actor}. Welcome to the public instances list!`,
+            })
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+            })
+      - if: failure()
+        uses: actions/github-script@v9
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Instance auto add failed ([log](${context.payload.repository.html_url}/actions/runs/${context.runId})).`,
+            })
