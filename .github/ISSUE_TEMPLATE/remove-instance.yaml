@@ -1,0 +1,25 @@
+name: Remove an instance
+description: Remove an existing SearXNG instance from searx.space
+title: "Remove https://<instance URL>"
+labels:
+  - instance remove
+  - instance
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Enter your instance URL in the title above e.g: `Remove https://searxng.example.com`
+
+  - type: input
+    id: original-issue
+    attributes:
+      label: Instance added by
+      description: Link to the original add request, if you have it.
+      placeholder: "https://github.com/searxng/searx-instances/issues/123"
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comment
+      description: Optional reason for removing the instance.
