@@ -45,8 +45,7 @@ https://nibblehole.com: {}
 
 # Add https://nibblehole.com
 #
-# Close https://github.com/searxng/searx-instances/issues/2
-# From @dalf
+# Closes https://github.com/searxng/searx-instances/issues/2
 
 #> The above text is the commit message
 #> Delete the whole buffer to cancel the request

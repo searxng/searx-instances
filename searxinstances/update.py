@@ -40,10 +40,7 @@ class UserRequest:
         commit_message = f"{self.user_request_name} {self.url}\n\n"
 
         if self.request_url is not None:
-            commit_message += f"Close {self.request_url}\n"
-
-        if self.user is not None:
-            commit_message += f"From @{self.user}\n"
+            commit_message += f"Closes {self.request_url}\n"
 
         if self.commit_extra:
             commit_message += f"{self.commit_extra.strip()}\n"
@@ -356,6 +353,9 @@ def load_user_request_list(argv=None):
             (UserRequestEdit, args.edit_instances),
     ):
         for url in urls:
+            rtitle = re.search(TITLE_RE, url)
+            if rtitle:
+                url = rtitle.group(1)
             user_request_list.append(cls(None, None, None, normalize_url(url) or url, '',
                                          commit_extra=args.message))
     return user_request_list

@@ -6,14 +6,7 @@ on:
 
 jobs:
   apply:
-    if: >
-      github.event.issue.state == 'open' &&
-      (
-        (github.event.label.name == 'auto-add' &&
-         contains(github.event.issue.labels.*.name, 'instance add')) ||
-        (github.event.label.name == 'auto-remove' &&
-         contains(github.event.issue.labels.*.name, 'instance remove'))
-      )
+    if: github.event.label.name == 'auto-add' || github.event.label.name == 'auto-remove'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -48,9 +41,12 @@ jobs:
           git config user.name 'searxng-bot'
           git config user.email 'searxng-bot@users.noreply.github.com'
           before=$(git rev-parse HEAD)
-          python -m searxinstances.update --github-issues ${{ github.event.issue.number }} -m
+          label='${{ github.event.label.name }}'
+          python -m searxinstances.update --${label#auto-} "$ISSUE_TITLE" -m "Closes ${{ github.event.issue.html_url }}"
           test "$(git rev-parse HEAD)" != "$before"
           git push
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
       - if: success()
         uses: actions/github-script@v9
         with:
@@ -66,12 +62,14 @@ jobs:
               issue_number: context.issue.number,
               body: `${verb} by @${context.actor} in ${context.payload.repository.html_url}/commit/${sha}.${welcome}`,
             })
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              state: 'closed',
-            })
+            if (context.payload.issue.state !== 'closed') {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                state: 'closed',
+              })
+            }
       - if: failure()
         uses: actions/github-script@v9
         with:
