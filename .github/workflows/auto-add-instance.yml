@@ -31,7 +31,13 @@ jobs:
             });
             if (!['admin', 'maintain', 'write'].includes(data.permission)) {
               core.setFailed(`@${context.actor} cannot do auto add (no permissions)`);
+              return;
             }
+            const { data: user } = await github.rest.users.getByUsername({
+              username: context.actor,
+            });
+            core.exportVariable('GIT_AUTHOR_NAME', user.name || user.login);
+            core.exportVariable('GIT_AUTHOR_EMAIL', `${user.id}+${user.login}@users.noreply.github.com`);
       - run: |
           python -m pip install --upgrade pip
           python -m pip install .[update]
