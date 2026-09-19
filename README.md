@@ -20,7 +20,7 @@ Create a new issue here: https://github.com/searxng/searx-instances/issues/new/c
 
 * then `searxinstances` can help to edit instances.yml :
 ```
-usage: searxinstances [-h] [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]] [--add [ADD_INSTANCES [ADD_INSTANCES ...]]] [--delete [DELETE_INSTANCES [DELETE_INSTANCES ...]]] [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]] [-m [MESSAGE]]
+usage: searxinstances [-h] [--github-issues [GITHUB_ISSUE_LIST [GITHUB_ISSUE_LIST ...]]] [--add [ADD_INSTANCES [ADD_INSTANCES ...]]] [--remove [REMOVE_INSTANCES [REMOVE_INSTANCES ...]]] [--edit [EDIT_INSTANCES [EDIT_INSTANCES ...]]] [-m [MESSAGE]]
 ```
 
 Or if you don't want to use virtualenv:

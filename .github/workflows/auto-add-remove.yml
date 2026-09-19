@@ -12,7 +12,7 @@ jobs:
         (github.event.label.name == 'auto-add' &&
          contains(github.event.issue.labels.*.name, 'instance add')) ||
         (github.event.label.name == 'auto-remove' &&
-         contains(github.event.issue.labels.*.name, 'instance delete'))
+         contains(github.event.issue.labels.*.name, 'instance remove'))
       )
     runs-on: ubuntu-latest
     permissions:

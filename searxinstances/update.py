@@ -93,9 +93,9 @@ class UserRequestAdd(UserRequest):
             instance_list[url] = instance
 
 
-class UserRequestDelete(UserRequest):
+class UserRequestRemove(UserRequest):
 
-    user_request_name = 'Delete'
+    user_request_name = 'Remove'
 
     def get_content(self, existing_instance_list) -> str:
         return self.get_generic_content()
@@ -233,7 +233,7 @@ TITLE_RE = re.compile('[a-z]*[ ]?(http.+)', re.IGNORECASE)
 COMMENT_RE = re.compile('<!--.*-->', re.MULTILINE | re.DOTALL)
 LABEL_TO_CLASS = {
     'instance add': UserRequestAdd,
-    'instance delete': UserRequestDelete,
+    'instance remove': UserRequestRemove,
     'instance edit': UserRequestEdit
 }
 
@@ -332,9 +332,9 @@ def load_user_request_list(argv=None):
                         type=str, nargs='*', dest='add_instances',
                         help='Add instance(s)',
                         default=[])
-    parser.add_argument('--delete',
-                        type=str, nargs='*', dest='delete_instances',
-                        help='Delete instance(s)',
+    parser.add_argument('--remove',
+                        type=str, nargs='*', dest='remove_instances',
+                        help='Remove instance(s)',
                         default=[])
     parser.add_argument('--edit',
                         type=str, nargs='*', dest='edit_instances',
@@ -352,7 +352,7 @@ def load_user_request_list(argv=None):
             user_request_list.append(req)
     for cls, urls in (
             (UserRequestAdd, args.add_instances),
-            (UserRequestDelete, args.delete_instances),
+            (UserRequestRemove, args.remove_instances),
             (UserRequestEdit, args.edit_instances),
     ):
         for url in urls:
