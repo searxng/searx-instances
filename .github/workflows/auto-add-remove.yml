@@ -1,15 +1,19 @@
-name: Auto add instance
+name: Auto add/remove
 
 on:
   issues:
     types: [labeled]
 
 jobs:
-  add:
+  apply:
     if: >
-      github.event.label.name == 'auto-add' &&
       github.event.issue.state == 'open' &&
-      contains(github.event.issue.labels.*.name, 'instance add')
+      (
+        (github.event.label.name == 'auto-add' &&
+         contains(github.event.issue.labels.*.name, 'instance add')) ||
+        (github.event.label.name == 'auto-remove' &&
+         contains(github.event.issue.labels.*.name, 'instance delete'))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -30,7 +34,7 @@ jobs:
               username: context.actor,
             });
             if (!['admin', 'maintain', 'write'].includes(data.permission)) {
-              core.setFailed(`@${context.actor} cannot do auto add (no permissions)`);
+              core.setFailed(`@${context.actor} cannot do ${context.payload.label.name} (no permissions)`);
               return;
             }
             const { data: user } = await github.rest.users.getByUsername({
@@ -53,11 +57,14 @@ jobs:
           github-token: ${{ secrets.GH_PAT }}
           script: |
             const sha = (await exec.getExecOutput('git', ['rev-parse', 'HEAD'])).stdout.trim()
+            const added = context.payload.label.name === 'auto-add'
+            const verb = added ? 'Added' : 'Removed'
+            const welcome = added ? ` Welcome to the public instances list @${context.payload.issue.user.login}!` : ''
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `Added by @${context.actor} in ${context.payload.repository.html_url}/commit/${sha}. Welcome to the public instances list @${context.payload.issue.user.login}!`,
+              body: `${verb} by @${context.actor} in ${context.payload.repository.html_url}/commit/${sha}.${welcome}`,
             })
             await github.rest.issues.update({
               owner: context.repo.owner,
@@ -74,7 +81,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `Instance auto add failed ([log](${context.payload.repository.html_url}/actions/runs/${context.runId})).`,
+              body: `${context.payload.label.name} failed ([log](${context.payload.repository.html_url}/actions/runs/${context.runId})).`,
             })
       - if: always()
         uses: actions/github-script@v9
@@ -86,7 +93,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                name: 'auto-add',
+                name: context.payload.label.name,
               })
             } catch (e) {
               if (e.status !== 404) throw e
