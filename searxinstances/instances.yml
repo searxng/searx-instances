@@ -36,8 +36,10 @@ https://search.liuzj.net: {}
 https://search.lumy.live: {}
 https://search.mdosch.de: {}
 https://search.mectov.my.id: {}
-https://search.meowing.monster: {}
 https://search.minus27315.dev: {}
+https://search.mizuki.st:
+  additional_urls:
+    http://search.lesboswza6waq3itqo46rvf5a7dibxih32f2umwg6fpssxj66spmclyd.onion: Hidden Service
 https://search.pereira.is: {}
 https://search.pi.vps.pw: {}
 https://search.privacyredirect.com: {}
